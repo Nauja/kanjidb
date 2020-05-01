@@ -5,7 +5,7 @@ import re
 
 
 def loads(s, decode=None, sep=None):
-    '''Load a list of kanjis from string.
+    """Load a list of kanjis from string.
 
     Usage example:
 
@@ -33,17 +33,15 @@ def loads(s, decode=None, sep=None):
     :param decode: how to decode kanjis
     :param sep: separator between kanjis
     :return: list of decoded kanjis
-    '''
+    """
     symbols = s if sep is None else s.split(sep)
     symbols = [re.sub("[ \t\r\n]", "", _) for _ in symbols]
 
-    return [
-        _ if decode is None else decode(_) for _ in symbols
-    ]
+    return [_ if decode is None else decode(_) for _ in symbols]
 
 
 def load(*streams, decode=None, sep=None):
-    '''Load a list of kanjis from input streams.
+    """Load a list of kanjis from input streams.
 
     Usage example:
 
@@ -71,7 +69,7 @@ def load(*streams, decode=None, sep=None):
     :param decode: how to decode kanjis
     :param sep: separator between kanjis
     :return: list of decoded kanjis
-    '''
+    """
     sep = sep if sep is not None else os.linesep
 
     def wrapper():

@@ -47,7 +47,6 @@ def validate_required_params(_fun=None, *, names):
 
 def KanjiView(*, db) -> web.View:
     class Wrapper(web.View, aiohttp_cors.CorsViewMixin):
-
         async def get(self):
             """
             ---
@@ -62,24 +61,14 @@ def KanjiView(*, db) -> web.View:
                 "405":
                     description: invalid HTTP Method
             """
-            kanji = self.request.match_info['kanji']
+            kanji = self.request.match_info["kanji"]
             data = db.get(kanji, None)
             if not data:
-                return web.Response(
-                    text=json.dumps({
-                        "result": "Ko"
-                    })
-                )
+                return web.Response(text=json.dumps({"result": "Ko"}))
 
             data["kanji"] = kanji
             return web.Response(
-                text=json.dumps(
-                    {
-                        "result": "Ok",
-                        "params": data
-                    },
-                    ensure_ascii=False
-                )
+                text=json.dumps({"result": "Ok", "params": data}, ensure_ascii=False)
             )
 
         async def post(self):
@@ -93,43 +82,26 @@ def KanjiView(*, db) -> web.View:
                     data[_] = db[_]
 
             return web.Response(
-                text=json.dumps(
-                    {
-                        "result": "Ok",
-                        "params": data
-                    },
-                    ensure_ascii=False
-                )
+                text=json.dumps({"result": "Ok", "params": data}, ensure_ascii=False)
             )
 
     return Wrapper
 
 
 class Application(web.Application):
-    def __init__(
-        self,
-        *args,
-        db,
-        base_url: str=None,
-        **kwargs
-    ):
+    def __init__(self, *args, db, base_url: str = None, **kwargs):
         super(Application, self).__init__(*args, **kwargs)
 
         base_url = base_url or ""
-        cors = aiohttp_cors.setup(self, defaults={
-            "*": aiohttp_cors.ResourceOptions(
-                allow_credentials=True,
-                expose_headers="*",
-                allow_headers="*",
-            )
-        })
-        cors.add(self.router.add_view(
-            base_url + "/kanji/{kanji}",
-            KanjiView(db=db)
-        ))
-        cors.add(self.router.add_view(
-            base_url + "/kanji",
-            KanjiView(db=db)
-        ))
+        cors = aiohttp_cors.setup(
+            self,
+            defaults={
+                "*": aiohttp_cors.ResourceOptions(
+                    allow_credentials=True, expose_headers="*", allow_headers="*",
+                )
+            },
+        )
+        cors.add(self.router.add_view(base_url + "/kanji/{kanji}", KanjiView(db=db)))
+        cors.add(self.router.add_view(base_url + "/kanji", KanjiView(db=db)))
 
         aiohttp_swagger.setup_swagger(self)

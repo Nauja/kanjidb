@@ -6,7 +6,7 @@ import json
 
 
 def dumps(db, *, encode=None, indent=None):
-    '''Dump the JSON database.
+    """Dump the JSON database.
 
     Parameter `output` may be a `str` or `filelike` object:
 
@@ -38,21 +38,17 @@ def dumps(db, *, encode=None, indent=None):
     :param db: JSON database
     :param indent: JSON indent level
     :param dumps: dumps JSON database
-    '''
+    """
     indent = indent if indent is not None else 4
 
     if encode:
         db = {encode(k): v for k, v in db.items()}
 
-    return json.dumps(
-        db,
-        indent=indent,
-        ensure_ascii=False
-    )
+    return json.dumps(db, indent=indent, ensure_ascii=False)
 
 
 def dump(db, output=None, *, encode=None, indent=None):
-    '''Dump the JSON database.
+    """Dump the JSON database.
 
     Parameter `output` may be a `str` or `filelike` object:
 
@@ -85,7 +81,7 @@ def dump(db, output=None, *, encode=None, indent=None):
     :param indent: JSON indent level
     :param dumps: dumps JSON database
     :param verbose: verbosity level
-    '''
+    """
     output = output if output is not None else sys.stdout
 
     content = dumps(db, encode=encode, indent=indent)

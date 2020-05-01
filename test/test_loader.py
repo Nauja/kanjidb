@@ -15,13 +15,18 @@ class LoaderTestCase(unittest.TestCase):
         # Unicode, keep same encoding
         self.assertEqual(loader.loads("U+4E00;U4E8C", sep=";"), ["U+4E00", "U4E8C"])
         # Unicode, convert to UTF8
-        self.assertEqual(loader.loads("U+4E00;U4E8C", decode=decode_unicode, sep=";"), ["一", "二"])
+        self.assertEqual(
+            loader.loads("U+4E00;U4E8C", decode=decode_unicode, sep=";"), ["一", "二"]
+        )
 
     def test_load(self):
         # UTF8 encoded
         self.assertEqual(loader.load("data/kanjis_utf8.txt", sep=";"), ["一", "二"])
         # Unicode
-        self.assertEqual(loader.load("data/kanjis_unicode.txt", decode=decode_unicode, sep=";"), ["一", "二"])
+        self.assertEqual(
+            loader.load("data/kanjis_unicode.txt", decode=decode_unicode, sep=";"),
+            ["一", "二"],
+        )
 
 
 if __name__ == "__main__":

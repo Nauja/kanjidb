@@ -3,6 +3,5 @@ from .__version__ import __version_major__, __version_long__, __version__, __sta
 
 
 from kanjidb.main import *
-__all__ = [
-    "help", "main", "__version__", "version_info"
-]
+
+__all__ = ["help", "main", "__version__", "version_info"]

@@ -40,42 +40,32 @@ def setup_logging(
     if error_logfile:
         logging.getLogger("aiohttp.server").addHandler(
             RotatingFileHandler(
-                error_logfile,
-                maxBytes=error_maxbytes,
-                backupCount=error_backupcount,
+                error_logfile, maxBytes=error_maxbytes, backupCount=error_backupcount,
             )
         )
 
 
-def run(
-    *,
-    base_url: str,
-    port: int,
-    cdn_url: str,
-    db
-):
+def run(*, base_url: str, port: int, cdn_url: str, db):
     db = {
         k: {
             "meaning": data["meaning"],
             "furigana": data.get("furigana", None),
             "media": {
-                "svg": "{}/svg/{}".format(cdn_url, data["media"]["svg"]) if "svg" in data["media"] else None
-            }
-        } for k, data in db.items()
+                "svg": "{}/svg/{}".format(cdn_url, data["media"]["svg"])
+                if "svg" in data["media"]
+                else None
+            },
+        }
+        for k, data in db.items()
     }
 
-    app = Application(
-        base_url=base_url,
-        db=db
-    )
+    app = Application(base_url=base_url, db=db)
     web.run_app(app, port=port)
 
 
 def main():
     parser = argparse.ArgumentParser(prog="Service", description="Help")
-    parser.add_argument(
-        "directory", type=str, help="config directory"
-    )
+    parser.add_argument("directory", type=str, help="config directory")
     parser.add_argument("-v", "--verbose", action="store_true", help="Verbosity level")
     args = parser.parse_args()
 
@@ -104,7 +94,7 @@ def main():
         base_url=config["service"]["base-url"],
         port=int(config["service"]["port"]),
         cdn_url=config["service"]["cdn-url"],
-        db=db
+        db=db,
     )
 
 

@@ -26,6 +26,7 @@ def main(argv=None):
 
     if isinstance(argv, str):
         import shlex
+
         argv = shlex.split(argv)
     elif not hasattr(argv, "__iter__"):
         raise Exception("expected a list or string")
@@ -34,10 +35,12 @@ def main(argv=None):
         # python -m kanjidb build [ARGS...]
         if argv[1] == "build":
             from kanjidb import builder
+
             return builder.main(argv[2:])
         # python -m kanjidb run [ARGS...]
         elif argv[1] == "run":
             from kanjidb import service
+
             return service.main(argv[2:])
 
     print(help())

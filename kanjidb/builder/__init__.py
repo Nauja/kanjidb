@@ -7,8 +7,17 @@ from kanjidb import loader, dumper, encoding
 from kanjidb.builder.plugins import kanjidic2
 
 
-def build(kanjis, *, plugins=None, output=None, decode=None, encode=None, indent=None, verbose=None):
-    '''Build a JSON kanji database.
+def build(
+    kanjis,
+    *,
+    plugins=None,
+    output=None,
+    decode=None,
+    encode=None,
+    indent=None,
+    verbose=None
+):
+    """Build a JSON kanji database.
 
     :param kanjis: list of kanjis to build or callable
     :param plugins: plugins used to build database
@@ -16,7 +25,7 @@ def build(kanjis, *, plugins=None, output=None, decode=None, encode=None, indent
     :param decode: how to decode input kanjis
     :param encode: how to encode output kanjis
     :param verbose: verbosity level
-    '''
+    """
     # Load
     if hasattr(kanjis, "__call__"):
         kanjis = kanjis()
@@ -38,6 +47,7 @@ def build(kanjis, *, plugins=None, output=None, decode=None, encode=None, indent
 
 def main(argv):
     import argparse
+
     parser = argparse.ArgumentParser(prog="KanjiDB", description="Kanji Database")
     parser.add_argument("--kd2-file", nargs="?", help="Kanjidic2 XML file")
     parser.add_argument("-o", "--output", nargs="?", help="Output file")
@@ -47,18 +57,11 @@ def main(argv):
     args = parser.parse_args(argv)
 
     build(
-        kanjis=loader.load(
-            *args.targets,
-            sep=args.sep
-        ) if args.targets else loader.load(
-            sys.stdin,
-            decode=encoding.decode_unicode,
-            sep=args.sep
-        ),
-        plugins=[
-            kanjidic2.Kanjidic2Plugin(args.kd2_file)
-        ],
+        kanjis=loader.load(*args.targets, sep=args.sep)
+        if args.targets
+        else loader.load(sys.stdin, decode=encoding.decode_unicode, sep=args.sep),
+        plugins=[kanjidic2.Kanjidic2Plugin(args.kd2_file)],
         output=args.output,
         encode=encoding.encode_unicode,
-        verbose=args.verbose
+        verbose=args.verbose,
     )

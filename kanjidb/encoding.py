@@ -8,7 +8,7 @@ def get_codepoint(kanji):
 
 
 def decode_unicode(s):
-    '''Decode an unicode encoded kanji.
+    """Decode an unicode encoded kanji.
 
     Input string may be in following formats:
 
@@ -25,16 +25,16 @@ def decode_unicode(s):
 
     :param s: unicode character to decode
     :return: decoded character
-    '''
+    """
     m = re.match("^(?:\\\\[uU]|[uU][+]?)([0-9a-fA-F]+)$", s)
     if not m:
-        raise Exception("Invalid unicode string \"{}\"".format(s))
+        raise Exception('Invalid unicode string "{}"'.format(s))
 
     return chr(int(m.group(1).upper(), 16))
 
 
 def encode_unicode(s, *, prefix=None):
-    '''Encode an UTF8 kanji to unicode.
+    """Encode an UTF8 kanji to unicode.
 
     Usage examples:
 
@@ -51,7 +51,7 @@ def encode_unicode(s, *, prefix=None):
 
     :param s: UTF8 character to encode
     :return: encoded character
-    '''
+    """
     prefix = prefix if prefix is not None else "U"
 
     return "{}{}".format(prefix, get_codepoint(s))
