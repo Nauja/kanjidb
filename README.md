@@ -1,5 +1,10 @@
-# kanjidb
-wip
+WIP
+
+# KanjiDB
+
+Kanji database builder and REST API.
+
+## How to use
 
 Show help:
 
