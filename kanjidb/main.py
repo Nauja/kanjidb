@@ -6,13 +6,13 @@ def help():
     return """
 Usage:  kanjidb COMMAND [OPTIONS]
 
-A Kanji database accessible via REST API
+A kanji database accessible via REST API
 
 Options:
   -v, --version            Print version information and quit
 
 Commands:
-  build       Build Kanji database from sources
+  build       Build kanji database from sources
   run         Run local server and REST API
 
 Run 'kanjidb COMMAND --help' for more information on a command.
@@ -20,7 +20,7 @@ Run 'kanjidb COMMAND --help' for more information on a command.
 """
 
 
-def main(argv=None, *, verbose=None):
+def main(argv=None):
     if argv is None:
         argv = sys.argv
 
