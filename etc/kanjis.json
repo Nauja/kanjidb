@@ -1,0 +1,7387 @@
+{
+    "一": {
+        "furigana": "いち",
+        "meaning": "one",
+        "media": {
+            "svg": "04e00.svg"
+        }
+    },
+    "丁": {
+        "furigana": "てい",
+        "meaning": "sheet; page; leaf",
+        "media": {
+            "svg": "04e01.svg"
+        }
+    },
+    "七": {
+        "furigana": "しち",
+        "meaning": "seven",
+        "media": {
+            "svg": "04e03.svg"
+        }
+    },
+    "万": {
+        "furigana": "まん",
+        "meaning": "10,000; ten thousand",
+        "media": {
+            "svg": "04e07.svg"
+        }
+    },
+    "三": {
+        "furigana": "さん",
+        "meaning": "three",
+        "media": {
+            "svg": "04e09.svg"
+        }
+    },
+    "上": {
+        "furigana": "うえ",
+        "meaning": "above; up; over; elder (e.g. daughter)",
+        "media": {
+            "svg": "04e0a.svg"
+        }
+    },
+    "下": {
+        "furigana": "した",
+        "meaning": "below; down; under; younger (e.g. daughter)",
+        "media": {
+            "svg": "04e0b.svg"
+        }
+    },
+    "不": {
+        "furigana": "あん",
+        "meaning": "un-; non-; negative prefix",
+        "media": {
+            "svg": "04e0d.svg"
+        }
+    },
+    "与": {
+        "furigana": "むた",
+        "meaning": "together with ...",
+        "media": {
+            "svg": "04e0e.svg"
+        }
+    },
+    "世": {
+        "furigana": "せい",
+        "meaning": "world; society; public",
+        "media": {
+            "svg": "04e16.svg"
+        }
+    },
+    "両": {
+        "furigana": "もろ",
+        "meaning": "both (hands, parents, sides, etc.)",
+        "media": {
+            "svg": "04e21.svg"
+        }
+    },
+    "並": {
+        "furigana": "なみ",
+        "meaning": "average; medium; common; ordinary",
+        "media": {
+            "svg": "04e26.svg"
+        }
+    },
+    "中": {
+        "furigana": "なか",
+        "meaning": "medium; average; middle",
+        "media": {
+            "svg": "04e2d.svg"
+        }
+    },
+    "丸": {
+        "furigana": "まる",
+        "meaning": "circle",
+        "media": {
+            "svg": "04e38.svg"
+        }
+    },
+    "主": {
+        "furigana": "しゅ",
+        "meaning": "head (of a household); proprietor (of a store); proprietress; landlord; landlady",
+        "media": {
+            "svg": "04e3b.svg"
+        }
+    },
+    "久": {
+        "furigana": "ひさ",
+        "meaning": "long (time that has passed); old (story)",
+        "media": {
+            "svg": "04e45.svg"
+        }
+    },
+    "乗": {
+        "furigana": "もの",
+        "meaning": "(nth) power",
+        "media": {
+            "svg": "04e57.svg"
+        }
+    },
+    "九": {
+        "furigana": "たに",
+        "meaning": "nine",
+        "media": {
+            "svg": "04e5d.svg"
+        }
+    },
+    "乱": {
+        "furigana": "らん",
+        "meaning": "revolt; rebellion; war",
+        "media": {
+            "svg": "04e71.svg"
+        }
+    },
+    "乳": {
+        "furigana": "ちち",
+        "meaning": "milk",
+        "media": {
+            "svg": "04e73.svg"
+        }
+    },
+    "乾": {
+        "furigana": "いぬ",
+        "meaning": "northwest",
+        "media": {
+            "svg": "04e7e.svg"
+        }
+    },
+    "了": {
+        "furigana": "かい",
+        "meaning": "finish; completion; the end",
+        "media": {
+            "svg": "04e86.svg"
+        }
+    },
+    "予": {
+        "furigana": "さん",
+        "meaning": "over; more than",
+        "media": {
+            "svg": "04e88.svg"
+        }
+    },
+    "争": {
+        "furigana": "そう",
+        "meaning": "to compete; to contest; to contend",
+        "media": {
+            "svg": "04e89.svg"
+        }
+    },
+    "事": {
+        "furigana": "こと",
+        "meaning": "thing; matter",
+        "media": {
+            "svg": "04e8b.svg"
+        }
+    },
+    "二": {
+        "furigana": "アル",
+        "meaning": "two",
+        "media": {
+            "svg": "04e8c.svg"
+        }
+    },
+    "互": {
+        "furigana": "たが",
+        "meaning": "each other; one another",
+        "media": {
+            "svg": "04e92.svg"
+        }
+    },
+    "五": {
+        "furigana": "ウー",
+        "meaning": "five",
+        "media": {
+            "svg": "04e94.svg"
+        }
+    },
+    "亡": {
+        "furigana": "ぼう",
+        "meaning": "death",
+        "media": {
+            "svg": "04ea1.svg"
+        }
+    },
+    "交": {
+        "furigana": "こう",
+        "meaning": "association; fellowship",
+        "media": {
+            "svg": "04ea4.svg"
+        }
+    },
+    "京": {
+        "furigana": "けい",
+        "meaning": "capital; metropolis; seat of government",
+        "media": {
+            "svg": "04eac.svg"
+        }
+    },
+    "人": {
+        "furigana": "ひと",
+        "meaning": "man; person",
+        "media": {
+            "svg": "04eba.svg"
+        }
+    },
+    "今": {
+        "furigana": "いま",
+        "meaning": "now; the present time; just now; soon; immediately",
+        "media": {
+            "svg": "04eca.svg"
+        }
+    },
+    "介": {
+        "furigana": "かい",
+        "meaning": "nursing; care; caregiving; caring",
+        "media": {
+            "svg": "04ecb.svg"
+        }
+    },
+    "仏": {
+        "furigana": "ふつ",
+        "meaning": "Buddha; merciful person; Buddhist image",
+        "media": {
+            "svg": "04ecf.svg"
+        }
+    },
+    "仕": {
+        "furigana": "ごと",
+        "meaning": "official; civil service",
+        "media": {
+            "svg": "04ed5.svg"
+        }
+    },
+    "他": {
+        "furigana": "ほか",
+        "meaning": "other (place, thing, person); the rest",
+        "media": {
+            "svg": "04ed6.svg"
+        }
+    },
+    "付": {
+        "furigana": "づけ",
+        "meaning": "furnished with; including",
+        "media": {
+            "svg": "04ed8.svg"
+        }
+    },
+    "代": {
+        "furigana": "だい",
+        "meaning": "world; society; public",
+        "media": {
+            "svg": "04ee3.svg"
+        }
+    },
+    "令": {
+        "furigana": "れい",
+        "meaning": "command; order; dictation",
+        "media": {
+            "svg": "04ee4.svg"
+        }
+    },
+    "以": {
+        "furigana": "ない",
+        "meaning": "not less than; ... and more; ... and upwards",
+        "media": {
+            "svg": "04ee5.svg"
+        }
+    },
+    "仮": {
+        "furigana": "かり",
+        "meaning": "temporary; provisional; interim",
+        "media": {
+            "svg": "04eee.svg"
+        }
+    },
+    "仲": {
+        "furigana": "なか",
+        "meaning": "relation; relationship",
+        "media": {
+            "svg": "04ef2.svg"
+        }
+    },
+    "件": {
+        "furigana": "けん",
+        "meaning": "matter; case; item; affair; subject",
+        "media": {
+            "svg": "04ef6.svg"
+        }
+    },
+    "任": {
+        "furigana": "にん",
+        "meaning": "obligation; duty; charge; responsibility",
+        "media": {
+            "svg": "04efb.svg"
+        }
+    },
+    "休": {
+        "furigana": "やす",
+        "meaning": "to be absent; to take a day off",
+        "media": {
+            "svg": "04f11.svg"
+        }
+    },
+    "会": {
+        "furigana": "かい",
+        "meaning": "meeting; assembly; party",
+        "media": {
+            "svg": "04f1a.svg"
+        }
+    },
+    "伝": {
+        "furigana": "でん",
+        "meaning": "legend; tradition",
+        "media": {
+            "svg": "04f1d.svg"
+        }
+    },
+    "伸": {
+        "furigana": "りつ",
+        "meaning": "to grow long (e.g. hair, nails)",
+        "media": {
+            "svg": "04f38.svg"
+        }
+    },
+    "伺": {
+        "furigana": "こう",
+        "meaning": "call; visit",
+        "media": {
+            "svg": "04f3a.svg"
+        }
+    },
+    "似": {
+        "furigana": "かよ",
+        "meaning": "looking like (someone); taking after (either of one's parents)",
+        "media": {
+            "svg": "04f3c.svg"
+        }
+    },
+    "位": {
+        "furigana": "そう",
+        "meaning": "throne; crown; (nobleman's) seat",
+        "media": {
+            "svg": "04f4d.svg"
+        }
+    },
+    "低": {
+        "furigana": "ひく",
+        "meaning": "low (rank, degree, value, content, quality, etc.)",
+        "media": {
+            "svg": "04f4e.svg"
+        }
+    },
+    "住": {
+        "furigana": "しょ",
+        "meaning": "dwelling; living",
+        "media": {
+            "svg": "04f4f.svg"
+        }
+    },
+    "体": {
+        "furigana": "てい",
+        "meaning": "body",
+        "media": {
+            "svg": "04f53.svg"
+        }
+    },
+    "何": {
+        "furigana": "なに",
+        "meaning": "what",
+        "media": {
+            "svg": "04f55.svg"
+        }
+    },
+    "余": {
+        "furigana": "あま",
+        "meaning": "over; more than",
+        "media": {
+            "svg": "04f59.svg"
+        }
+    },
+    "作": {
+        "furigana": "さく",
+        "meaning": "work (e.g. of art); production",
+        "media": {
+            "svg": "04f5c.svg"
+        }
+    },
+    "使": {
+        "furigana": "つか",
+        "meaning": "messenger",
+        "media": {
+            "svg": "04f7f.svg"
+        }
+    },
+    "例": {
+        "furigana": "れい",
+        "meaning": "custom; practice; habit; usual",
+        "media": {
+            "svg": "04f8b.svg"
+        }
+    },
+    "供": {
+        "furigana": "とも",
+        "meaning": "companion; follower; attendant; retinue",
+        "media": {
+            "svg": "04f9b.svg"
+        }
+    },
+    "依": {
+        "furigana": "らい",
+        "meaning": "request; commission; entrusting (with a matter)",
+        "media": {
+            "svg": "04f9d.svg"
+        }
+    },
+    "価": {
+        "furigana": "かく",
+        "meaning": "price; cost",
+        "media": {
+            "svg": "04fa1.svg"
+        }
+    },
+    "便": {
+        "furigana": "びん",
+        "meaning": "flight (e.g. airline flight); trip (e.g. train trip); service",
+        "media": {
+            "svg": "04fbf.svg"
+        }
+    },
+    "係": {
+        "furigana": "かか",
+        "meaning": "charge; duty; person in charge; official; clerk",
+        "media": {
+            "svg": "04fc2.svg"
+        }
+    },
+    "保": {
+        "furigana": "けん",
+        "meaning": "guarantee; security; assurance; pledge; warranty",
+        "media": {
+            "svg": "04fdd.svg"
+        }
+    },
+    "信": {
+        "furigana": "しん",
+        "meaning": "honesty; sincerity; fidelity",
+        "media": {
+            "svg": "04fe1.svg"
+        }
+    },
+    "修": {
+        "furigana": "せい",
+        "meaning": "master's (academic degree)",
+        "media": {
+            "svg": "04fee.svg"
+        }
+    },
+    "倉": {
+        "furigana": "くら",
+        "meaning": "warehouse; storehouse; cellar; magazine; granary; godown; depository; treasury; elevator",
+        "media": {
+            "svg": "05009.svg"
+        }
+    },
+    "個": {
+        "furigana": "じん",
+        "meaning": "counter for articles",
+        "media": {
+            "svg": "0500b.svg"
+        }
+    },
+    "倍": {
+        "furigana": "ばい",
+        "meaning": "twice; double",
+        "media": {
+            "svg": "0500d.svg"
+        }
+    },
+    "倒": {
+        "furigana": "さか",
+        "meaning": "inverted; upside down; reversed; back to front",
+        "media": {
+            "svg": "05012.svg"
+        }
+    },
+    "候": {
+        "furigana": "こう",
+        "meaning": "season; weather",
+        "media": {
+            "svg": "05019.svg"
+        }
+    },
+    "借": {
+        "furigana": "かり",
+        "meaning": "to borrow; to have a loan",
+        "media": {
+            "svg": "0501f.svg"
+        }
+    },
+    "値": {
+        "furigana": "だん",
+        "meaning": "price; cost",
+        "media": {
+            "svg": "05024.svg"
+        }
+    },
+    "偉": {
+        "furigana": "えら",
+        "meaning": "tremendous; huge",
+        "media": {
+            "svg": "05049.svg"
+        }
+    },
+    "停": {
+        "furigana": "てい",
+        "meaning": "to stop (moving); to come to a stop",
+        "media": {
+            "svg": "0505c.svg"
+        }
+    },
+    "健": {
+        "furigana": "けん",
+        "meaning": "health",
+        "media": {
+            "svg": "05065.svg"
+        }
+    },
+    "側": {
+        "furigana": "がわ",
+        "meaning": "side (of something, or taking someone's side); part",
+        "media": {
+            "svg": "05074.svg"
+        }
+    },
+    "偶": {
+        "furigana": "たま",
+        "meaning": "occasionally; once in a while; seldom",
+        "media": {
+            "svg": "05076.svg"
+        }
+    },
+    "備": {
+        "furigana": "そな",
+        "meaning": "to furnish with; to equip with; to provide; to install",
+        "media": {
+            "svg": "05099.svg"
+        }
+    },
+    "傾": {
+        "furigana": "なな",
+        "meaning": "slanting; tilted; sloping; diagonal; oblique",
+        "media": {
+            "svg": "050be.svg"
+        }
+    },
+    "働": {
+        "furigana": "ざか",
+        "meaning": "to work; to labor; to labour",
+        "media": {
+            "svg": "050cd.svg"
+        }
+    },
+    "像": {
+        "furigana": "ぞう",
+        "meaning": "image; figure; statue; picture; portrait",
+        "media": {
+            "svg": "050cf.svg"
+        }
+    },
+    "億": {
+        "furigana": "おく",
+        "meaning": "10^8; 100,000,000; hundred million",
+        "media": {
+            "svg": "05104.svg"
+        }
+    },
+    "優": {
+        "furigana": "ゆう",
+        "meaning": "Excellent (grade); A",
+        "media": {
+            "svg": "0512a.svg"
+        }
+    },
+    "元": {
+        "furigana": "もと",
+        "meaning": "origin; source",
+        "media": {
+            "svg": "05143.svg"
+        }
+    },
+    "兄": {
+        "furigana": "あに",
+        "meaning": "elder brother; older brother",
+        "media": {
+            "svg": "05144.svg"
+        }
+    },
+    "兆": {
+        "furigana": "きざ",
+        "meaning": "10^12; 1,000,000,000,000; trillion",
+        "media": {
+            "svg": "05146.svg"
+        }
+    },
+    "先": {
+        "furigana": "さき",
+        "meaning": "previous; prior; former; first; earlier; some time ago; preceding",
+        "media": {
+            "svg": "05148.svg"
+        }
+    },
+    "光": {
+        "furigana": "こう",
+        "meaning": "light",
+        "media": {
+            "svg": "05149.svg"
+        }
+    },
+    "児": {
+        "furigana": "やや",
+        "meaning": "child",
+        "media": {
+            "svg": "05150.svg"
+        }
+    },
+    "党": {
+        "furigana": "とう",
+        "meaning": "party (political)",
+        "media": {
+            "svg": "0515a.svg"
+        }
+    },
+    "入": {
+        "furigana": "しお",
+        "meaning": "entering",
+        "media": {
+            "svg": "05165.svg"
+        }
+    },
+    "全": {
+        "furigana": "ぜん",
+        "meaning": "all; whole; entire; complete; total; pan-",
+        "media": {
+            "svg": "05168.svg"
+        }
+    },
+    "八": {
+        "furigana": "はち",
+        "meaning": "eight",
+        "media": {
+            "svg": "0516b.svg"
+        }
+    },
+    "公": {
+        "furigana": "きみ",
+        "meaning": "official; governmental; formal",
+        "media": {
+            "svg": "0516c.svg"
+        }
+    },
+    "六": {
+        "furigana": "ろく",
+        "meaning": "six",
+        "media": {
+            "svg": "0516d.svg"
+        }
+    },
+    "共": {
+        "furigana": "とも",
+        "meaning": "together with",
+        "media": {
+            "svg": "05171.svg"
+        }
+    },
+    "兵": {
+        "furigana": "へい",
+        "meaning": "(common) soldier; rank and file",
+        "media": {
+            "svg": "05175.svg"
+        }
+    },
+    "具": {
+        "furigana": "つま",
+        "meaning": "tool; means",
+        "media": {
+            "svg": "05177.svg"
+        }
+    },
+    "典": {
+        "furigana": "てん",
+        "meaning": "ceremony; celebration",
+        "media": {
+            "svg": "05178.svg"
+        }
+    },
+    "内": {
+        "furigana": "うち",
+        "meaning": "inside; within",
+        "media": {
+            "svg": "05185.svg"
+        }
+    },
+    "円": {
+        "furigana": "えん",
+        "meaning": "yen; Japanese monetary unit",
+        "media": {
+            "svg": "05186.svg"
+        }
+    },
+    "冊": {
+        "furigana": "さつ",
+        "meaning": "counter for books",
+        "media": {
+            "svg": "0518a.svg"
+        }
+    },
+    "再": {
+        "furigana": "さい",
+        "meaning": "re-; again; repeated; deutero-; deuto-; deuter-",
+        "media": {
+            "svg": "0518d.svg"
+        }
+    },
+    "写": {
+        "furigana": "しゃ",
+        "meaning": "photograph; photo; picture; snapshot; snap",
+        "media": {
+            "svg": "05199.svg"
+        }
+    },
+    "冬": {
+        "furigana": "ふゆ",
+        "meaning": "winter",
+        "media": {
+            "svg": "051ac.svg"
+        }
+    },
+    "冷": {
+        "furigana": "れい",
+        "meaning": "cold water",
+        "media": {
+            "svg": "051b7.svg"
+        }
+    },
+    "凍": {
+        "furigana": "こお",
+        "meaning": "ice",
+        "media": {
+            "svg": "051cd.svg"
+        }
+    },
+    "処": {
+        "furigana": "しょ",
+        "meaning": "place; spot; scene; site",
+        "media": {
+            "svg": "051e6.svg"
+        }
+    },
+    "出": {
+        "furigana": "ぱん",
+        "meaning": "coming out; going out; outflow; efflux; rising (of the Sun or the Moon)",
+        "media": {
+            "svg": "051fa.svg"
+        }
+    },
+    "刀": {
+        "furigana": "とう",
+        "meaning": "(single-edged) sword; katana",
+        "media": {
+            "svg": "05200.svg"
+        }
+    },
+    "分": {
+        "furigana": "ぶん",
+        "meaning": "part; segment; share; ration",
+        "media": {
+            "svg": "05206.svg"
+        }
+    },
+    "切": {
+        "furigana": "せつ",
+        "meaning": "end; finish; stop",
+        "media": {
+            "svg": "05207.svg"
+        }
+    },
+    "刊": {
+        "furigana": "かん",
+        "meaning": "publication; edition (e.g. morning, evening, special); published in (year); publication frequency (e.g. daily, monthly)",
+        "media": {
+            "svg": "0520a.svg"
+        }
+    },
+    "列": {
+        "furigana": "れつ",
+        "meaning": "row; line; file; column; queue; rank; procession",
+        "media": {
+            "svg": "05217.svg"
+        }
+    },
+    "初": {
+        "furigana": "はつ",
+        "meaning": "first; new",
+        "media": {
+            "svg": "0521d.svg"
+        }
+    },
+    "判": {
+        "furigana": "はん",
+        "meaning": "seal; stamp; monogram signature",
+        "media": {
+            "svg": "05224.svg"
+        }
+    },
+    "別": {
+        "furigana": "べつ",
+        "meaning": "distinction; difference; discrimination",
+        "media": {
+            "svg": "05225.svg"
+        }
+    },
+    "利": {
+        "furigana": "えき",
+        "meaning": "advantage; benefit; profit; interest",
+        "media": {
+            "svg": "05229.svg"
+        }
+    },
+    "到": {
+        "furigana": "とう",
+        "meaning": "finally; at last; ultimately; in the end",
+        "media": {
+            "svg": "05230.svg"
+        }
+    },
+    "制": {
+        "furigana": "せい",
+        "meaning": "system; organization; organisation; imperial command; laws; regulation; control; government; suppression; restraint; holding back; establishment",
+        "media": {
+            "svg": "05236.svg"
+        }
+    },
+    "刷": {
+        "furigana": "さつ",
+        "meaning": "printing",
+        "media": {
+            "svg": "05237.svg"
+        }
+    },
+    "券": {
+        "furigana": "けん",
+        "meaning": "ticket; coupon; bond; certificate",
+        "media": {
+            "svg": "05238.svg"
+        }
+    },
+    "刺": {
+        "furigana": "とげ",
+        "meaning": "thorn; spine; prickle",
+        "media": {
+            "svg": "0523a.svg"
+        }
+    },
+    "刻": {
+        "furigana": "とき",
+        "meaning": "time; hour; moment",
+        "media": {
+            "svg": "0523b.svg"
+        }
+    },
+    "則": {
+        "furigana": "そく",
+        "meaning": "counter for rules",
+        "media": {
+            "svg": "05247.svg"
+        }
+    },
+    "前": {
+        "furigana": "ぜん",
+        "meaning": "the last (i.e. immediately preceding) (e.g. \"the last mayor\"); previous; one-time; former",
+        "media": {
+            "svg": "0524d.svg"
+        }
+    },
+    "副": {
+        "furigana": "ふく",
+        "meaning": "assistant; associate; vice-; sub-; deputy; substitute; auxiliary; supplementary; additional; collateral",
+        "media": {
+            "svg": "0526f.svg"
+        }
+    },
+    "割": {
+        "furigana": "わり",
+        "meaning": "rate; ratio; proportion; percentage",
+        "media": {
+            "svg": "05272.svg"
+        }
+    },
+    "劇": {
+        "furigana": "げき",
+        "meaning": "drama; play",
+        "media": {
+            "svg": "05287.svg"
+        }
+    },
+    "力": {
+        "furigana": "りき",
+        "meaning": "force; strength; might; vigour (vigor); energy",
+        "media": {
+            "svg": "0529b.svg"
+        }
+    },
+    "功": {
+        "furigana": "こう",
+        "meaning": "merit; success; meritorious deed",
+        "media": {
+            "svg": "0529f.svg"
+        }
+    },
+    "加": {
+        "furigana": "くわ",
+        "meaning": "addition; increase",
+        "media": {
+            "svg": "052a0.svg"
+        }
+    },
+    "助": {
+        "furigana": "じょ",
+        "meaning": "help; rescue; assistant",
+        "media": {
+            "svg": "052a9.svg"
+        }
+    },
+    "努": {
+        "furigana": "ゆめ",
+        "meaning": "third principle of the Eight Principles of Yong; downward stroke",
+        "media": {
+            "svg": "052aa.svg"
+        }
+    },
+    "労": {
+        "furigana": "ろう",
+        "meaning": "labor; labour; toil; trouble; pains; work; effort; striving",
+        "media": {
+            "svg": "052b4.svg"
+        }
+    },
+    "効": {
+        "furigana": "かい",
+        "meaning": "effect; result; worth; use; avail",
+        "media": {
+            "svg": "052b9.svg"
+        }
+    },
+    "勇": {
+        "furigana": "ゆう",
+        "meaning": "bravery; courage; heroism",
+        "media": {
+            "svg": "052c7.svg"
+        }
+    },
+    "勉": {
+        "furigana": "べん",
+        "meaning": "study",
+        "media": {
+            "svg": "052c9.svg"
+        }
+    },
+    "動": {
+        "furigana": "どう",
+        "meaning": "motion; change; confusion",
+        "media": {
+            "svg": "052d5.svg"
+        }
+    },
+    "務": {
+        "furigana": "つと",
+        "meaning": "to work (for); to be employed (at); to serve (in)",
+        "media": {
+            "svg": "052d9.svg"
+        }
+    },
+    "勝": {
+        "furigana": "すぐ",
+        "meaning": "win; victory",
+        "media": {
+            "svg": "052dd.svg"
+        }
+    },
+    "募": {
+        "furigana": "つの",
+        "meaning": "recruitment; invitation; selection; advertisement; taking applications",
+        "media": {
+            "svg": "052df.svg"
+        }
+    },
+    "勢": {
+        "furigana": "はず",
+        "meaning": "force; vigor; vigour; energy; spirit; life",
+        "media": {
+            "svg": "052e2.svg"
+        }
+    },
+    "勤": {
+        "furigana": "つと",
+        "meaning": "to work (for); to be employed (at); to serve (in)",
+        "media": {
+            "svg": "052e4.svg"
+        }
+    },
+    "包": {
+        "furigana": "パオ",
+        "meaning": "yurt",
+        "media": {
+            "svg": "05305.svg"
+        }
+    },
+    "化": {
+        "furigana": "がく",
+        "meaning": "action of making something; -ification",
+        "media": {
+            "svg": "05316.svg"
+        }
+    },
+    "北": {
+        "furigana": "きた",
+        "meaning": "north",
+        "media": {
+            "svg": "05317.svg"
+        }
+    },
+    "匹": {
+        "furigana": "ひき",
+        "meaning": "counter for small animals",
+        "media": {
+            "svg": "05339.svg"
+        }
+    },
+    "区": {
+        "furigana": "べつ",
+        "meaning": "ward; borough; city (in Tokyo)",
+        "media": {
+            "svg": "0533a.svg"
+        }
+    },
+    "医": {
+        "furigana": "がく",
+        "meaning": "medicine; the healing art; healing; curing",
+        "media": {
+            "svg": "0533b.svg"
+        }
+    },
+    "十": {
+        "furigana": "シー",
+        "meaning": "ten",
+        "media": {
+            "svg": "05341.svg"
+        }
+    },
+    "千": {
+        "furigana": "せん",
+        "meaning": "1,000; thousand",
+        "media": {
+            "svg": "05343.svg"
+        }
+    },
+    "午": {
+        "furigana": "ひる",
+        "meaning": "noon; midday",
+        "media": {
+            "svg": "05348.svg"
+        }
+    },
+    "半": {
+        "furigana": "はん",
+        "meaning": "half; semi-",
+        "media": {
+            "svg": "0534a.svg"
+        }
+    },
+    "卒": {
+        "furigana": "そつ",
+        "meaning": "low-ranking soldier",
+        "media": {
+            "svg": "05352.svg"
+        }
+    },
+    "協": {
+        "furigana": "どう",
+        "meaning": "doing together (as equals); sharing; common (land, etc.); joint (statement, etc.); cooperation; co-operation; collaboration; association",
+        "media": {
+            "svg": "05354.svg"
+        }
+    },
+    "南": {
+        "furigana": "ナン",
+        "meaning": "south",
+        "media": {
+            "svg": "05357.svg"
+        }
+    },
+    "単": {
+        "furigana": "ひと",
+        "meaning": "one layer; single layer",
+        "media": {
+            "svg": "05358.svg"
+        }
+    },
+    "博": {
+        "furigana": "はく",
+        "meaning": "doctor; PhD",
+        "media": {
+            "svg": "0535a.svg"
+        }
+    },
+    "占": {
+        "furigana": "うら",
+        "meaning": "fortune-telling; divination",
+        "media": {
+            "svg": "05360.svg"
+        }
+    },
+    "印": {
+        "furigana": "いん",
+        "meaning": "mark; sign",
+        "media": {
+            "svg": "05370.svg"
+        }
+    },
+    "危": {
+        "furigana": "けん",
+        "meaning": "danger",
+        "media": {
+            "svg": "05371.svg"
+        }
+    },
+    "卵": {
+        "furigana": "かい",
+        "meaning": "eggs; egg; spawn; roe",
+        "media": {
+            "svg": "05375.svg"
+        }
+    },
+    "厚": {
+        "furigana": "あつ",
+        "meaning": "thickness",
+        "media": {
+            "svg": "0539a.svg"
+        }
+    },
+    "原": {
+        "furigana": "はら",
+        "meaning": "field; plain; prairie; tundra; moor; wilderness",
+        "media": {
+            "svg": "0539f.svg"
+        }
+    },
+    "去": {
+        "furigana": "きょ",
+        "meaning": "last year",
+        "media": {
+            "svg": "053bb.svg"
+        }
+    },
+    "参": {
+        "furigana": "さん",
+        "meaning": "three",
+        "media": {
+            "svg": "053c2.svg"
+        }
+    },
+    "友": {
+        "furigana": "とも",
+        "meaning": "friend; companion; comrade; pal",
+        "media": {
+            "svg": "053cb.svg"
+        }
+    },
+    "双": {
+        "furigana": "そう",
+        "meaning": "pair",
+        "media": {
+            "svg": "053cc.svg"
+        }
+    },
+    "反": {
+        "furigana": "はん",
+        "meaning": "anti-",
+        "media": {
+            "svg": "053cd.svg"
+        }
+    },
+    "収": {
+        "furigana": "かく",
+        "meaning": "income; receipts; revenue",
+        "media": {
+            "svg": "053ce.svg"
+        }
+    },
+    "取": {
+        "furigana": "しゅ",
+        "meaning": "taking; taker; collecting; collector; remover; removal",
+        "media": {
+            "svg": "053d6.svg"
+        }
+    },
+    "受": {
+        "furigana": "じゅ",
+        "meaning": "vedana (sensation)",
+        "media": {
+            "svg": "053d7.svg"
+        }
+    },
+    "口": {
+        "furigana": "くち",
+        "meaning": "mouth",
+        "media": {
+            "svg": "053e3.svg"
+        }
+    },
+    "古": {
+        "furigana": "ふる",
+        "meaning": "used item; secondhand item",
+        "media": {
+            "svg": "053e4.svg"
+        }
+    },
+    "叫": {
+        "furigana": "さけ",
+        "meaning": "Retribution (2006 film)",
+        "media": {
+            "svg": "053eb.svg"
+        }
+    },
+    "召": {
+        "furigana": "じん",
+        "meaning": "to eat; to drink",
+        "media": {
+            "svg": "053ec.svg"
+        }
+    },
+    "可": {
+        "furigana": "おか",
+        "meaning": "acceptable; satisfactory; allowed; permitted",
+        "media": {
+            "svg": "053ef.svg"
+        }
+    },
+    "台": {
+        "furigana": "だい",
+        "meaning": "stand; rack; table; bench; podium; pedestal; platform; stage",
+        "media": {
+            "svg": "053f0.svg"
+        }
+    },
+    "史": {
+        "furigana": "がく",
+        "meaning": "history",
+        "media": {
+            "svg": "053f2.svg"
+        }
+    },
+    "右": {
+        "furigana": "みぎ",
+        "meaning": "right; right-hand side",
+        "media": {
+            "svg": "053f3.svg"
+        }
+    },
+    "号": {
+        "furigana": "ごう",
+        "meaning": "number; edition; make; model; issue; part of that group",
+        "media": {
+            "svg": "053f7.svg"
+        }
+    },
+    "司": {
+        "furigana": "かい",
+        "meaning": "office (government department beneath a bureau under the ritsuryo system)",
+        "media": {
+            "svg": "053f8.svg"
+        }
+    },
+    "各": {
+        "furigana": "かく",
+        "meaning": "each; every; all",
+        "media": {
+            "svg": "05404.svg"
+        }
+    },
+    "合": {
+        "furigana": "ごう",
+        "meaning": "gō; traditional unit of volume, approx. 0.1804 litres",
+        "media": {
+            "svg": "05408.svg"
+        }
+    },
+    "同": {
+        "furigana": "どう",
+        "meaning": "the same; the said; ibid.",
+        "media": {
+            "svg": "0540c.svg"
+        }
+    },
+    "名": {
+        "furigana": "めい",
+        "meaning": "name; given name",
+        "media": {
+            "svg": "0540d.svg"
+        }
+    },
+    "向": {
+        "furigana": "むか",
+        "meaning": "opposite side; other side; opposite direction",
+        "media": {
+            "svg": "05411.svg"
+        }
+    },
+    "君": {
+        "furigana": "きみ",
+        "meaning": "you; buddy; pal",
+        "media": {
+            "svg": "0541b.svg"
+        }
+    },
+    "否": {
+        "furigana": "てい",
+        "meaning": "no; nay",
+        "media": {
+            "svg": "05426.svg"
+        }
+    },
+    "含": {
+        "furigana": "ふく",
+        "meaning": "to contain; to comprise; to have; to hold; to include; to embrace",
+        "media": {
+            "svg": "0542b.svg"
+        }
+    },
+    "吸": {
+        "furigana": "けつ",
+        "meaning": "absorption; suction; attraction",
+        "media": {
+            "svg": "05438.svg"
+        }
+    },
+    "吹": {
+        "furigana": "ぶき",
+        "meaning": "to blow (of the wind)",
+        "media": {
+            "svg": "05439.svg"
+        }
+    },
+    "告": {
+        "furigana": "こく",
+        "meaning": "confession; acknowledgement; acknowledgment",
+        "media": {
+            "svg": "0544a.svg"
+        }
+    },
+    "周": {
+        "furigana": "あわ",
+        "meaning": "Zhou dynasty (China, approx. 1046-256 BCE); Chou dynasty",
+        "media": {
+            "svg": "05468.svg"
+        }
+    },
+    "味": {
+        "furigana": "あじ",
+        "meaning": "flavor; flavour; taste",
+        "media": {
+            "svg": "05473.svg"
+        }
+    },
+    "呼": {
+        "furigana": "おう",
+        "meaning": "breathing; respiration",
+        "media": {
+            "svg": "0547c.svg"
+        }
+    },
+    "命": {
+        "furigana": "めい",
+        "meaning": "life; life force",
+        "media": {
+            "svg": "0547d.svg"
+        }
+    },
+    "和": {
+        "furigana": "なぎ",
+        "meaning": "sum",
+        "media": {
+            "svg": "0548c.svg"
+        }
+    },
+    "咲": {
+        "furigana": "わら",
+        "meaning": "laugh; laughter",
+        "media": {
+            "svg": "054b2.svg"
+        }
+    },
+    "品": {
+        "furigana": "ひん",
+        "meaning": "elegance; grace; refinement; class; dignity",
+        "media": {
+            "svg": "054c1.svg"
+        }
+    },
+    "員": {
+        "furigana": "いん",
+        "meaning": "member",
+        "media": {
+            "svg": "054e1.svg"
+        }
+    },
+    "唱": {
+        "furigana": "うた",
+        "meaning": "to sing",
+        "media": {
+            "svg": "05531.svg"
+        }
+    },
+    "商": {
+        "furigana": "にん",
+        "meaning": "quotient",
+        "media": {
+            "svg": "05546.svg"
+        }
+    },
+    "問": {
+        "furigana": "もん",
+        "meaning": "question; query",
+        "media": {
+            "svg": "0554f.svg"
+        }
+    },
+    "善": {
+        "furigana": "ぜん",
+        "meaning": "good; goodness; right; virtue",
+        "media": {
+            "svg": "05584.svg"
+        }
+    },
+    "喜": {
+        "furigana": "げき",
+        "meaning": "to be delighted; to be glad; to be pleased",
+        "media": {
+            "svg": "0559c.svg"
+        }
+    },
+    "喫": {
+        "furigana": "きっ",
+        "meaning": "coffee shop; tearoom; coffee lounge; coffeehouse; cafe",
+        "media": {
+            "svg": "055ab.svg"
+        }
+    },
+    "営": {
+        "furigana": "えい",
+        "meaning": "business; trade; operations",
+        "media": {
+            "svg": "055b6.svg"
+        }
+    },
+    "器": {
+        "furigana": "かい",
+        "meaning": "bowl; vessel; container",
+        "media": {
+            "svg": "05668.svg"
+        }
+    },
+    "四": {
+        "furigana": "スー",
+        "meaning": "four",
+        "media": {
+            "svg": "056db.svg"
+        }
+    },
+    "回": {
+        "furigana": "かい",
+        "meaning": "counter for occurrences",
+        "media": {
+            "svg": "056de.svg"
+        }
+    },
+    "因": {
+        "furigana": "よし",
+        "meaning": "reason; significance; cause",
+        "media": {
+            "svg": "056e0.svg"
+        }
+    },
+    "団": {
+        "furigana": "だん",
+        "meaning": "body; group; party; company; troupe",
+        "media": {
+            "svg": "056e3.svg"
+        }
+    },
+    "困": {
+        "furigana": "こま",
+        "meaning": "to be troubled; to have difficulty; to be in a fix; to be at a loss; to be stumped; to be embarrassed",
+        "media": {
+            "svg": "056f0.svg"
+        }
+    },
+    "囲": {
+        "furigana": "かこ",
+        "meaning": "to surround; to encircle; to enclose; to fence; to wall in",
+        "media": {
+            "svg": "056f2.svg"
+        }
+    },
+    "図": {
+        "furigana": "しょ",
+        "meaning": "drawing; picture; diagram; figure; illustration; chart; graph",
+        "media": {
+            "svg": "056f3.svg"
+        }
+    },
+    "固": {
+        "furigana": "てい",
+        "meaning": "fixing (in place); being fixed (in place); securing; anchoring; fastening down",
+        "media": {
+            "svg": "056fa.svg"
+        }
+    },
+    "国": {
+        "furigana": "くに",
+        "meaning": "country; state",
+        "media": {
+            "svg": "056fd.svg"
+        }
+    },
+    "園": {
+        "furigana": "その",
+        "meaning": "garden (esp. man-made); orchard; park; plantation",
+        "media": {
+            "svg": "05712.svg"
+        }
+    },
+    "土": {
+        "furigana": "つち",
+        "meaning": "earth; soil; dirt; clay; mud",
+        "media": {
+            "svg": "0571f.svg"
+        }
+    },
+    "圧": {
+        "furigana": "あつ",
+        "meaning": "pressure; force",
+        "media": {
+            "svg": "05727.svg"
+        }
+    },
+    "在": {
+        "furigana": "ざい",
+        "meaning": "the country; countryside",
+        "media": {
+            "svg": "05728.svg"
+        }
+    },
+    "地": {
+        "furigana": "つち",
+        "meaning": "earth; ground; land; soil",
+        "media": {
+            "svg": "05730.svg"
+        }
+    },
+    "坂": {
+        "furigana": "さか",
+        "meaning": "slope; hill",
+        "media": {
+            "svg": "05742.svg"
+        }
+    },
+    "均": {
+        "furigana": "きん",
+        "meaning": "equilibrium; balance",
+        "media": {
+            "svg": "05747.svg"
+        }
+    },
+    "坊": {
+        "furigana": "ぼう",
+        "meaning": "bonze; monk",
+        "media": {
+            "svg": "0574a.svg"
+        }
+    },
+    "型": {
+        "furigana": "かた",
+        "meaning": "model; type (e.g. of machine, goods, etc.)",
+        "media": {
+            "svg": "0578b.svg"
+        }
+    },
+    "埋": {
+        "furigana": "まい",
+        "meaning": "to bury (e.g. in the ground)",
+        "media": {
+            "svg": "057cb.svg"
+        }
+    },
+    "城": {
+        "furigana": "しろ",
+        "meaning": "castle",
+        "media": {
+            "svg": "057ce.svg"
+        }
+    },
+    "域": {
+        "furigana": "いき",
+        "meaning": "region; limits; stage; level",
+        "media": {
+            "svg": "057df.svg"
+        }
+    },
+    "基": {
+        "furigana": "もと",
+        "meaning": "origin; source",
+        "media": {
+            "svg": "057fa.svg"
+        }
+    },
+    "堂": {
+        "furigana": "どう",
+        "meaning": "temple; shrine; chapel",
+        "media": {
+            "svg": "05802.svg"
+        }
+    },
+    "報": {
+        "furigana": "ほう",
+        "meaning": "information; news; report",
+        "media": {
+            "svg": "05831.svg"
+        }
+    },
+    "場": {
+        "furigana": "しょ",
+        "meaning": "place; spot; space",
+        "media": {
+            "svg": "05834.svg"
+        }
+    },
+    "塔": {
+        "furigana": "とう",
+        "meaning": "tower; steeple; spire",
+        "media": {
+            "svg": "05854.svg"
+        }
+    },
+    "塗": {
+        "furigana": "そう",
+        "meaning": "covered with; stained; smeared",
+        "media": {
+            "svg": "05857.svg"
+        }
+    },
+    "塩": {
+        "furigana": "しお",
+        "meaning": "salt (i.e. sodium chloride); common salt; table salt",
+        "media": {
+            "svg": "05869.svg"
+        }
+    },
+    "境": {
+        "furigana": "かい",
+        "meaning": "border; boundary",
+        "media": {
+            "svg": "05883.svg"
+        }
+    },
+    "増": {
+        "furigana": "ぞう",
+        "meaning": "increase",
+        "media": {
+            "svg": "05897.svg"
+        }
+    },
+    "壁": {
+        "furigana": "かべ",
+        "meaning": "wall; partition",
+        "media": {
+            "svg": "058c1.svg"
+        }
+    },
+    "士": {
+        "furigana": "かん",
+        "meaning": "warrior (esp. of military retainers of daimyos in the Edo period); samurai",
+        "media": {
+            "svg": "058eb.svg"
+        }
+    },
+    "声": {
+        "furigana": "こえ",
+        "meaning": "voice",
+        "media": {
+            "svg": "058f0.svg"
+        }
+    },
+    "売": {
+        "furigana": "ばい",
+        "meaning": "to sell",
+        "media": {
+            "svg": "058f2.svg"
+        }
+    },
+    "変": {
+        "furigana": "へん",
+        "meaning": "strange; odd; peculiar; weird; curious; queer; eccentric; funny; suspicious; fishy",
+        "media": {
+            "svg": "05909.svg"
+        }
+    },
+    "夏": {
+        "furigana": "なつ",
+        "meaning": "summer",
+        "media": {
+            "svg": "0590f.svg"
+        }
+    },
+    "夕": {
+        "furigana": "ゆう",
+        "meaning": "evening",
+        "media": {
+            "svg": "05915.svg"
+        }
+    },
+    "外": {
+        "furigana": "そと",
+        "meaning": "outside; exterior",
+        "media": {
+            "svg": "05916.svg"
+        }
+    },
+    "多": {
+        "furigana": "ぶん",
+        "meaning": "multi-",
+        "media": {
+            "svg": "0591a.svg"
+        }
+    },
+    "夜": {
+        "furigana": "よる",
+        "meaning": "evening; night",
+        "media": {
+            "svg": "0591c.svg"
+        }
+    },
+    "夢": {
+        "furigana": "ゆめ",
+        "meaning": "dream",
+        "media": {
+            "svg": "05922.svg"
+        }
+    },
+    "大": {
+        "furigana": "だい",
+        "meaning": "large; big; great; huge; vast; major; important; serious; severe",
+        "media": {
+            "svg": "05927.svg"
+        }
+    },
+    "天": {
+        "furigana": "てん",
+        "meaning": "sky",
+        "media": {
+            "svg": "05929.svg"
+        }
+    },
+    "太": {
+        "furigana": "ふと",
+        "meaning": "fat; fatty",
+        "media": {
+            "svg": "0592a.svg"
+        }
+    },
+    "夫": {
+        "furigana": "つま",
+        "meaning": "husband",
+        "media": {
+            "svg": "0592b.svg"
+        }
+    },
+    "央": {
+        "furigana": "おう",
+        "meaning": "middle; centre; center",
+        "media": {
+            "svg": "0592e.svg"
+        }
+    },
+    "失": {
+        "furigana": "しつ",
+        "meaning": "loss (of something); disadvantage",
+        "media": {
+            "svg": "05931.svg"
+        }
+    },
+    "奥": {
+        "furigana": "おく",
+        "meaning": "inner part; inside; interior; depths (e.g. of a forest); back (of a house, drawer, etc.); bottom (e.g. of one's heart); recesses; heart",
+        "media": {
+            "svg": "05965.svg"
+        }
+    },
+    "女": {
+        "furigana": "じょ",
+        "meaning": "female; woman; female sex",
+        "media": {
+            "svg": "05973.svg"
+        }
+    },
+    "好": {
+        "furigana": "こう",
+        "meaning": "good",
+        "media": {
+            "svg": "0597d.svg"
+        }
+    },
+    "妹": {
+        "furigana": "いも",
+        "meaning": "younger sister",
+        "media": {
+            "svg": "059b9.svg"
+        }
+    },
+    "妻": {
+        "furigana": "つま",
+        "meaning": "wife",
+        "media": {
+            "svg": "059bb.svg"
+        }
+    },
+    "姉": {
+        "furigana": "あね",
+        "meaning": "older sister; elder sister",
+        "media": {
+            "svg": "059c9.svg"
+        }
+    },
+    "始": {
+        "furigana": "はじ",
+        "meaning": "beginning; start; outset; opening",
+        "media": {
+            "svg": "059cb.svg"
+        }
+    },
+    "姓": {
+        "furigana": "せい",
+        "meaning": "surname; family name",
+        "media": {
+            "svg": "059d3.svg"
+        }
+    },
+    "委": {
+        "furigana": "くわ",
+        "meaning": "detailed; full; accurate",
+        "media": {
+            "svg": "059d4.svg"
+        }
+    },
+    "娘": {
+        "furigana": "むこ",
+        "meaning": "daughter",
+        "media": {
+            "svg": "05a18.svg"
+        }
+    },
+    "婚": {
+        "furigana": "こん",
+        "meaning": "creeping at night into a woman's bedroom; stealing into a girl's bedroom at night to make love; sneaking visit",
+        "media": {
+            "svg": "05a5a.svg"
+        }
+    },
+    "婦": {
+        "furigana": "よめ",
+        "meaning": "wife; bride",
+        "media": {
+            "svg": "05a66.svg"
+        }
+    },
+    "子": {
+        "furigana": "こう",
+        "meaning": "child",
+        "media": {
+            "svg": "05b50.svg"
+        }
+    },
+    "字": {
+        "furigana": "あざ",
+        "meaning": "character (esp. kanji); letter; written text",
+        "media": {
+            "svg": "05b57.svg"
+        }
+    },
+    "存": {
+        "furigana": "そん",
+        "meaning": "existence; being",
+        "media": {
+            "svg": "05b58.svg"
+        }
+    },
+    "季": {
+        "furigana": "せつ",
+        "meaning": "season",
+        "media": {
+            "svg": "05b63.svg"
+        }
+    },
+    "学": {
+        "furigana": "がく",
+        "meaning": "learning; scholarship; study; erudition; knowledge; education",
+        "media": {
+            "svg": "05b66.svg"
+        }
+    },
+    "孫": {
+        "furigana": "まご",
+        "meaning": "grandchild",
+        "media": {
+            "svg": "05b6b.svg"
+        }
+    },
+    "宅": {
+        "furigana": "たく",
+        "meaning": "house; home",
+        "media": {
+            "svg": "05b85.svg"
+        }
+    },
+    "宇": {
+        "furigana": "のき",
+        "meaning": "eaves",
+        "media": {
+            "svg": "05b87.svg"
+        }
+    },
+    "守": {
+        "furigana": "まも",
+        "meaning": "protection; defense; defence",
+        "media": {
+            "svg": "05b88.svg"
+        }
+    },
+    "安": {
+        "furigana": "やす",
+        "meaning": "cheap",
+        "media": {
+            "svg": "05b89.svg"
+        }
+    },
+    "完": {
+        "furigana": "かん",
+        "meaning": "The End; Finis",
+        "media": {
+            "svg": "05b8c.svg"
+        }
+    },
+    "官": {
+        "furigana": "かん",
+        "meaning": "government service; the bureaucracy",
+        "media": {
+            "svg": "05b98.svg"
+        }
+    },
+    "宙": {
+        "furigana": "がえ",
+        "meaning": "space; air; midair",
+        "media": {
+            "svg": "05b99.svg"
+        }
+    },
+    "定": {
+        "furigana": "さだ",
+        "meaning": "certainly; truly",
+        "media": {
+            "svg": "05b9a.svg"
+        }
+    },
+    "宝": {
+        "furigana": "ほう",
+        "meaning": "treasure",
+        "media": {
+            "svg": "05b9d.svg"
+        }
+    },
+    "実": {
+        "furigana": "じつ",
+        "meaning": "truth; reality",
+        "media": {
+            "svg": "05b9f.svg"
+        }
+    },
+    "客": {
+        "furigana": "せき",
+        "meaning": "guest; visitor",
+        "media": {
+            "svg": "05ba2.svg"
+        }
+    },
+    "室": {
+        "furigana": "しつ",
+        "meaning": "room",
+        "media": {
+            "svg": "05ba4.svg"
+        }
+    },
+    "宮": {
+        "furigana": "みや",
+        "meaning": "shrine",
+        "media": {
+            "svg": "05bae.svg"
+        }
+    },
+    "害": {
+        "furigana": "がい",
+        "meaning": "injury; harm; evil influence; damage",
+        "media": {
+            "svg": "05bb3.svg"
+        }
+    },
+    "家": {
+        "furigana": "いえ",
+        "meaning": "house; residence; dwelling",
+        "media": {
+            "svg": "05bb6.svg"
+        }
+    },
+    "容": {
+        "furigana": "しつ",
+        "meaning": "form; shape; figure",
+        "media": {
+            "svg": "05bb9.svg"
+        }
+    },
+    "宿": {
+        "furigana": "やど",
+        "meaning": "lodging; inn; hotel",
+        "media": {
+            "svg": "05bbf.svg"
+        }
+    },
+    "寄": {
+        "furigana": "ぞう",
+        "meaning": "contribution; donation",
+        "media": {
+            "svg": "05bc4.svg"
+        }
+    },
+    "富": {
+        "furigana": "とみ",
+        "meaning": "riches; wealth; fortune",
+        "media": {
+            "svg": "05bcc.svg"
+        }
+    },
+    "寒": {
+        "furigana": "さむ",
+        "meaning": "cold",
+        "media": {
+            "svg": "05bd2.svg"
+        }
+    },
+    "寝": {
+        "furigana": "ぼう",
+        "meaning": "sleep",
+        "media": {
+            "svg": "05bdd.svg"
+        }
+    },
+    "察": {
+        "furigana": "さつ",
+        "meaning": "cops; police",
+        "media": {
+            "svg": "05bdf.svg"
+        }
+    },
+    "寺": {
+        "furigana": "てら",
+        "meaning": "temple (Buddhist)",
+        "media": {
+            "svg": "05bfa.svg"
+        }
+    },
+    "対": {
+        "furigana": "つい",
+        "meaning": "pair; couple; set",
+        "media": {
+            "svg": "05bfe.svg"
+        }
+    },
+    "封": {
+        "furigana": "ふう",
+        "meaning": "seal",
+        "media": {
+            "svg": "05c01.svg"
+        }
+    },
+    "専": {
+        "furigana": "せん",
+        "meaning": "having a fetish for ...; specializing in ...; majoring in ...",
+        "media": {
+            "svg": "05c02.svg"
+        }
+    },
+    "将": {
+        "furigana": "はた",
+        "meaning": "commander; general; leader",
+        "media": {
+            "svg": "05c06.svg"
+        }
+    },
+    "尊": {
+        "furigana": "そん",
+        "meaning": "value; preciousness; nobility",
+        "media": {
+            "svg": "05c0a.svg"
+        }
+    },
+    "導": {
+        "furigana": "どう",
+        "meaning": "guidance; guide",
+        "media": {
+            "svg": "05c0e.svg"
+        }
+    },
+    "小": {
+        "furigana": "ささ",
+        "meaning": "smallness; small item",
+        "media": {
+            "svg": "05c0f.svg"
+        }
+    },
+    "少": {
+        "furigana": "ねん",
+        "meaning": "small; little; few",
+        "media": {
+            "svg": "05c11.svg"
+        }
+    },
+    "局": {
+        "furigana": "めん",
+        "meaning": "bureau; department",
+        "media": {
+            "svg": "05c40.svg"
+        }
+    },
+    "居": {
+        "furigana": "きょ",
+        "meaning": "residence",
+        "media": {
+            "svg": "05c45.svg"
+        }
+    },
+    "届": {
+        "furigana": "とど",
+        "meaning": "report; notification; registration",
+        "media": {
+            "svg": "05c4a.svg"
+        }
+    },
+    "屋": {
+        "furigana": "おく",
+        "meaning": "(something) shop",
+        "media": {
+            "svg": "05c4b.svg"
+        }
+    },
+    "展": {
+        "furigana": "てん",
+        "meaning": "exhibition; exhibit",
+        "media": {
+            "svg": "05c55.svg"
+        }
+    },
+    "層": {
+        "furigana": "そう",
+        "meaning": "layer; seam; bed; stream; class; stratum",
+        "media": {
+            "svg": "05c64.svg"
+        }
+    },
+    "山": {
+        "furigana": "やま",
+        "meaning": "mountain; hill",
+        "media": {
+            "svg": "05c71.svg"
+        }
+    },
+    "岩": {
+        "furigana": "いわ",
+        "meaning": "rock; boulder",
+        "media": {
+            "svg": "05ca9.svg"
+        }
+    },
+    "岸": {
+        "furigana": "きし",
+        "meaning": "bank; coast; shore",
+        "media": {
+            "svg": "05cb8.svg"
+        }
+    },
+    "島": {
+        "furigana": "しま",
+        "meaning": "island",
+        "media": {
+            "svg": "05cf6.svg"
+        }
+    },
+    "川": {
+        "furigana": "かわ",
+        "meaning": "river; stream",
+        "media": {
+            "svg": "05ddd.svg"
+        }
+    },
+    "州": {
+        "furigana": "せい",
+        "meaning": "state (US, Australia, India, Germany, etc.); province (e.g. Canada); canton (e.g. Switzerland); oblast (e.g. Russia); department (e.g. ancient China)",
+        "media": {
+            "svg": "05dde.svg"
+        }
+    },
+    "巣": {
+        "furigana": "づく",
+        "meaning": "nest; rookery; breeding place; hive",
+        "media": {
+            "svg": "05de3.svg"
+        }
+    },
+    "工": {
+        "furigana": "こう",
+        "meaning": "(factory) worker",
+        "media": {
+            "svg": "05de5.svg"
+        }
+    },
+    "左": {
+        "furigana": "ゆう",
+        "meaning": "left; left hand side",
+        "media": {
+            "svg": "05de6.svg"
+        }
+    },
+    "巨": {
+        "furigana": "きょ",
+        "meaning": "huge; gigantic; enormous",
+        "media": {
+            "svg": "05de8.svg"
+        }
+    },
+    "差": {
+        "furigana": "べつ",
+        "meaning": "difference; variation",
+        "media": {
+            "svg": "05dee.svg"
+        }
+    },
+    "巻": {
+        "furigana": "まき",
+        "meaning": "roll (e.g. of cloth)",
+        "media": {
+            "svg": "05dfb.svg"
+        }
+    },
+    "市": {
+        "furigana": "いち",
+        "meaning": "city",
+        "media": {
+            "svg": "05e02.svg"
+        }
+    },
+    "布": {
+        "furigana": "ぬの",
+        "meaning": "cloth",
+        "media": {
+            "svg": "05e03.svg"
+        }
+    },
+    "希": {
+        "furigana": "まれ",
+        "meaning": "rare; seldom",
+        "media": {
+            "svg": "05e0c.svg"
+        }
+    },
+    "師": {
+        "furigana": "だん",
+        "meaning": "teacher; master; one's mentor",
+        "media": {
+            "svg": "05e2b.svg"
+        }
+    },
+    "席": {
+        "furigana": "せき",
+        "meaning": "seat",
+        "media": {
+            "svg": "05e2d.svg"
+        }
+    },
+    "帯": {
+        "furigana": "おび",
+        "meaning": "obi; kimono sash",
+        "media": {
+            "svg": "05e2f.svg"
+        }
+    },
+    "帰": {
+        "furigana": "かえ",
+        "meaning": "to return; to come home; to go home; to go back",
+        "media": {
+            "svg": "05e30.svg"
+        }
+    },
+    "帳": {
+        "furigana": "ほん",
+        "meaning": "curtain; hanging; bunting",
+        "media": {
+            "svg": "05e33.svg"
+        }
+    },
+    "常": {
+        "furigana": "えい",
+        "meaning": "eternity; permanence; perpetuity",
+        "media": {
+            "svg": "05e38.svg"
+        }
+    },
+    "帽": {
+        "furigana": "ぼう",
+        "meaning": "hat; cap",
+        "media": {
+            "svg": "05e3d.svg"
+        }
+    },
+    "幅": {
+        "furigana": "はば",
+        "meaning": "width; breadth",
+        "media": {
+            "svg": "05e45.svg"
+        }
+    },
+    "干": {
+        "furigana": "かん",
+        "meaning": "drying; dried",
+        "media": {
+            "svg": "05e72.svg"
+        }
+    },
+    "平": {
+        "furigana": "ひら",
+        "meaning": "something broad and flat",
+        "media": {
+            "svg": "05e73.svg"
+        }
+    },
+    "年": {
+        "furigana": "とし",
+        "meaning": "year",
+        "media": {
+            "svg": "05e74.svg"
+        }
+    },
+    "幸": {
+        "furigana": "さち",
+        "meaning": "good luck; fortune; happiness",
+        "media": {
+            "svg": "05e78.svg"
+        }
+    },
+    "幼": {
+        "furigana": "いと",
+        "meaning": "young child (esp. a young girl)",
+        "media": {
+            "svg": "05e7c.svg"
+        }
+    },
+    "庁": {
+        "furigana": "しゃ",
+        "meaning": "government office; agency; board",
+        "media": {
+            "svg": "05e81.svg"
+        }
+    },
+    "広": {
+        "furigana": "こう",
+        "meaning": "advertisement; advertising",
+        "media": {
+            "svg": "05e83.svg"
+        }
+    },
+    "床": {
+        "furigana": "ゆか",
+        "meaning": "floor",
+        "media": {
+            "svg": "05e8a.svg"
+        }
+    },
+    "底": {
+        "furigana": "そこ",
+        "meaning": "bottom; sole",
+        "media": {
+            "svg": "05e95.svg"
+        }
+    },
+    "店": {
+        "furigana": "みせ",
+        "meaning": "store; shop; establishment; restaurant",
+        "media": {
+            "svg": "05e97.svg"
+        }
+    },
+    "府": {
+        "furigana": "けん",
+        "meaning": "(metropolitan) prefecture (of Osaka and Kyoto)",
+        "media": {
+            "svg": "05e9c.svg"
+        }
+    },
+    "度": {
+        "furigana": "たび",
+        "meaning": "degree (angle, temperature, scale, etc.)",
+        "media": {
+            "svg": "05ea6.svg"
+        }
+    },
+    "座": {
+        "furigana": "せき",
+        "meaning": "seat; place",
+        "media": {
+            "svg": "05ea7.svg"
+        }
+    },
+    "庫": {
+        "furigana": "くら",
+        "meaning": "warehouse; storehouse; cellar; magazine; granary; godown; depository; treasury; elevator",
+        "media": {
+            "svg": "05eab.svg"
+        }
+    },
+    "庭": {
+        "furigana": "にわ",
+        "meaning": "garden; yard; courtyard",
+        "media": {
+            "svg": "05ead.svg"
+        }
+    },
+    "康": {
+        "furigana": "こう",
+        "meaning": "Kōan era (of the Northern Court) (1361.3.29-1362.9.23)",
+        "media": {
+            "svg": "05eb7.svg"
+        }
+    },
+    "延": {
+        "furigana": "えん",
+        "meaning": "postponement; deferment; adjournment",
+        "media": {
+            "svg": "05ef6.svg"
+        }
+    },
+    "建": {
+        "furigana": "けん",
+        "meaning": "contract; commitment",
+        "media": {
+            "svg": "05efa.svg"
+        }
+    },
+    "式": {
+        "furigana": "しき",
+        "meaning": "equation; formula; expression",
+        "media": {
+            "svg": "05f0f.svg"
+        }
+    },
+    "弓": {
+        "furigana": "ゆみ",
+        "meaning": "bow (weapon)",
+        "media": {
+            "svg": "05f13.svg"
+        }
+    },
+    "引": {
+        "furigana": "いん",
+        "meaning": "quotation; citation; reference",
+        "media": {
+            "svg": "05f15.svg"
+        }
+    },
+    "弟": {
+        "furigana": "おと",
+        "meaning": "younger brother; little brother; kid brother",
+        "media": {
+            "svg": "05f1f.svg"
+        }
+    },
+    "弱": {
+        "furigana": "よわ",
+        "meaning": "little less than; slightly fewer than; just under",
+        "media": {
+            "svg": "05f31.svg"
+        }
+    },
+    "張": {
+        "furigana": "がみ",
+        "meaning": "Chinese \"Extended Net\" constellation (one of the 28 mansions)",
+        "media": {
+            "svg": "05f35.svg"
+        }
+    },
+    "強": {
+        "furigana": "ごう",
+        "meaning": "a little over; a little more than",
+        "media": {
+            "svg": "05f37.svg"
+        }
+    },
+    "当": {
+        "furigana": "とう",
+        "meaning": "this; our; the ... in question; the said ...",
+        "media": {
+            "svg": "05f53.svg"
+        }
+    },
+    "形": {
+        "furigana": "けい",
+        "meaning": "form; shape; figure",
+        "media": {
+            "svg": "05f62.svg"
+        }
+    },
+    "役": {
+        "furigana": "やく",
+        "meaning": "role; assignment; responsibility; duty; function; job; service",
+        "media": {
+            "svg": "05f79.svg"
+        }
+    },
+    "彼": {
+        "furigana": "かれ",
+        "meaning": "he; him",
+        "media": {
+            "svg": "05f7c.svg"
+        }
+    },
+    "径": {
+        "furigana": "みち",
+        "meaning": "road; path; street; lane; passage",
+        "media": {
+            "svg": "05f84.svg"
+        }
+    },
+    "待": {
+        "furigana": "まち",
+        "meaning": "to wait",
+        "media": {
+            "svg": "05f85.svg"
+        }
+    },
+    "律": {
+        "furigana": "りつ",
+        "meaning": "law (esp. ancient East Asian criminal code); regulation",
+        "media": {
+            "svg": "05f8b.svg"
+        }
+    },
+    "後": {
+        "furigana": "あと",
+        "meaning": "behind; rear",
+        "media": {
+            "svg": "05f8c.svg"
+        }
+    },
+    "徒": {
+        "furigana": "ただ",
+        "meaning": "futility; waste; uselessness; pointlessness; idleness",
+        "media": {
+            "svg": "05f92.svg"
+        }
+    },
+    "得": {
+        "furigana": "とく",
+        "meaning": "profit; advantage; benefit; gain",
+        "media": {
+            "svg": "05f97.svg"
+        }
+    },
+    "御": {
+        "furigana": "ぎょ",
+        "meaning": "honorific/polite/humble prefix",
+        "media": {
+            "svg": "05fa1.svg"
+        }
+    },
+    "復": {
+        "furigana": "また",
+        "meaning": "again; and; also; still (doing something)",
+        "media": {
+            "svg": "05fa9.svg"
+        }
+    },
+    "心": {
+        "furigana": "しん",
+        "meaning": "mind; heart; spirit",
+        "media": {
+            "svg": "05fc3.svg"
+        }
+    },
+    "必": {
+        "furigana": "ひつ",
+        "meaning": "definiteness; certainty",
+        "media": {
+            "svg": "05fc5.svg"
+        }
+    },
+    "志": {
+        "furigana": "ぼう",
+        "meaning": "will; resolution; intention; ambition; aim; goal",
+        "media": {
+            "svg": "05fd7.svg"
+        }
+    },
+    "忘": {
+        "furigana": "わす",
+        "meaning": "to forget; to leave carelessly; to be forgetful of; to forget about; to forget (an article)",
+        "media": {
+            "svg": "05fd8.svg"
+        }
+    },
+    "忙": {
+        "furigana": "ぼう",
+        "meaning": "busy; occupied; hectic",
+        "media": {
+            "svg": "05fd9.svg"
+        }
+    },
+    "応": {
+        "furigana": "おう",
+        "meaning": "agreement; affirmative",
+        "media": {
+            "svg": "05fdc.svg"
+        }
+    },
+    "快": {
+        "furigana": "かい",
+        "meaning": "pleasure; delight; enjoyment",
+        "media": {
+            "svg": "05feb.svg"
+        }
+    },
+    "念": {
+        "furigana": "ねん",
+        "meaning": "sense; idea; thought; feeling",
+        "media": {
+            "svg": "05ff5.svg"
+        }
+    },
+    "怒": {
+        "furigana": "おこ",
+        "meaning": "to get angry; to get mad",
+        "media": {
+            "svg": "06012.svg"
+        }
+    },
+    "怖": {
+        "furigana": "こわ",
+        "meaning": "frightening; terrifying",
+        "media": {
+            "svg": "06016.svg"
+        }
+    },
+    "思": {
+        "furigana": "おも",
+        "meaning": "to think; to consider; to believe; to reckon",
+        "media": {
+            "svg": "0601d.svg"
+        }
+    },
+    "急": {
+        "furigana": "いそ",
+        "meaning": "sudden; abrupt; unexpected",
+        "media": {
+            "svg": "06025.svg"
+        }
+    },
+    "性": {
+        "furigana": "せい",
+        "meaning": "nature (of a person)",
+        "media": {
+            "svg": "06027.svg"
+        }
+    },
+    "恋": {
+        "furigana": "こい",
+        "meaning": "(romantic) love",
+        "media": {
+            "svg": "0604b.svg"
+        }
+    },
+    "恐": {
+        "furigana": "こわ",
+        "meaning": "frightening; terrifying",
+        "media": {
+            "svg": "06050.svg"
+        }
+    },
+    "恥": {
+        "furigana": "はじ",
+        "meaning": "shame; embarrassment; disgrace",
+        "media": {
+            "svg": "06065.svg"
+        }
+    },
+    "息": {
+        "furigana": "いき",
+        "meaning": "breath; breathing",
+        "media": {
+            "svg": "0606f.svg"
+        }
+    },
+    "恵": {
+        "furigana": "めぐ",
+        "meaning": "wisdom; enlightenment",
+        "media": {
+            "svg": "06075.svg"
+        }
+    },
+    "悩": {
+        "furigana": "なや",
+        "meaning": "to be worried; to be troubled",
+        "media": {
+            "svg": "060a9.svg"
+        }
+    },
+    "悪": {
+        "furigana": "あく",
+        "meaning": "evil; wickedness",
+        "media": {
+            "svg": "060aa.svg"
+        }
+    },
+    "悲": {
+        "furigana": "かな",
+        "meaning": "karuna (compassion)",
+        "media": {
+            "svg": "060b2.svg"
+        }
+    },
+    "情": {
+        "furigana": "ほう",
+        "meaning": "feelings; emotion; sentiment",
+        "media": {
+            "svg": "060c5.svg"
+        }
+    },
+    "想": {
+        "furigana": "そう",
+        "meaning": "conception; idea; thought",
+        "media": {
+            "svg": "060f3.svg"
+        }
+    },
+    "意": {
+        "furigana": "しき",
+        "meaning": "feelings; thoughts",
+        "media": {
+            "svg": "0610f.svg"
+        }
+    },
+    "愛": {
+        "furigana": "あい",
+        "meaning": "love; affection; care",
+        "media": {
+            "svg": "0611b.svg"
+        }
+    },
+    "感": {
+        "furigana": "かん",
+        "meaning": "feeling; sensation; emotion; admiration; impression",
+        "media": {
+            "svg": "0611f.svg"
+        }
+    },
+    "慣": {
+        "furigana": "なら",
+        "meaning": "to get used to; to grow accustomed to; to become familiar with",
+        "media": {
+            "svg": "06163.svg"
+        }
+    },
+    "憎": {
+        "furigana": "にく",
+        "meaning": "hatred",
+        "media": {
+            "svg": "0618e.svg"
+        }
+    },
+    "成": {
+        "furigana": "ほど",
+        "meaning": "to become; to get; to grow; to be; to reach; to attain",
+        "media": {
+            "svg": "06210.svg"
+        }
+    },
+    "戦": {
+        "furigana": "せん",
+        "meaning": "war; battle; campaign; fight",
+        "media": {
+            "svg": "06226.svg"
+        }
+    },
+    "戸": {
+        "furigana": "せき",
+        "meaning": "door (esp. Japanese-style)",
+        "media": {
+            "svg": "06238.svg"
+        }
+    },
+    "戻": {
+        "furigana": "もど",
+        "meaning": "to turn back (e.g. half-way)",
+        "media": {
+            "svg": "0623b.svg"
+        }
+    },
+    "所": {
+        "furigana": "しょ",
+        "meaning": "place; spot; scene; site",
+        "media": {
+            "svg": "06240.svg"
+        }
+    },
+    "手": {
+        "furigana": "がみ",
+        "meaning": "hand; arm",
+        "media": {
+            "svg": "0624b.svg"
+        }
+    },
+    "才": {
+        "furigana": "さい",
+        "meaning": "ability; gift; talent; aptitude; genius",
+        "media": {
+            "svg": "0624d.svg"
+        }
+    },
+    "打": {
+        "furigana": "げき",
+        "meaning": "dozen",
+        "media": {
+            "svg": "06253.svg"
+        }
+    },
+    "払": {
+        "furigana": "はら",
+        "meaning": "to pay (e.g. money, bill)",
+        "media": {
+            "svg": "06255.svg"
+        }
+    },
+    "批": {
+        "furigana": "はん",
+        "meaning": "criticism; review; commentary",
+        "media": {
+            "svg": "06279.svg"
+        }
+    },
+    "承": {
+        "furigana": "だく",
+        "meaning": "second line of a four-line Chinese poem",
+        "media": {
+            "svg": "0627f.svg"
+        }
+    },
+    "技": {
+        "furigana": "わざ",
+        "meaning": "technique; art; skill; move",
+        "media": {
+            "svg": "06280.svg"
+        }
+    },
+    "投": {
+        "furigana": "とう",
+        "meaning": "pitching ability",
+        "media": {
+            "svg": "06295.svg"
+        }
+    },
+    "折": {
+        "furigana": "おり",
+        "meaning": "opportunity; chance; occasion; time",
+        "media": {
+            "svg": "06298.svg"
+        }
+    },
+    "抜": {
+        "furigana": "ばつ",
+        "meaning": "to pull out; to draw out; to extract; to unplug; to weed",
+        "media": {
+            "svg": "0629c.svg"
+        }
+    },
+    "抱": {
+        "furigana": "かか",
+        "meaning": "to hold or carry under or in the arms",
+        "media": {
+            "svg": "062b1.svg"
+        }
+    },
+    "押": {
+        "furigana": "おう",
+        "meaning": "closet",
+        "media": {
+            "svg": "062bc.svg"
+        }
+    },
+    "担": {
+        "furigana": "たん",
+        "meaning": "being in charge (of an area of responsibility); being responsible (for a work role, etc.)",
+        "media": {
+            "svg": "062c5.svg"
+        }
+    },
+    "招": {
+        "furigana": "たい",
+        "meaning": "to call out (to); to call; to invoke",
+        "media": {
+            "svg": "062db.svg"
+        }
+    },
+    "拝": {
+        "furigana": "はい",
+        "meaning": "bowing one's head (in respect or worship); worship",
+        "media": {
+            "svg": "062dd.svg"
+        }
+    },
+    "拡": {
+        "furigana": "かく",
+        "meaning": "scattering; diffusion; spread (e.g. signal across the spectrum)",
+        "media": {
+            "svg": "062e1.svg"
+        }
+    },
+    "拾": {
+        "furigana": "ひろ",
+        "meaning": "ten",
+        "media": {
+            "svg": "062fe.svg"
+        }
+    },
+    "持": {
+        "furigana": "さん",
+        "meaning": "draw (in go, poetry contest, etc.); tie",
+        "media": {
+            "svg": "06301.svg"
+        }
+    },
+    "挙": {
+        "furigana": "きょ",
+        "meaning": "action; behavior; behaviour; move",
+        "media": {
+            "svg": "06319.svg"
+        }
+    },
+    "挟": {
+        "furigana": "はさ",
+        "meaning": "to hold between (e.g. one's fingers, chopsticks); to grip (from both sides)",
+        "media": {
+            "svg": "0631f.svg"
+        }
+    },
+    "捕": {
+        "furigana": "りょ",
+        "meaning": "prisoner (of war)",
+        "media": {
+            "svg": "06355.svg"
+        }
+    },
+    "捜": {
+        "furigana": "さが",
+        "meaning": "to search (for something desired, needed); to look for",
+        "media": {
+            "svg": "0635c.svg"
+        }
+    },
+    "捨": {
+        "furigana": "ばち",
+        "meaning": "to throw away; to cast away; to dump; to discard",
+        "media": {
+            "svg": "06368.svg"
+        }
+    },
+    "掃": {
+        "furigana": "そう",
+        "meaning": "cleaning; sweeping; dusting; scrubbing",
+        "media": {
+            "svg": "06383.svg"
+        }
+    },
+    "授": {
+        "furigana": "じゅ",
+        "meaning": "lesson; class work; teaching; instruction",
+        "media": {
+            "svg": "06388.svg"
+        }
+    },
+    "掘": {
+        "furigana": "もの",
+        "meaning": "to dig; to excavate; to hollow",
+        "media": {
+            "svg": "06398.svg"
+        }
+    },
+    "採": {
+        "furigana": "さい",
+        "meaning": "to pick up",
+        "media": {
+            "svg": "063a1.svg"
+        }
+    },
+    "探": {
+        "furigana": "さが",
+        "meaning": "to search (for something desired, needed); to look for",
+        "media": {
+            "svg": "063a2.svg"
+        }
+    },
+    "接": {
+        "furigana": "せつ",
+        "meaning": "connection; attachment; union; join; joint; link",
+        "media": {
+            "svg": "063a5.svg"
+        }
+    },
+    "換": {
+        "furigana": "かん",
+        "meaning": "to replace",
+        "media": {
+            "svg": "063db.svg"
+        }
+    },
+    "損": {
+        "furigana": "そん",
+        "meaning": "loss; damage; harm; unprofitable",
+        "media": {
+            "svg": "0640d.svg"
+        }
+    },
+    "操": {
+        "furigana": "そう",
+        "meaning": "fidelity; honour; honor; constancy",
+        "media": {
+            "svg": "064cd.svg"
+        }
+    },
+    "支": {
+        "furigana": "はら",
+        "meaning": "China",
+        "media": {
+            "svg": "0652f.svg"
+        }
+    },
+    "改": {
+        "furigana": "かい",
+        "meaning": "revision",
+        "media": {
+            "svg": "06539.svg"
+        }
+    },
+    "放": {
+        "furigana": "ほう",
+        "meaning": "broadcast; broadcasting",
+        "media": {
+            "svg": "0653e.svg"
+        }
+    },
+    "政": {
+        "furigana": "せい",
+        "meaning": "rule; government",
+        "media": {
+            "svg": "0653f.svg"
+        }
+    },
+    "故": {
+        "furigana": "もと",
+        "meaning": "the late; the deceased",
+        "media": {
+            "svg": "06545.svg"
+        }
+    },
+    "救": {
+        "furigana": "さい",
+        "meaning": "relief; aid; rescue; salvation; help",
+        "media": {
+            "svg": "06551.svg"
+        }
+    },
+    "敗": {
+        "furigana": "はい",
+        "meaning": "loss; defeat",
+        "media": {
+            "svg": "06557.svg"
+        }
+    },
+    "教": {
+        "furigana": "しつ",
+        "meaning": "classroom",
+        "media": {
+            "svg": "06559.svg"
+        }
+    },
+    "散": {
+        "furigana": "ばら",
+        "meaning": "loose articles (not packaged with other things); bulk items; individual items",
+        "media": {
+            "svg": "06563.svg"
+        }
+    },
+    "敬": {
+        "furigana": "けい",
+        "meaning": "reverence; respect",
+        "media": {
+            "svg": "0656c.svg"
+        }
+    },
+    "数": {
+        "furigana": "すう",
+        "meaning": "several; a number of",
+        "media": {
+            "svg": "06570.svg"
+        }
+    },
+    "整": {
+        "furigana": "せい",
+        "meaning": "sorting; arrangement; organization; putting in order; adjustment; regulation",
+        "media": {
+            "svg": "06574.svg"
+        }
+    },
+    "文": {
+        "furigana": "ぶん",
+        "meaning": "sentence",
+        "media": {
+            "svg": "06587.svg"
+        }
+    },
+    "料": {
+        "furigana": "きん",
+        "meaning": "fee; charge; rate",
+        "media": {
+            "svg": "06599.svg"
+        }
+    },
+    "断": {
+        "furigana": "だん",
+        "meaning": "decision; judgment; resolution",
+        "media": {
+            "svg": "065ad.svg"
+        }
+    },
+    "新": {
+        "furigana": "しん",
+        "meaning": "new; neo-",
+        "media": {
+            "svg": "065b0.svg"
+        }
+    },
+    "方": {
+        "furigana": "ほう",
+        "meaning": "direction; way; side; area (in a particular direction)",
+        "media": {
+            "svg": "065b9.svg"
+        }
+    },
+    "旅": {
+        "furigana": "たび",
+        "meaning": "travel; trip; journey",
+        "media": {
+            "svg": "065c5.svg"
+        }
+    },
+    "族": {
+        "furigana": "ぞく",
+        "meaning": "tribe; clan; band; family",
+        "media": {
+            "svg": "065cf.svg"
+        }
+    },
+    "旗": {
+        "furigana": "はた",
+        "meaning": "flag",
+        "media": {
+            "svg": "065d7.svg"
+        }
+    },
+    "日": {
+        "furigana": "にち",
+        "meaning": "Sunday",
+        "media": {
+            "svg": "065e5.svg"
+        }
+    },
+    "旧": {
+        "furigana": "もと",
+        "meaning": "old; former; ex-",
+        "media": {
+            "svg": "065e7.svg"
+        }
+    },
+    "早": {
+        "furigana": "はや",
+        "meaning": "already; now; by this time",
+        "media": {
+            "svg": "065e9.svg"
+        }
+    },
+    "昇": {
+        "furigana": "のぼ",
+        "meaning": "to ascend; to go up; to climb",
+        "media": {
+            "svg": "06607.svg"
+        }
+    },
+    "明": {
+        "furigana": "さや",
+        "meaning": "vidya (wisdom)",
+        "media": {
+            "svg": "0660e.svg"
+        }
+    },
+    "易": {
+        "furigana": "えき",
+        "meaning": "divination; fortune-telling",
+        "media": {
+            "svg": "06613.svg"
+        }
+    },
+    "昔": {
+        "furigana": "せき",
+        "meaning": "olden days; former",
+        "media": {
+            "svg": "06614.svg"
+        }
+    },
+    "星": {
+        "furigana": "ほし",
+        "meaning": "star (usu. not including the Sun); planet (usu. not including Earth); heavenly body",
+        "media": {
+            "svg": "0661f.svg"
+        }
+    },
+    "映": {
+        "furigana": "えい",
+        "meaning": "movie; film",
+        "media": {
+            "svg": "06620.svg"
+        }
+    },
+    "春": {
+        "furigana": "はる",
+        "meaning": "spring; springtime",
+        "media": {
+            "svg": "06625.svg"
+        }
+    },
+    "昨": {
+        "furigana": "さく",
+        "meaning": "last (year); yesterday",
+        "media": {
+            "svg": "06628.svg"
+        }
+    },
+    "昭": {
+        "furigana": "てん",
+        "meaning": "nth year in the Shōwa era (1926.12.25-1989.1.7)",
+        "media": {
+            "svg": "0662d.svg"
+        }
+    },
+    "昼": {
+        "furigana": "ひる",
+        "meaning": "noon; midday",
+        "media": {
+            "svg": "0663c.svg"
+        }
+    },
+    "時": {
+        "furigana": "とき",
+        "meaning": "time; hour; moment",
+        "media": {
+            "svg": "06642.svg"
+        }
+    },
+    "晩": {
+        "furigana": "ばん",
+        "meaning": "evening",
+        "media": {
+            "svg": "06669.svg"
+        }
+    },
+    "普": {
+        "furigana": "つう",
+        "meaning": "general; ordinary; usual",
+        "media": {
+            "svg": "0666e.svg"
+        }
+    },
+    "景": {
+        "furigana": "かげ",
+        "meaning": "shadow; silhouette; figure; shape",
+        "media": {
+            "svg": "0666f.svg"
+        }
+    },
+    "晴": {
+        "furigana": "せい",
+        "meaning": "clear weather; fine weather",
+        "media": {
+            "svg": "06674.svg"
+        }
+    },
+    "暑": {
+        "furigana": "しょ",
+        "meaning": "heat",
+        "media": {
+            "svg": "06691.svg"
+        }
+    },
+    "暖": {
+        "furigana": "だん",
+        "meaning": "warming; warmth",
+        "media": {
+            "svg": "06696.svg"
+        }
+    },
+    "暗": {
+        "furigana": "あん",
+        "meaning": "memorization; memorisation; learning by heart",
+        "media": {
+            "svg": "06697.svg"
+        }
+    },
+    "暮": {
+        "furigana": "がた",
+        "meaning": "sunset; sundown; nightfall; dusk",
+        "media": {
+            "svg": "066ae.svg"
+        }
+    },
+    "暴": {
+        "furigana": "ぼう",
+        "meaning": "violence; force",
+        "media": {
+            "svg": "066b4.svg"
+        }
+    },
+    "曇": {
+        "furigana": "くも",
+        "meaning": "cloudiness; cloudy weather",
+        "media": {
+            "svg": "066c7.svg"
+        }
+    },
+    "曜": {
+        "furigana": "よう",
+        "meaning": "day of the week",
+        "media": {
+            "svg": "066dc.svg"
+        }
+    },
+    "曲": {
+        "furigana": "くせ",
+        "meaning": "composition; piece of music; song; track (on a record)",
+        "media": {
+            "svg": "066f2.svg"
+        }
+    },
+    "更": {
+        "furigana": "こう",
+        "meaning": "growing late; latening",
+        "media": {
+            "svg": "066f4.svg"
+        }
+    },
+    "書": {
+        "furigana": "ふみ",
+        "meaning": "letter; writings",
+        "media": {
+            "svg": "066f8.svg"
+        }
+    },
+    "替": {
+        "furigana": "だま",
+        "meaning": "substitute; replacement; substituting; replacing",
+        "media": {
+            "svg": "066ff.svg"
+        }
+    },
+    "最": {
+        "furigana": "さい",
+        "meaning": "the most; the extreme",
+        "media": {
+            "svg": "06700.svg"
+        }
+    },
+    "月": {
+        "furigana": "つき",
+        "meaning": "moon",
+        "media": {
+            "svg": "06708.svg"
+        }
+    },
+    "有": {
+        "furigana": "ゆう",
+        "meaning": "existence",
+        "media": {
+            "svg": "06709.svg"
+        }
+    },
+    "服": {
+        "furigana": "ふく",
+        "meaning": "clothes (esp. Western clothes)",
+        "media": {
+            "svg": "0670d.svg"
+        }
+    },
+    "望": {
+        "furigana": "もち",
+        "meaning": "full moon",
+        "media": {
+            "svg": "0671b.svg"
+        }
+    },
+    "朝": {
+        "furigana": "あさ",
+        "meaning": "morning",
+        "media": {
+            "svg": "0671d.svg"
+        }
+    },
+    "期": {
+        "furigana": "たい",
+        "meaning": "period; time",
+        "media": {
+            "svg": "0671f.svg"
+        }
+    },
+    "木": {
+        "furigana": "もく",
+        "meaning": "tree; shrub; bush",
+        "media": {
+            "svg": "06728.svg"
+        }
+    },
+    "未": {
+        "furigana": "らい",
+        "meaning": "not yet; un-",
+        "media": {
+            "svg": "0672a.svg"
+        }
+    },
+    "末": {
+        "furigana": "すえ",
+        "meaning": "tip; top",
+        "media": {
+            "svg": "0672b.svg"
+        }
+    },
+    "本": {
+        "furigana": "ほん",
+        "meaning": "book; volume; script",
+        "media": {
+            "svg": "0672c.svg"
+        }
+    },
+    "札": {
+        "furigana": "さつ",
+        "meaning": "banknote; bill; note; paper money",
+        "media": {
+            "svg": "0672d.svg"
+        }
+    },
+    "机": {
+        "furigana": "くう",
+        "meaning": "desk",
+        "media": {
+            "svg": "0673a.svg"
+        }
+    },
+    "材": {
+        "furigana": "ざい",
+        "meaning": "wood; lumber; timber",
+        "media": {
+            "svg": "06750.svg"
+        }
+    },
+    "村": {
+        "furigana": "むら",
+        "meaning": "village",
+        "media": {
+            "svg": "06751.svg"
+        }
+    },
+    "束": {
+        "furigana": "たば",
+        "meaning": "bundle; bunch; sheaf",
+        "media": {
+            "svg": "0675f.svg"
+        }
+    },
+    "条": {
+        "furigana": "すじ",
+        "meaning": "muscle; tendon; sinew",
+        "media": {
+            "svg": "06761.svg"
+        }
+    },
+    "来": {
+        "furigana": "らい",
+        "meaning": "next (year, spring, etc.); coming",
+        "media": {
+            "svg": "06765.svg"
+        }
+    },
+    "杯": {
+        "furigana": "はい",
+        "meaning": "sake cup; cup for alcoholic beverages",
+        "media": {
+            "svg": "0676f.svg"
+        }
+    },
+    "東": {
+        "furigana": "トン",
+        "meaning": "east",
+        "media": {
+            "svg": "06771.svg"
+        }
+    },
+    "松": {
+        "furigana": "まつ",
+        "meaning": "pine tree (Pinus spp.)",
+        "media": {
+            "svg": "0677e.svg"
+        }
+    },
+    "板": {
+        "furigana": "いた",
+        "meaning": "board; plank",
+        "media": {
+            "svg": "0677f.svg"
+        }
+    },
+    "林": {
+        "furigana": "りん",
+        "meaning": "woods; forest; copse; thicket",
+        "media": {
+            "svg": "06797.svg"
+        }
+    },
+    "枚": {
+        "furigana": "まい",
+        "meaning": "counter for flat objects (e.g. sheets of paper)",
+        "media": {
+            "svg": "0679a.svg"
+        }
+    },
+    "果": {
+        "furigana": "はか",
+        "meaning": "phala (attained state, result)",
+        "media": {
+            "svg": "0679c.svg"
+        }
+    },
+    "枝": {
+        "furigana": "えだ",
+        "meaning": "branch; bow; bough; twig; limb",
+        "media": {
+            "svg": "0679d.svg"
+        }
+    },
+    "枯": {
+        "furigana": "かれ",
+        "meaning": "to wither (of a plant); to be blasted; to die",
+        "media": {
+            "svg": "067af.svg"
+        }
+    },
+    "柔": {
+        "furigana": "やわ",
+        "meaning": "softness; gentleness; weakness",
+        "media": {
+            "svg": "067d4.svg"
+        }
+    },
+    "柱": {
+        "furigana": "ろう",
+        "meaning": "pillar; post",
+        "media": {
+            "svg": "067f1.svg"
+        }
+    },
+    "査": {
+        "furigana": "てい",
+        "meaning": "assessment (of value, damages, etc.); revision (of a budget)",
+        "media": {
+            "svg": "067fb.svg"
+        }
+    },
+    "栄": {
+        "furigana": "ロン",
+        "meaning": "winning by picking up a discarded tile",
+        "media": {
+            "svg": "06804.svg"
+        }
+    },
+    "校": {
+        "furigana": "こう",
+        "meaning": "school",
+        "media": {
+            "svg": "06821.svg"
+        }
+    },
+    "根": {
+        "furigana": "こん",
+        "meaning": "root (of a plant)",
+        "media": {
+            "svg": "06839.svg"
+        }
+    },
+    "格": {
+        "furigana": "かく",
+        "meaning": "status; position; rank",
+        "media": {
+            "svg": "0683c.svg"
+        }
+    },
+    "案": {
+        "furigana": "あん",
+        "meaning": "idea; plan; proposal; suggestion; (government) bill",
+        "media": {
+            "svg": "06848.svg"
+        }
+    },
+    "梅": {
+        "furigana": "うめ",
+        "meaning": "Japanese apricot (Prunus mume); Japanese plum; ume; Chinese plum",
+        "media": {
+            "svg": "06885.svg"
+        }
+    },
+    "棒": {
+        "furigana": "ぼう",
+        "meaning": "pole; rod; stick; baton",
+        "media": {
+            "svg": "068d2.svg"
+        }
+    },
+    "森": {
+        "furigana": "もり",
+        "meaning": "forest",
+        "media": {
+            "svg": "068ee.svg"
+        }
+    },
+    "植": {
+        "furigana": "ぶつ",
+        "meaning": "plant; vegetation",
+        "media": {
+            "svg": "0690d.svg"
+        }
+    },
+    "検": {
+        "furigana": "けん",
+        "meaning": "inspection (e.g. customs, factory); examination; scan (e.g. MRI, PET, etc.)",
+        "media": {
+            "svg": "0691c.svg"
+        }
+    },
+    "業": {
+        "furigana": "わざ",
+        "meaning": "deed; act; work; performance",
+        "media": {
+            "svg": "0696d.svg"
+        }
+    },
+    "極": {
+        "furigana": "ごく",
+        "meaning": "pole",
+        "media": {
+            "svg": "06975.svg"
+        }
+    },
+    "楽": {
+        "furigana": "らく",
+        "meaning": "comfort; ease; relief; (at) peace; relaxation",
+        "media": {
+            "svg": "0697d.svg"
+        }
+    },
+    "構": {
+        "furigana": "かま",
+        "meaning": "structure; construction; appearance",
+        "media": {
+            "svg": "069cb.svg"
+        }
+    },
+    "様": {
+        "furigana": "よう",
+        "meaning": "appearing ...; looking ...",
+        "media": {
+            "svg": "069d8.svg"
+        }
+    },
+    "標": {
+        "furigana": "しめ",
+        "meaning": "mark; sign",
+        "media": {
+            "svg": "06a19.svg"
+        }
+    },
+    "権": {
+        "furigana": "けん",
+        "meaning": "right (to do something)",
+        "media": {
+            "svg": "06a29.svg"
+        }
+    },
+    "横": {
+        "furigana": "よこ",
+        "meaning": "horizontal (as opposed to vertical); lying down",
+        "media": {
+            "svg": "06a2a.svg"
+        }
+    },
+    "橋": {
+        "furigana": "はし",
+        "meaning": "bridge",
+        "media": {
+            "svg": "06a4b.svg"
+        }
+    },
+    "機": {
+        "furigana": "はた",
+        "meaning": "loom",
+        "media": {
+            "svg": "06a5f.svg"
+        }
+    },
+    "欠": {
+        "furigana": "けつ",
+        "meaning": "yawn; yawning",
+        "media": {
+            "svg": "06b20.svg"
+        }
+    },
+    "次": {
+        "furigana": "つぎ",
+        "meaning": "next; following; subsequent",
+        "media": {
+            "svg": "06b21.svg"
+        }
+    },
+    "欧": {
+        "furigana": "おう",
+        "meaning": "Europe",
+        "media": {
+            "svg": "06b27.svg"
+        }
+    },
+    "欲": {
+        "furigana": "よく",
+        "meaning": "greed; craving; desire; appetite; hunger; avarice; wants",
+        "media": {
+            "svg": "06b32.svg"
+        }
+    },
+    "歌": {
+        "furigana": "うた",
+        "meaning": "song",
+        "media": {
+            "svg": "06b4c.svg"
+        }
+    },
+    "止": {
+        "furigana": "とど",
+        "meaning": "to stop (moving); to come to a stop",
+        "media": {
+            "svg": "06b62.svg"
+        }
+    },
+    "正": {
+        "furigana": "せい",
+        "meaning": "(logical) true; regular",
+        "media": {
+            "svg": "06b63.svg"
+        }
+    },
+    "武": {
+        "furigana": "そう",
+        "meaning": "the art of war; martial arts; military arts",
+        "media": {
+            "svg": "06b66.svg"
+        }
+    },
+    "歩": {
+        "furigana": "あゆ",
+        "meaning": "walking",
+        "media": {
+            "svg": "06b69.svg"
+        }
+    },
+    "歯": {
+        "furigana": "みが",
+        "meaning": "tooth",
+        "media": {
+            "svg": "06b6f.svg"
+        }
+    },
+    "歳": {
+        "furigana": "とし",
+        "meaning": "year",
+        "media": {
+            "svg": "06b73.svg"
+        }
+    },
+    "歴": {
+        "furigana": "れき",
+        "meaning": "history of; experience of",
+        "media": {
+            "svg": "06b74.svg"
+        }
+    },
+    "死": {
+        "furigana": "たい",
+        "meaning": "death; decease",
+        "media": {
+            "svg": "06b7b.svg"
+        }
+    },
+    "残": {
+        "furigana": "ざん",
+        "meaning": "remaining; left-over; excess",
+        "media": {
+            "svg": "06b8b.svg"
+        }
+    },
+    "段": {
+        "furigana": "だん",
+        "meaning": "step; stair; (flight of) steps; (row of) stitches; columns (of print)",
+        "media": {
+            "svg": "06bb5.svg"
+        }
+    },
+    "殺": {
+        "furigana": "さつ",
+        "meaning": "murder; homicide; manslaughter",
+        "media": {
+            "svg": "06bba.svg"
+        }
+    },
+    "殿": {
+        "furigana": "どの",
+        "meaning": "rear; rear unit guard",
+        "media": {
+            "svg": "06bbf.svg"
+        }
+    },
+    "母": {
+        "furigana": "はは",
+        "meaning": "mother",
+        "media": {
+            "svg": "06bcd.svg"
+        }
+    },
+    "毎": {
+        "furigana": "まい",
+        "meaning": "every (usu. with events, e.g. every weekend); each",
+        "media": {
+            "svg": "06bce.svg"
+        }
+    },
+    "毒": {
+        "furigana": "どく",
+        "meaning": "poison; toxicant",
+        "media": {
+            "svg": "06bd2.svg"
+        }
+    },
+    "比": {
+        "furigana": "ころ",
+        "meaning": "ratio; proportion",
+        "media": {
+            "svg": "06bd4.svg"
+        }
+    },
+    "毛": {
+        "furigana": "もう",
+        "meaning": "hair",
+        "media": {
+            "svg": "06bdb.svg"
+        }
+    },
+    "氏": {
+        "furigana": "うじ",
+        "meaning": "Mr; Mrs; Ms; Miss",
+        "media": {
+            "svg": "06c0f.svg"
+        }
+    },
+    "民": {
+        "furigana": "たみ",
+        "meaning": "people; citizens; subjects; folk",
+        "media": {
+            "svg": "06c11.svg"
+        }
+    },
+    "気": {
+        "furigana": "ぶん",
+        "meaning": "spirit; mind; heart",
+        "media": {
+            "svg": "06c17.svg"
+        }
+    },
+    "水": {
+        "furigana": "みず",
+        "meaning": "water (esp. cool, fresh water, e.g. drinking water)",
+        "media": {
+            "svg": "06c34.svg"
+        }
+    },
+    "氷": {
+        "furigana": "こお",
+        "meaning": "ice",
+        "media": {
+            "svg": "06c37.svg"
+        }
+    },
+    "永": {
+        "furigana": "えい",
+        "meaning": "eternity; permanence; perpetuity",
+        "media": {
+            "svg": "06c38.svg"
+        }
+    },
+    "求": {
+        "furigana": "もと",
+        "meaning": "to want; to wish for",
+        "media": {
+            "svg": "06c42.svg"
+        }
+    },
+    "汗": {
+        "furigana": "あせ",
+        "meaning": "sweat; perspiration",
+        "media": {
+            "svg": "06c57.svg"
+        }
+    },
+    "汚": {
+        "furigana": "せん",
+        "meaning": "oceanic whitetip shark (Carcharhinus longimanus)",
+        "media": {
+            "svg": "06c5a.svg"
+        }
+    },
+    "池": {
+        "furigana": "いけ",
+        "meaning": "pond",
+        "media": {
+            "svg": "06c60.svg"
+        }
+    },
+    "決": {
+        "furigana": "けつ",
+        "meaning": "decision; vote",
+        "media": {
+            "svg": "06c7a.svg"
+        }
+    },
+    "汽": {
+        "furigana": "しゃ",
+        "meaning": "train (esp. long distance train)",
+        "media": {
+            "svg": "06c7d.svg"
+        }
+    },
+    "沈": {
+        "furigana": "しず",
+        "meaning": "to sink; to go under; to submerge",
+        "media": {
+            "svg": "06c88.svg"
+        }
+    },
+    "河": {
+        "furigana": "かわ",
+        "meaning": "river; stream",
+        "media": {
+            "svg": "06cb3.svg"
+        }
+    },
+    "沸": {
+        "furigana": "ふっ",
+        "meaning": "to boil; to heat",
+        "media": {
+            "svg": "06cb8.svg"
+        }
+    },
+    "油": {
+        "furigana": "だん",
+        "meaning": "oil",
+        "media": {
+            "svg": "06cb9.svg"
+        }
+    },
+    "治": {
+        "furigana": "なお",
+        "meaning": "politics; government; administration; rule",
+        "media": {
+            "svg": "06cbb.svg"
+        }
+    },
+    "況": {
+        "furigana": "いわ",
+        "meaning": "still more; to say nothing of; not to mention",
+        "media": {
+            "svg": "06cc1.svg"
+        }
+    },
+    "泉": {
+        "furigana": "せん",
+        "meaning": "spring; fountain",
+        "media": {
+            "svg": "06cc9.svg"
+        }
+    },
+    "泊": {
+        "furigana": "はく",
+        "meaning": "counter for nights of a stay",
+        "media": {
+            "svg": "06cca.svg"
+        }
+    },
+    "法": {
+        "furigana": "ほう",
+        "meaning": "law; act; principle",
+        "media": {
+            "svg": "06cd5.svg"
+        }
+    },
+    "波": {
+        "furigana": "なみ",
+        "meaning": "wave",
+        "media": {
+            "svg": "06ce2.svg"
+        }
+    },
+    "泣": {
+        "furigana": "ごえ",
+        "meaning": "to cry; to weep; to sob; to howl",
+        "media": {
+            "svg": "06ce3.svg"
+        }
+    },
+    "泥": {
+        "furigana": "どろ",
+        "meaning": "mud; slush; (wet) dirt; mire",
+        "media": {
+            "svg": "06ce5.svg"
+        }
+    },
+    "注": {
+        "furigana": "しゃ",
+        "meaning": "annotation; explanatory note; comment",
+        "media": {
+            "svg": "06ce8.svg"
+        }
+    },
+    "泳": {
+        "furigana": "およ",
+        "meaning": "to swim",
+        "media": {
+            "svg": "06cf3.svg"
+        }
+    },
+    "洋": {
+        "furigana": "なだ",
+        "meaning": "open sea",
+        "media": {
+            "svg": "06d0b.svg"
+        }
+    },
+    "洗": {
+        "furigana": "せん",
+        "meaning": "washing machine (laundry)",
+        "media": {
+            "svg": "06d17.svg"
+        }
+    },
+    "活": {
+        "furigana": "かつ",
+        "meaning": "living; life",
+        "media": {
+            "svg": "06d3b.svg"
+        }
+    },
+    "流": {
+        "furigana": "なが",
+        "meaning": "fashion; way; style; manner",
+        "media": {
+            "svg": "06d41.svg"
+        }
+    },
+    "浅": {
+        "furigana": "あさ",
+        "meaning": "shallow; superficial",
+        "media": {
+            "svg": "06d45.svg"
+        }
+    },
+    "浮": {
+        "furigana": "わき",
+        "meaning": "buoyancy; floating power",
+        "media": {
+            "svg": "06d6e.svg"
+        }
+    },
+    "浴": {
+        "furigana": "よく",
+        "meaning": "to dash over oneself (e.g. water); to take (e.g. shower); to bask in (e.g. the sun); to bathe in; to be flooded with (e.g. light); to be covered in",
+        "media": {
+            "svg": "06d74.svg"
+        }
+    },
+    "海": {
+        "furigana": "うみ",
+        "meaning": "sea; ocean; waters",
+        "media": {
+            "svg": "06d77.svg"
+        }
+    },
+    "消": {
+        "furigana": "ぼう",
+        "meaning": "consumption; expenditure",
+        "media": {
+            "svg": "06d88.svg"
+        }
+    },
+    "涙": {
+        "furigana": "るい",
+        "meaning": "tear; tears; lachrymal secretion",
+        "media": {
+            "svg": "06d99.svg"
+        }
+    },
+    "液": {
+        "furigana": "えき",
+        "meaning": "liquid; fluid",
+        "media": {
+            "svg": "06db2.svg"
+        }
+    },
+    "涼": {
+        "furigana": "すず",
+        "meaning": "cool breeze; cool air; refreshing coolness",
+        "media": {
+            "svg": "06dbc.svg"
+        }
+    },
+    "深": {
+        "furigana": "しん",
+        "meaning": "growing late; latening",
+        "media": {
+            "svg": "06df1.svg"
+        }
+    },
+    "混": {
+        "furigana": "こん",
+        "meaning": "mixed race; mixed parentage",
+        "media": {
+            "svg": "06df7.svg"
+        }
+    },
+    "清": {
+        "furigana": "しん",
+        "meaning": "Qing dynasty (China, 1644-1912); Ch'ing dynasty; Manchu dynasty",
+        "media": {
+            "svg": "06e05.svg"
+        }
+    },
+    "済": {
+        "furigana": "せい",
+        "meaning": "arranged; taken care of; settled; completed; finished",
+        "media": {
+            "svg": "06e08.svg"
+        }
+    },
+    "減": {
+        "furigana": "げん",
+        "meaning": "reduction; decrease",
+        "media": {
+            "svg": "06e1b.svg"
+        }
+    },
+    "渡": {
+        "furigana": "わた",
+        "meaning": "to ferry across (e.g. a river); to carry across; to traverse",
+        "media": {
+            "svg": "06e21.svg"
+        }
+    },
+    "温": {
+        "furigana": "ぬく",
+        "meaning": "idiot; dummy; slow person",
+        "media": {
+            "svg": "06e29.svg"
+        }
+    },
+    "測": {
+        "furigana": "そく",
+        "meaning": "measurement",
+        "media": {
+            "svg": "06e2c.svg"
+        }
+    },
+    "港": {
+        "furigana": "こう",
+        "meaning": "harbour; harbor; port",
+        "media": {
+            "svg": "06e2f.svg"
+        }
+    },
+    "湖": {
+        "furigana": "はん",
+        "meaning": "lake",
+        "media": {
+            "svg": "06e56.svg"
+        }
+    },
+    "湯": {
+        "furigana": "タン",
+        "meaning": "hot water",
+        "media": {
+            "svg": "06e6f.svg"
+        }
+    },
+    "湾": {
+        "furigana": "わん",
+        "meaning": "bay; gulf; inlet",
+        "media": {
+            "svg": "06e7e.svg"
+        }
+    },
+    "湿": {
+        "furigana": "しつ",
+        "meaning": "moisture; humidity; dampness",
+        "media": {
+            "svg": "06e7f.svg"
+        }
+    },
+    "満": {
+        "furigana": "まん",
+        "meaning": "being full",
+        "media": {
+            "svg": "06e80.svg"
+        }
+    },
+    "準": {
+        "furigana": "けっ",
+        "meaning": "semi-; quasi-; associate",
+        "media": {
+            "svg": "06e96.svg"
+        }
+    },
+    "溶": {
+        "furigana": "よう",
+        "meaning": "lava",
+        "media": {
+            "svg": "06eb6.svg"
+        }
+    },
+    "滴": {
+        "furigana": "てき",
+        "meaning": "drop (e.g. of water); drip",
+        "media": {
+            "svg": "06ef4.svg"
+        }
+    },
+    "漁": {
+        "furigana": "ぎょ",
+        "meaning": "fishing; gathering seafood (e.g. clams, seaweed)",
+        "media": {
+            "svg": "06f01.svg"
+        }
+    },
+    "演": {
+        "furigana": "えん",
+        "meaning": "speech; address",
+        "media": {
+            "svg": "06f14.svg"
+        }
+    },
+    "漢": {
+        "furigana": "かん",
+        "meaning": "China",
+        "media": {
+            "svg": "06f22.svg"
+        }
+    },
+    "濃": {
+        "furigana": "のう",
+        "meaning": "dark (color)",
+        "media": {
+            "svg": "06fc3.svg"
+        }
+    },
+    "濯": {
+        "furigana": "すす",
+        "meaning": "to rinse; to wash out",
+        "media": {
+            "svg": "06fef.svg"
+        }
+    },
+    "火": {
+        "furigana": "よう",
+        "meaning": "fire; flame; blaze",
+        "media": {
+            "svg": "0706b.svg"
+        }
+    },
+    "灯": {
+        "furigana": "とう",
+        "meaning": "light; lamp; torch",
+        "media": {
+            "svg": "0706f.svg"
+        }
+    },
+    "灰": {
+        "furigana": "はい",
+        "meaning": "ash; ashes",
+        "media": {
+            "svg": "07070.svg"
+        }
+    },
+    "炭": {
+        "furigana": "すみ",
+        "meaning": "charcoal",
+        "media": {
+            "svg": "070ad.svg"
+        }
+    },
+    "点": {
+        "furigana": "てん",
+        "meaning": "dot; spot; point; speck; mark",
+        "media": {
+            "svg": "070b9.svg"
+        }
+    },
+    "無": {
+        "furigana": "げん",
+        "meaning": "nothing; naught; nought; nil; zero",
+        "media": {
+            "svg": "07121.svg"
+        }
+    },
+    "然": {
+        "furigana": "しか",
+        "meaning": "like that; as such",
+        "media": {
+            "svg": "07136.svg"
+        }
+    },
+    "焼": {
+        "furigana": "やき",
+        "meaning": "cooking, esp. frying or stir-frying; heating",
+        "media": {
+            "svg": "0713c.svg"
+        }
+    },
+    "煙": {
+        "furigana": "えん",
+        "meaning": "smoke; fumes",
+        "media": {
+            "svg": "07159.svg"
+        }
+    },
+    "照": {
+        "furigana": "めい",
+        "meaning": "illumination; lighting",
+        "media": {
+            "svg": "07167.svg"
+        }
+    },
+    "熱": {
+        "furigana": "ねつ",
+        "meaning": "heat",
+        "media": {
+            "svg": "071b1.svg"
+        }
+    },
+    "燃": {
+        "furigana": "ねん",
+        "meaning": "fuel",
+        "media": {
+            "svg": "071c3.svg"
+        }
+    },
+    "燥": {
+        "furigana": null,
+        "meaning": "to make merry; to frolic; to be in high spirits",
+        "media": {
+            "svg": "071e5.svg"
+        }
+    },
+    "爆": {
+        "furigana": "ばく",
+        "meaning": "burst of laughter; roar of laughter",
+        "media": {
+            "svg": "07206.svg"
+        }
+    },
+    "父": {
+        "furigana": "ちち",
+        "meaning": "father",
+        "media": {
+            "svg": "07236.svg"
+        }
+    },
+    "片": {
+        "furigana": "かた",
+        "meaning": "pence (monetary unit)",
+        "media": {
+            "svg": "07247.svg"
+        }
+    },
+    "版": {
+        "furigana": "はん",
+        "meaning": "edition; version; printing; impression; implementation (e.g. software)",
+        "media": {
+            "svg": "07248.svg"
+        }
+    },
+    "牛": {
+        "furigana": "うし",
+        "meaning": "cattle (Bos taurus); cow; bull; ox; calf",
+        "media": {
+            "svg": "0725b.svg"
+        }
+    },
+    "牧": {
+        "furigana": "まき",
+        "meaning": "pasture; grazing land",
+        "media": {
+            "svg": "07267.svg"
+        }
+    },
+    "物": {
+        "furigana": "もの",
+        "meaning": "thing; object; article; stuff; substance",
+        "media": {
+            "svg": "07269.svg"
+        }
+    },
+    "特": {
+        "furigana": "とく",
+        "meaning": "special; particular; extraordinary; exceptional; especial",
+        "media": {
+            "svg": "07279.svg"
+        }
+    },
+    "犬": {
+        "furigana": "いぬ",
+        "meaning": "dog (Canis (lupus) familiaris)",
+        "media": {
+            "svg": "072ac.svg"
+        }
+    },
+    "犯": {
+        "furigana": "はん",
+        "meaning": "perpetrators of (some) crime; (some type of) crime",
+        "media": {
+            "svg": "072af.svg"
+        }
+    },
+    "状": {
+        "furigana": "さま",
+        "meaning": "form; shape; appearance",
+        "media": {
+            "svg": "072b6.svg"
+        }
+    },
+    "独": {
+        "furigana": "どく",
+        "meaning": "Germany",
+        "media": {
+            "svg": "072ec.svg"
+        }
+    },
+    "狭": {
+        "furigana": "せま",
+        "meaning": "narrow; thin",
+        "media": {
+            "svg": "072ed.svg"
+        }
+    },
+    "猫": {
+        "furigana": "ねこ",
+        "meaning": "cat (esp. the domestic cat, Felis catus)",
+        "media": {
+            "svg": "0732b.svg"
+        }
+    },
+    "率": {
+        "furigana": "りつ",
+        "meaning": "rate; ratio; proportion; percentage",
+        "media": {
+            "svg": "07387.svg"
+        }
+    },
+    "玉": {
+        "furigana": "たま",
+        "meaning": "ball; sphere; globe; orb",
+        "media": {
+            "svg": "07389.svg"
+        }
+    },
+    "王": {
+        "furigana": "おう",
+        "meaning": "king; ruler; sovereign; monarch",
+        "media": {
+            "svg": "0738b.svg"
+        }
+    },
+    "珍": {
+        "furigana": "ちん",
+        "meaning": "rare",
+        "media": {
+            "svg": "073cd.svg"
+        }
+    },
+    "球": {
+        "furigana": "たま",
+        "meaning": "ball; sphere; globe; orb",
+        "media": {
+            "svg": "07403.svg"
+        }
+    },
+    "理": {
+        "furigana": "かい",
+        "meaning": "reason; principle; logic",
+        "media": {
+            "svg": "07406.svg"
+        }
+    },
+    "環": {
+        "furigana": "かん",
+        "meaning": "ring; circle; loop",
+        "media": {
+            "svg": "074b0.svg"
+        }
+    },
+    "甘": {
+        "furigana": "あま",
+        "meaning": "sweet-tasting; sweet; sugary; sugared",
+        "media": {
+            "svg": "07518.svg"
+        }
+    },
+    "生": {
+        "furigana": "なま",
+        "meaning": "raw; uncooked; fresh",
+        "media": {
+            "svg": "0751f.svg"
+        }
+    },
+    "産": {
+        "furigana": "さん",
+        "meaning": "(giving) birth; childbirth; delivery; confinement",
+        "media": {
+            "svg": "07523.svg"
+        }
+    },
+    "用": {
+        "furigana": "よう",
+        "meaning": "business; task; errand; engagement",
+        "media": {
+            "svg": "07528.svg"
+        }
+    },
+    "田": {
+        "furigana": "でん",
+        "meaning": "rice field",
+        "media": {
+            "svg": "07530.svg"
+        }
+    },
+    "由": {
+        "furigana": "よし",
+        "meaning": "reason; significance; cause",
+        "media": {
+            "svg": "07531.svg"
+        }
+    },
+    "申": {
+        "furigana": "さる",
+        "meaning": "ninth sign of the Chinese zodiac (The Monkey, 3pm-5pm, west-southwest, July)",
+        "media": {
+            "svg": "07533.svg"
+        }
+    },
+    "男": {
+        "furigana": "なん",
+        "meaning": "man; male",
+        "media": {
+            "svg": "07537.svg"
+        }
+    },
+    "町": {
+        "furigana": "まち",
+        "meaning": "town; block; neighbourhood; neighborhood",
+        "media": {
+            "svg": "0753a.svg"
+        }
+    },
+    "画": {
+        "furigana": "かく",
+        "meaning": "stroke (of a kanji, etc.)",
+        "media": {
+            "svg": "0753b.svg"
+        }
+    },
+    "界": {
+        "furigana": "かい",
+        "meaning": "border; boundary",
+        "media": {
+            "svg": "0754c.svg"
+        }
+    },
+    "畑": {
+        "furigana": "ちが",
+        "meaning": "field (for fruits, vegetables, etc.); cultivated land; vegetable plot; kitchen garden; plantation",
+        "media": {
+            "svg": "07551.svg"
+        }
+    },
+    "留": {
+        "furigana": "がく",
+        "meaning": "studying abroad",
+        "media": {
+            "svg": "07559.svg"
+        }
+    },
+    "畜": {
+        "furigana": "ちく",
+        "meaning": "beast (i.e. any animal other than man)",
+        "media": {
+            "svg": "0755c.svg"
+        }
+    },
+    "略": {
+        "furigana": "ほぼ",
+        "meaning": "almost; roughly; approximately",
+        "media": {
+            "svg": "07565.svg"
+        }
+    },
+    "番": {
+        "furigana": "ばん",
+        "meaning": "number (in a series)",
+        "media": {
+            "svg": "0756a.svg"
+        }
+    },
+    "異": {
+        "furigana": "こと",
+        "meaning": "difference (of opinion)",
+        "media": {
+            "svg": "07570.svg"
+        }
+    },
+    "畳": {
+        "furigana": "たた",
+        "meaning": "tatami mat; Japanese straw floor coverings",
+        "media": {
+            "svg": "07573.svg"
+        }
+    },
+    "疑": {
+        "furigana": "もん",
+        "meaning": "doubt; distrust; suspicion (of)",
+        "media": {
+            "svg": "07591.svg"
+        }
+    },
+    "疲": {
+        "furigana": "つか",
+        "meaning": "to get tired; to tire",
+        "media": {
+            "svg": "075b2.svg"
+        }
+    },
+    "病": {
+        "furigana": "いん",
+        "meaning": "illness; disease",
+        "media": {
+            "svg": "075c5.svg"
+        }
+    },
+    "痛": {
+        "furigana": "いた",
+        "meaning": "ouch; ow; that hurt",
+        "media": {
+            "svg": "075db.svg"
+        }
+    },
+    "療": {
+        "furigana": "ほう",
+        "meaning": "therapy; treatment; remedy; cure",
+        "media": {
+            "svg": "07642.svg"
+        }
+    },
+    "発": {
+        "furigana": "はつ",
+        "meaning": "departure; departing (from ...); departing (at time ...)",
+        "media": {
+            "svg": "0767a.svg"
+        }
+    },
+    "登": {
+        "furigana": "ざん",
+        "meaning": "mountain climbing",
+        "media": {
+            "svg": "0767b.svg"
+        }
+    },
+    "白": {
+        "furigana": "しろ",
+        "meaning": "white",
+        "media": {
+            "svg": "0767d.svg"
+        }
+    },
+    "百": {
+        "furigana": "がい",
+        "meaning": "100; hundred",
+        "media": {
+            "svg": "0767e.svg"
+        }
+    },
+    "的": {
+        "furigana": "てき",
+        "meaning": "-ical; -ish; -ive; -al; -ic; -y; -like; kind of; sort of",
+        "media": {
+            "svg": "07684.svg"
+        }
+    },
+    "皆": {
+        "furigana": "みな",
+        "meaning": "all; everyone; everybody",
+        "media": {
+            "svg": "07686.svg"
+        }
+    },
+    "皮": {
+        "furigana": "かわ",
+        "meaning": "skin; hide; pelt; fur",
+        "media": {
+            "svg": "076ae.svg"
+        }
+    },
+    "皿": {
+        "furigana": "さら",
+        "meaning": "plate; dish; platter; disc",
+        "media": {
+            "svg": "076bf.svg"
+        }
+    },
+    "盗": {
+        "furigana": "ぬす",
+        "meaning": "to steal",
+        "media": {
+            "svg": "076d7.svg"
+        }
+    },
+    "目": {
+        "furigana": "もく",
+        "meaning": "eye; eyeball",
+        "media": {
+            "svg": "076ee.svg"
+        }
+    },
+    "直": {
+        "furigana": "じき",
+        "meaning": "price; cost",
+        "media": {
+            "svg": "076f4.svg"
+        }
+    },
+    "相": {
+        "furigana": "あい",
+        "meaning": "together; mutually; fellow",
+        "media": {
+            "svg": "076f8.svg"
+        }
+    },
+    "省": {
+        "furigana": "はぶ",
+        "meaning": "ministry; department",
+        "media": {
+            "svg": "07701.svg"
+        }
+    },
+    "看": {
+        "furigana": "かん",
+        "meaning": "signboard; sign; billboard; hoarding; doorplate",
+        "media": {
+            "svg": "0770b.svg"
+        }
+    },
+    "県": {
+        "furigana": "けん",
+        "meaning": "prefecture (Japan); county (China, Taiwan, Norway, etc.); department (France); province (Italy, Spain, etc.)",
+        "media": {
+            "svg": "0770c.svg"
+        }
+    },
+    "真": {
+        "furigana": "しん",
+        "meaning": "truth; reality; genuineness",
+        "media": {
+            "svg": "0771f.svg"
+        }
+    },
+    "眠": {
+        "furigana": "ねむ",
+        "meaning": "to sleep (not necessarily lying down)",
+        "media": {
+            "svg": "07720.svg"
+        }
+    },
+    "着": {
+        "furigana": "もの",
+        "meaning": "counter for suits of clothing",
+        "media": {
+            "svg": "07740.svg"
+        }
+    },
+    "矢": {
+        "furigana": "さき",
+        "meaning": "arrow",
+        "media": {
+            "svg": "077e2.svg"
+        }
+    },
+    "知": {
+        "furigana": "しき",
+        "meaning": "wisdom",
+        "media": {
+            "svg": "077e5.svg"
+        }
+    },
+    "短": {
+        "furigana": "たん",
+        "meaning": "short; brief",
+        "media": {
+            "svg": "077ed.svg"
+        }
+    },
+    "石": {
+        "furigana": "いし",
+        "meaning": "stone",
+        "media": {
+            "svg": "077f3.svg"
+        }
+    },
+    "砂": {
+        "furigana": "すな",
+        "meaning": "sand; grit",
+        "media": {
+            "svg": "07802.svg"
+        }
+    },
+    "研": {
+        "furigana": "けん",
+        "meaning": "study; research; investigation",
+        "media": {
+            "svg": "07814.svg"
+        }
+    },
+    "破": {
+        "furigana": "かい",
+        "meaning": "(in gagaku or noh) middle section of a song",
+        "media": {
+            "svg": "07834.svg"
+        }
+    },
+    "硬": {
+        "furigana": "こう",
+        "meaning": "hardness",
+        "media": {
+            "svg": "0786c.svg"
+        }
+    },
+    "確": {
+        "furigana": "たし",
+        "meaning": "sure; certain; positive; definite",
+        "media": {
+            "svg": "078ba.svg"
+        }
+    },
+    "磨": {
+        "furigana": "みが",
+        "meaning": "to polish; to shine; to brush (e.g. teeth); to grind (e.g. lens)",
+        "media": {
+            "svg": "078e8.svg"
+        }
+    },
+    "示": {
+        "furigana": "しめ",
+        "meaning": "to (take out and) show; to demonstrate; to tell; to exemplify; to make apparent",
+        "media": {
+            "svg": "0793a.svg"
+        }
+    },
+    "礼": {
+        "furigana": "れい",
+        "meaning": "thanks; gratitude",
+        "media": {
+            "svg": "0793c.svg"
+        }
+    },
+    "社": {
+        "furigana": "しゃ",
+        "meaning": "(Shinto) shrine",
+        "media": {
+            "svg": "0793e.svg"
+        }
+    },
+    "祈": {
+        "furigana": "いの",
+        "meaning": "prayer; supplication",
+        "media": {
+            "svg": "07948.svg"
+        }
+    },
+    "祖": {
+        "furigana": "おや",
+        "meaning": "parent; parents; mother and father",
+        "media": {
+            "svg": "07956.svg"
+        }
+    },
+    "祝": {
+        "furigana": "いわ",
+        "meaning": "congratulation; congratulations; celebration; festival; congratulatory gift",
+        "media": {
+            "svg": "0795d.svg"
+        }
+    },
+    "神": {
+        "furigana": "かみ",
+        "meaning": "god; deity; divinity; spirit; kami",
+        "media": {
+            "svg": "0795e.svg"
+        }
+    },
+    "票": {
+        "furigana": "すう",
+        "meaning": "vote; ballot",
+        "media": {
+            "svg": "07968.svg"
+        }
+    },
+    "祭": {
+        "furigana": "まつ",
+        "meaning": "festival; feast",
+        "media": {
+            "svg": "0796d.svg"
+        }
+    },
+    "禁": {
+        "furigana": "きん",
+        "meaning": "ban (e.g. on smoking); prohibition",
+        "media": {
+            "svg": "07981.svg"
+        }
+    },
+    "福": {
+        "furigana": "ふく",
+        "meaning": "good fortune; happiness; blessing; good luck",
+        "media": {
+            "svg": "0798f.svg"
+        }
+    },
+    "私": {
+        "furigana": "わし",
+        "meaning": "I; me",
+        "media": {
+            "svg": "079c1.svg"
+        }
+    },
+    "秋": {
+        "furigana": "あき",
+        "meaning": "autumn; fall",
+        "media": {
+            "svg": "079cb.svg"
+        }
+    },
+    "科": {
+        "furigana": "しな",
+        "meaning": "department; section; faculty; school; arm",
+        "media": {
+            "svg": "079d1.svg"
+        }
+    },
+    "秒": {
+        "furigana": "そく",
+        "meaning": "second (unit of time)",
+        "media": {
+            "svg": "079d2.svg"
+        }
+    },
+    "移": {
+        "furigana": "みん",
+        "meaning": "emigration; immigration",
+        "media": {
+            "svg": "079fb.svg"
+        }
+    },
+    "程": {
+        "furigana": "ほど",
+        "meaning": "extent; degree; measure",
+        "media": {
+            "svg": "07a0b.svg"
+        }
+    },
+    "税": {
+        "furigana": "ぜい",
+        "meaning": "tax",
+        "media": {
+            "svg": "07a0e.svg"
+        }
+    },
+    "種": {
+        "furigana": "たね",
+        "meaning": "seed (e.g. of a plant); pip; kind; variety; quality; tone",
+        "media": {
+            "svg": "07a2e.svg"
+        }
+    },
+    "積": {
+        "furigana": "せき",
+        "meaning": "product",
+        "media": {
+            "svg": "07a4d.svg"
+        }
+    },
+    "究": {
+        "furigana": "めい",
+        "meaning": "ultimate; final; last; eventual",
+        "media": {
+            "svg": "07a76.svg"
+        }
+    },
+    "空": {
+        "furigana": "そら",
+        "meaning": "sky; the air; the heavens",
+        "media": {
+            "svg": "07a7a.svg"
+        }
+    },
+    "突": {
+        "furigana": "とつ",
+        "meaning": "very; much",
+        "media": {
+            "svg": "07a81.svg"
+        }
+    },
+    "窓": {
+        "furigana": "まど",
+        "meaning": "window",
+        "media": {
+            "svg": "07a93.svg"
+        }
+    },
+    "立": {
+        "furigana": "りっ",
+        "meaning": "to stand; to rise; to stand up",
+        "media": {
+            "svg": "07acb.svg"
+        }
+    },
+    "章": {
+        "furigana": "たこ",
+        "meaning": "chapter; section",
+        "media": {
+            "svg": "07ae0.svg"
+        }
+    },
+    "童": {
+        "furigana": "どう",
+        "meaning": "child",
+        "media": {
+            "svg": "07ae5.svg"
+        }
+    },
+    "競": {
+        "furigana": "くら",
+        "meaning": "contest; match",
+        "media": {
+            "svg": "07af6.svg"
+        }
+    },
+    "竹": {
+        "furigana": "たけ",
+        "meaning": "bamboo (any grass of subfamily Bambusoideae)",
+        "media": {
+            "svg": "07af9.svg"
+        }
+    },
+    "笑": {
+        "furigana": "わら",
+        "meaning": "laugh; laughter",
+        "media": {
+            "svg": "07b11.svg"
+        }
+    },
+    "笛": {
+        "furigana": "ふえ",
+        "meaning": "flute; fife; pipe; recorder; flageolet; shakuhachi; clarinet",
+        "media": {
+            "svg": "07b1b.svg"
+        }
+    },
+    "符": {
+        "furigana": "ごう",
+        "meaning": "charm; talisman; amulet",
+        "media": {
+            "svg": "07b26.svg"
+        }
+    },
+    "第": {
+        "furigana": "だい",
+        "meaning": "prefix for forming ordinal numbers",
+        "media": {
+            "svg": "07b2c.svg"
+        }
+    },
+    "筆": {
+        "furigana": "ふで",
+        "meaning": "writing brush; paintbrush; pen",
+        "media": {
+            "svg": "07b46.svg"
+        }
+    },
+    "等": {
+        "furigana": "など",
+        "meaning": "et cetera; etc.; and the like; and so forth",
+        "media": {
+            "svg": "07b49.svg"
+        }
+    },
+    "筒": {
+        "furigana": "つつ",
+        "meaning": "pipe; tube; cylinder",
+        "media": {
+            "svg": "07b52.svg"
+        }
+    },
+    "答": {
+        "furigana": "こた",
+        "meaning": "answer; reply; response; solution",
+        "media": {
+            "svg": "07b54.svg"
+        }
+    },
+    "算": {
+        "furigana": "さん",
+        "meaning": "divining sticks",
+        "media": {
+            "svg": "07b97.svg"
+        }
+    },
+    "管": {
+        "furigana": "かん",
+        "meaning": "pipe; tube",
+        "media": {
+            "svg": "07ba1.svg"
+        }
+    },
+    "箱": {
+        "furigana": "はこ",
+        "meaning": "box; case; chest; package; pack; crate",
+        "media": {
+            "svg": "07bb1.svg"
+        }
+    },
+    "節": {
+        "furigana": "ふし",
+        "meaning": "joint; knuckle",
+        "media": {
+            "svg": "07bc0.svg"
+        }
+    },
+    "築": {
+        "furigana": "ちく",
+        "meaning": "... years since construction; ... years old (of a building)",
+        "media": {
+            "svg": "07bc9.svg"
+        }
+    },
+    "簡": {
+        "furigana": "ふだ",
+        "meaning": "ticket; token; check; receipt",
+        "media": {
+            "svg": "07c21.svg"
+        }
+    },
+    "米": {
+        "furigana": "こめ",
+        "meaning": "metre; meter",
+        "media": {
+            "svg": "07c73.svg"
+        }
+    },
+    "粉": {
+        "furigana": "こな",
+        "meaning": "flour; meal; powder; dust",
+        "media": {
+            "svg": "07c89.svg"
+        }
+    },
+    "粒": {
+        "furigana": "つぶ",
+        "meaning": "grain; bead; drop",
+        "media": {
+            "svg": "07c92.svg"
+        }
+    },
+    "精": {
+        "furigana": "せい",
+        "meaning": "spirit; sprite; nymph",
+        "media": {
+            "svg": "07cbe.svg"
+        }
+    },
+    "糸": {
+        "furigana": "いと",
+        "meaning": "thread; yarn; string",
+        "media": {
+            "svg": "07cf8.svg"
+        }
+    },
+    "紀": {
+        "furigana": "ねん",
+        "meaning": "period",
+        "media": {
+            "svg": "07d00.svg"
+        }
+    },
+    "約": {
+        "furigana": "やく",
+        "meaning": "approximately; about",
+        "media": {
+            "svg": "07d04.svg"
+        }
+    },
+    "紅": {
+        "furigana": "あか",
+        "meaning": "red; crimson; scarlet",
+        "media": {
+            "svg": "07d05.svg"
+        }
+    },
+    "純": {
+        "furigana": "すい",
+        "meaning": "innocent; chaste; naive",
+        "media": {
+            "svg": "07d14.svg"
+        }
+    },
+    "紙": {
+        "furigana": "かみ",
+        "meaning": "paper",
+        "media": {
+            "svg": "07d19.svg"
+        }
+    },
+    "級": {
+        "furigana": "ゆう",
+        "meaning": "class (e.g. school); grade; rank",
+        "media": {
+            "svg": "07d1a.svg"
+        }
+    },
+    "細": {
+        "furigana": "ほそ",
+        "meaning": "fine thread; hempen cord",
+        "media": {
+            "svg": "07d30.svg"
+        }
+    },
+    "紹": {
+        "furigana": "かい",
+        "meaning": "introduction; presentation; referral; listing",
+        "media": {
+            "svg": "07d39.svg"
+        }
+    },
+    "終": {
+        "furigana": "つい",
+        "meaning": "the end",
+        "media": {
+            "svg": "07d42.svg"
+        }
+    },
+    "組": {
+        "furigana": "くみ",
+        "meaning": "set (of items)",
+        "media": {
+            "svg": "07d44.svg"
+        }
+    },
+    "経": {
+        "furigana": "たて",
+        "meaning": "the vertical; height",
+        "media": {
+            "svg": "07d4c.svg"
+        }
+    },
+    "結": {
+        "furigana": "けっ",
+        "meaning": "marriage",
+        "media": {
+            "svg": "07d50.svg"
+        }
+    },
+    "絡": {
+        "furigana": "から",
+        "meaning": "to entangle; to entwine",
+        "media": {
+            "svg": "07d61.svg"
+        }
+    },
+    "給": {
+        "furigana": "たま",
+        "meaning": "wage; recompense",
+        "media": {
+            "svg": "07d66.svg"
+        }
+    },
+    "絵": {
+        "furigana": "かい",
+        "meaning": "picture; drawing; painting; sketch",
+        "media": {
+            "svg": "07d75.svg"
+        }
+    },
+    "絶": {
+        "furigana": "ぜつ",
+        "meaning": "extinction; extermination",
+        "media": {
+            "svg": "07d76.svg"
+        }
+    },
+    "続": {
+        "furigana": "ぞく",
+        "meaning": "continuation; sequel",
+        "media": {
+            "svg": "07d9a.svg"
+        }
+    },
+    "綿": {
+        "furigana": "めん",
+        "meaning": "cotton",
+        "media": {
+            "svg": "07dbf.svg"
+        }
+    },
+    "総": {
+        "furigana": "そう",
+        "meaning": "whole; all; general; gross; entire; overall",
+        "media": {
+            "svg": "07dcf.svg"
+        }
+    },
+    "緑": {
+        "furigana": "ちゃ",
+        "meaning": "green",
+        "media": {
+            "svg": "07dd1.svg"
+        }
+    },
+    "緒": {
+        "furigana": "いと",
+        "meaning": "thread end",
+        "media": {
+            "svg": "07dd2.svg"
+        }
+    },
+    "線": {
+        "furigana": "せん",
+        "meaning": "line; stripe; stria",
+        "media": {
+            "svg": "07dda.svg"
+        }
+    },
+    "編": {
+        "furigana": "へん",
+        "meaning": "compilation (of a text); editing",
+        "media": {
+            "svg": "07de8.svg"
+        }
+    },
+    "練": {
+        "furigana": "れん",
+        "meaning": "practice; training; drill; (an) exercise; workout",
+        "media": {
+            "svg": "07df4.svg"
+        }
+    },
+    "績": {
+        "furigana": null,
+        "meaning": "to spin (e.g. ramie, hemp, etc.)",
+        "media": {
+            "svg": "07e3e.svg"
+        }
+    },
+    "罪": {
+        "furigana": "つみ",
+        "meaning": "crime; sin; wrongdoing; indiscretion",
+        "media": {
+            "svg": "07f6a.svg"
+        }
+    },
+    "置": {
+        "furigana": "わす",
+        "meaning": "to put; to place",
+        "media": {
+            "svg": "07f6e.svg"
+        }
+    },
+    "署": {
+        "furigana": "しょ",
+        "meaning": "station (esp. a police station); office (e.g. tax office)",
+        "media": {
+            "svg": "07f72.svg"
+        }
+    },
+    "羊": {
+        "furigana": "よう",
+        "meaning": "sheep (Ovis aries)",
+        "media": {
+            "svg": "07f8a.svg"
+        }
+    },
+    "美": {
+        "furigana": "かん",
+        "meaning": "beauty",
+        "media": {
+            "svg": "07f8e.svg"
+        }
+    },
+    "群": {
+        "furigana": "ぐん",
+        "meaning": "group; bunch; crowd; throng; swarm; band",
+        "media": {
+            "svg": "07fa4.svg"
+        }
+    },
+    "羽": {
+        "furigana": "はね",
+        "meaning": "feather; plume; down",
+        "media": {
+            "svg": "07fbd.svg"
+        }
+    },
+    "翌": {
+        "furigana": "よく",
+        "meaning": "the following; next",
+        "media": {
+            "svg": "07fcc.svg"
+        }
+    },
+    "習": {
+        "furigana": "なら",
+        "meaning": "to take lessons in; to be taught; to learn (from a teacher); to study (under a teacher); to get training in",
+        "media": {
+            "svg": "07fd2.svg"
+        }
+    },
+    "老": {
+        "furigana": "ろう",
+        "meaning": "old age; age; old people; the old; the aged; senior; elder",
+        "media": {
+            "svg": "08001.svg"
+        }
+    },
+    "考": {
+        "furigana": "こう",
+        "meaning": "thought",
+        "media": {
+            "svg": "08003.svg"
+        }
+    },
+    "者": {
+        "furigana": "もの",
+        "meaning": "person",
+        "media": {
+            "svg": "08005.svg"
+        }
+    },
+    "耕": {
+        "furigana": "こう",
+        "meaning": "to till; to plow; to plough; to cultivate",
+        "media": {
+            "svg": "08015.svg"
+        }
+    },
+    "耳": {
+        "furigana": "みみ",
+        "meaning": "ear",
+        "media": {
+            "svg": "08033.svg"
+        }
+    },
+    "聞": {
+        "furigana": "みみ",
+        "meaning": "to hear",
+        "media": {
+            "svg": "0805e.svg"
+        }
+    },
+    "職": {
+        "furigana": "しき",
+        "meaning": "job; work; employment; occupation; position",
+        "media": {
+            "svg": "08077.svg"
+        }
+    },
+    "肉": {
+        "furigana": "にく",
+        "meaning": "flesh",
+        "media": {
+            "svg": "08089.svg"
+        }
+    },
+    "肌": {
+        "furigana": "はだ",
+        "meaning": "skin",
+        "media": {
+            "svg": "0808c.svg"
+        }
+    },
+    "肩": {
+        "furigana": "かた",
+        "meaning": "shoulder",
+        "media": {
+            "svg": "080a9.svg"
+        }
+    },
+    "肯": {
+        "furigana": "こう",
+        "meaning": "affirmation",
+        "media": {
+            "svg": "080af.svg"
+        }
+    },
+    "育": {
+        "furigana": "そだ",
+        "meaning": "to raise; to rear; to bring up",
+        "media": {
+            "svg": "080b2.svg"
+        }
+    },
+    "胃": {
+        "furigana": "つう",
+        "meaning": "stomach",
+        "media": {
+            "svg": "080c3.svg"
+        }
+    },
+    "背": {
+        "furigana": "せい",
+        "meaning": "back; spine",
+        "media": {
+            "svg": "080cc.svg"
+        }
+    },
+    "胸": {
+        "furigana": "むね",
+        "meaning": "chest; breast",
+        "media": {
+            "svg": "080f8.svg"
+        }
+    },
+    "能": {
+        "furigana": "のう",
+        "meaning": "talent; gift; function",
+        "media": {
+            "svg": "080fd.svg"
+        }
+    },
+    "脂": {
+        "furigana": "やに",
+        "meaning": "fat; tallow; lard; grease",
+        "media": {
+            "svg": "08102.svg"
+        }
+    },
+    "脈": {
+        "furigana": "はく",
+        "meaning": "pulse",
+        "media": {
+            "svg": "08108.svg"
+        }
+    },
+    "脳": {
+        "furigana": "のう",
+        "meaning": "brain",
+        "media": {
+            "svg": "08133.svg"
+        }
+    },
+    "腕": {
+        "furigana": "うで",
+        "meaning": "arm",
+        "media": {
+            "svg": "08155.svg"
+        }
+    },
+    "腰": {
+        "furigana": "こし",
+        "meaning": "back; lower back; waist; hips; lumbar region",
+        "media": {
+            "svg": "08170.svg"
+        }
+    },
+    "腸": {
+        "furigana": "えん",
+        "meaning": "guts; bowels; intestines",
+        "media": {
+            "svg": "08178.svg"
+        }
+    },
+    "腹": {
+        "furigana": "はら",
+        "meaning": "abdomen; belly; stomach",
+        "media": {
+            "svg": "08179.svg"
+        }
+    },
+    "膚": {
+        "furigana": "はだ",
+        "meaning": "skin",
+        "media": {
+            "svg": "0819a.svg"
+        }
+    },
+    "臓": {
+        "furigana": "ぞう",
+        "meaning": "viscera; bowels",
+        "media": {
+            "svg": "081d3.svg"
+        }
+    },
+    "臣": {
+        "furigana": "おみ",
+        "meaning": "retainer; attendant",
+        "media": {
+            "svg": "081e3.svg"
+        }
+    },
+    "自": {
+        "furigana": "てん",
+        "meaning": "self-",
+        "media": {
+            "svg": "081ea.svg"
+        }
+    },
+    "舞": {
+        "furigana": "まい",
+        "meaning": "dancing; dance",
+        "media": {
+            "svg": "0821e.svg"
+        }
+    },
+    "舟": {
+        "furigana": "ふね",
+        "meaning": "ship; boat; watercraft; vessel; steamship",
+        "media": {
+            "svg": "0821f.svg"
+        }
+    },
+    "航": {
+        "furigana": "こう",
+        "meaning": "aviation; flying",
+        "media": {
+            "svg": "0822a.svg"
+        }
+    },
+    "般": {
+        "furigana": "はん",
+        "meaning": "prajna; wisdom required to attain enlightenment",
+        "media": {
+            "svg": "0822c.svg"
+        }
+    },
+    "船": {
+        "furigana": "ふね",
+        "meaning": "ship; boat; watercraft; vessel; steamship",
+        "media": {
+            "svg": "08239.svg"
+        }
+    },
+    "良": {
+        "furigana": "しん",
+        "meaning": "good (quality, condition, etc.)",
+        "media": {
+            "svg": "0826f.svg"
+        }
+    },
+    "色": {
+        "furigana": "いろ",
+        "meaning": "colour; color; hue; tint; tinge; shade",
+        "media": {
+            "svg": "08272.svg"
+        }
+    },
+    "花": {
+        "furigana": "はな",
+        "meaning": "flower; blossom; bloom; petal",
+        "media": {
+            "svg": "082b1.svg"
+        }
+    },
+    "芸": {
+        "furigana": "げい",
+        "meaning": "art; craft; accomplishment; artistic skill; technique; performance",
+        "media": {
+            "svg": "082b8.svg"
+        }
+    },
+    "芽": {
+        "furigana": "はぎ",
+        "meaning": "sprout",
+        "media": {
+            "svg": "082bd.svg"
+        }
+    },
+    "若": {
+        "furigana": "わか",
+        "meaning": "youth",
+        "media": {
+            "svg": "082e5.svg"
+        }
+    },
+    "苦": {
+        "furigana": "にが",
+        "meaning": "pain; anguish; suffering; distress; anxiety; worry; trouble; difficulty; hardship",
+        "media": {
+            "svg": "082e6.svg"
+        }
+    },
+    "英": {
+        "furigana": "えい",
+        "meaning": "Britain; British",
+        "media": {
+            "svg": "082f1.svg"
+        }
+    },
+    "茶": {
+        "furigana": "ちゃ",
+        "meaning": "tea",
+        "media": {
+            "svg": "08336.svg"
+        }
+    },
+    "草": {
+        "furigana": "くさ",
+        "meaning": "grass; weed; herb; thatch",
+        "media": {
+            "svg": "08349.svg"
+        }
+    },
+    "荒": {
+        "furigana": "あら",
+        "meaning": "remaining bony parts (of a fish after filleting)",
+        "media": {
+            "svg": "08352.svg"
+        }
+    },
+    "荷": {
+        "furigana": "もつ",
+        "meaning": "load; baggage; cargo; freight; goods",
+        "media": {
+            "svg": "08377.svg"
+        }
+    },
+    "菓": {
+        "furigana": "ざら",
+        "meaning": "fruit",
+        "media": {
+            "svg": "083d3.svg"
+        }
+    },
+    "菜": {
+        "furigana": "さい",
+        "meaning": "side dish",
+        "media": {
+            "svg": "083dc.svg"
+        }
+    },
+    "落": {
+        "furigana": "らく",
+        "meaning": "slip; omission",
+        "media": {
+            "svg": "0843d.svg"
+        }
+    },
+    "葉": {
+        "furigana": "よう",
+        "meaning": "leaf; blade (of grass); (pine) needle",
+        "media": {
+            "svg": "08449.svg"
+        }
+    },
+    "著": {
+        "furigana": "ちょ",
+        "meaning": "work; book",
+        "media": {
+            "svg": "08457.svg"
+        }
+    },
+    "蒸": {
+        "furigana": "はつ",
+        "meaning": "steam; vapour; vapor",
+        "media": {
+            "svg": "084b8.svg"
+        }
+    },
+    "蔵": {
+        "furigana": "くら",
+        "meaning": "warehouse; storehouse; cellar; magazine; granary; godown; depository; treasury; elevator",
+        "media": {
+            "svg": "08535.svg"
+        }
+    },
+    "薄": {
+        "furigana": "うす",
+        "meaning": "Japanese pampas grass (Miscanthus sinensis); maiden silvergrass; zebra grass",
+        "media": {
+            "svg": "08584.svg"
+        }
+    },
+    "薬": {
+        "furigana": "やく",
+        "meaning": "medicine; pharmaceuticals; (legal) drugs; pill; ointment; salve",
+        "media": {
+            "svg": "085ac.svg"
+        }
+    },
+    "虫": {
+        "furigana": "むし",
+        "meaning": "insect; bug; cricket; moth",
+        "media": {
+            "svg": "0866b.svg"
+        }
+    },
+    "血": {
+        "furigana": "けつ",
+        "meaning": "blood; consanguinity",
+        "media": {
+            "svg": "08840.svg"
+        }
+    },
+    "行": {
+        "furigana": "こう",
+        "meaning": "line (of text); row; verse",
+        "media": {
+            "svg": "0884c.svg"
+        }
+    },
+    "術": {
+        "furigana": "すべ",
+        "meaning": "art; technique",
+        "media": {
+            "svg": "08853.svg"
+        }
+    },
+    "街": {
+        "furigana": "まち",
+        "meaning": "town; block; neighbourhood; neighborhood",
+        "media": {
+            "svg": "08857.svg"
+        }
+    },
+    "衣": {
+        "furigana": "きぬ",
+        "meaning": "clothes; garment",
+        "media": {
+            "svg": "08863.svg"
+        }
+    },
+    "袋": {
+        "furigana": "たい",
+        "meaning": "bag; sack; pouch",
+        "media": {
+            "svg": "0888b.svg"
+        }
+    },
+    "被": {
+        "furigana": "おお",
+        "meaning": "indicates the target of an activity; -ee (e.g. employee, examinee, trustee)",
+        "media": {
+            "svg": "088ab.svg"
+        }
+    },
+    "装": {
+        "furigana": "そう",
+        "meaning": "clothing; dressing",
+        "media": {
+            "svg": "088c5.svg"
+        }
+    },
+    "裏": {
+        "furigana": "うら",
+        "meaning": "opposite side; bottom; other side; side hidden from view; undersurface; reverse side",
+        "media": {
+            "svg": "088cf.svg"
+        }
+    },
+    "補": {
+        "furigana": "じょ",
+        "meaning": "assistant ...; probationary ...",
+        "media": {
+            "svg": "088dc.svg"
+        }
+    },
+    "製": {
+        "furigana": "せい",
+        "meaning": "-made; make",
+        "media": {
+            "svg": "088fd.svg"
+        }
+    },
+    "複": {
+        "furigana": "ふく",
+        "meaning": "compound; composite; multiple; re-; bi-",
+        "media": {
+            "svg": "08907.svg"
+        }
+    },
+    "西": {
+        "furigana": "にし",
+        "meaning": "west",
+        "media": {
+            "svg": "0897f.svg"
+        }
+    },
+    "要": {
+        "furigana": "よう",
+        "meaning": "pivot",
+        "media": {
+            "svg": "08981.svg"
+        }
+    },
+    "見": {
+        "furigana": "けん",
+        "meaning": "looking; viewing",
+        "media": {
+            "svg": "0898b.svg"
+        }
+    },
+    "規": {
+        "furigana": "そく",
+        "meaning": "rule; regulation",
+        "media": {
+            "svg": "0898f.svg"
+        }
+    },
+    "覚": {
+        "furigana": "おぼ",
+        "meaning": "Satori; folklore monster that can read minds",
+        "media": {
+            "svg": "0899a.svg"
+        }
+    },
+    "親": {
+        "furigana": "おや",
+        "meaning": "parent; parents; mother and father",
+        "media": {
+            "svg": "089aa.svg"
+        }
+    },
+    "観": {
+        "furigana": "かん",
+        "meaning": "look; appearance",
+        "media": {
+            "svg": "089b3.svg"
+        }
+    },
+    "角": {
+        "furigana": "かく",
+        "meaning": "angle",
+        "media": {
+            "svg": "089d2.svg"
+        }
+    },
+    "解": {
+        "furigana": "かい",
+        "meaning": "solution (of an equation, inequality, etc.); root (e.g. of a polynomial)",
+        "media": {
+            "svg": "089e3.svg"
+        }
+    },
+    "触": {
+        "furigana": "そく",
+        "meaning": "proclamation; official notice",
+        "media": {
+            "svg": "089e6.svg"
+        }
+    },
+    "言": {
+        "furigana": "げん",
+        "meaning": "word; remark; statement",
+        "media": {
+            "svg": "08a00.svg"
+        }
+    },
+    "計": {
+        "furigana": "けい",
+        "meaning": "plan",
+        "media": {
+            "svg": "08a08.svg"
+        }
+    },
+    "訓": {
+        "furigana": "おし",
+        "meaning": "teaching; instruction; teachings; precept; lesson; doctrine",
+        "media": {
+            "svg": "08a13.svg"
+        }
+    },
+    "記": {
+        "furigana": "ろく",
+        "meaning": "account; history; chronicle; annals; record",
+        "media": {
+            "svg": "08a18.svg"
+        }
+    },
+    "訪": {
+        "furigana": "たず",
+        "meaning": "to visit; to call on; to pay a visit to",
+        "media": {
+            "svg": "08a2a.svg"
+        }
+    },
+    "設": {
+        "furigana": "せっ",
+        "meaning": "establishment; creation; posing (a problem); setting (movie, novel, etc.); scene",
+        "media": {
+            "svg": "08a2d.svg"
+        }
+    },
+    "許": {
+        "furigana": "ばか",
+        "meaning": "only; merely; nothing but; no more than",
+        "media": {
+            "svg": "08a31.svg"
+        }
+    },
+    "評": {
+        "furigana": "ばん",
+        "meaning": "criticism; commentary; review",
+        "media": {
+            "svg": "08a55.svg"
+        }
+    },
+    "詞": {
+        "furigana": "こと",
+        "meaning": "language; dialect",
+        "media": {
+            "svg": "08a5e.svg"
+        }
+    },
+    "試": {
+        "furigana": "けん",
+        "meaning": "testing; experiment; test; examination; exam; trial",
+        "media": {
+            "svg": "08a66.svg"
+        }
+    },
+    "詩": {
+        "furigana": "うた",
+        "meaning": "poem; verse of poetry",
+        "media": {
+            "svg": "08a69.svg"
+        }
+    },
+    "詰": {
+        "furigana": "つま",
+        "meaning": "stuffing; packing",
+        "media": {
+            "svg": "08a70.svg"
+        }
+    },
+    "話": {
+        "furigana": "だい",
+        "meaning": "talk; speech; chat; conversation",
+        "media": {
+            "svg": "08a71.svg"
+        }
+    },
+    "誌": {
+        "furigana": "しる",
+        "meaning": "magazine",
+        "media": {
+            "svg": "08a8c.svg"
+        }
+    },
+    "認": {
+        "furigana": "にん",
+        "meaning": "recognition; awareness; perception; understanding; knowledge; cognition; cognizance; cognisance",
+        "media": {
+            "svg": "08a8d.svg"
+        }
+    },
+    "語": {
+        "furigana": "かた",
+        "meaning": "language",
+        "media": {
+            "svg": "08a9e.svg"
+        }
+    },
+    "誤": {
+        "furigana": "かい",
+        "meaning": "mistake; error",
+        "media": {
+            "svg": "08aa4.svg"
+        }
+    },
+    "説": {
+        "furigana": "せつ",
+        "meaning": "theory; doctrine",
+        "media": {
+            "svg": "08aac.svg"
+        }
+    },
+    "読": {
+        "furigana": "どく",
+        "meaning": "reading",
+        "media": {
+            "svg": "08aad.svg"
+        }
+    },
+    "課": {
+        "furigana": "もく",
+        "meaning": "lesson",
+        "media": {
+            "svg": "08ab2.svg"
+        }
+    },
+    "調": {
+        "furigana": "てい",
+        "meaning": "pitch; tone; key",
+        "media": {
+            "svg": "08abf.svg"
+        }
+    },
+    "談": {
+        "furigana": "だん",
+        "meaning": "talk; story; conversation",
+        "media": {
+            "svg": "08ac7.svg"
+        }
+    },
+    "論": {
+        "furigana": "ろん",
+        "meaning": "argument; discussion; dispute; controversy; discourse; debate",
+        "media": {
+            "svg": "08ad6.svg"
+        }
+    },
+    "諸": {
+        "furigana": "しょ",
+        "meaning": "various; many; several",
+        "media": {
+            "svg": "08af8.svg"
+        }
+    },
+    "講": {
+        "furigana": "こう",
+        "meaning": "(Buddhist) lecture meeting",
+        "media": {
+            "svg": "08b1b.svg"
+        }
+    },
+    "識": {
+        "furigana": "しき",
+        "meaning": "acquaintanceship",
+        "media": {
+            "svg": "08b58.svg"
+        }
+    },
+    "警": {
+        "furigana": "けい",
+        "meaning": "police",
+        "media": {
+            "svg": "08b66.svg"
+        }
+    },
+    "議": {
+        "furigana": "かい",
+        "meaning": "discussion; deliberation",
+        "media": {
+            "svg": "08b70.svg"
+        }
+    },
+    "谷": {
+        "furigana": "たに",
+        "meaning": "valley",
+        "media": {
+            "svg": "08c37.svg"
+        }
+    },
+    "豆": {
+        "furigana": "まめ",
+        "meaning": "legume (esp. edible legumes or their seeds, such as beans, peas, pulses, etc.); beans; peas",
+        "media": {
+            "svg": "08c46.svg"
+        }
+    },
+    "豊": {
+        "furigana": "ゆた",
+        "meaning": "abundant; wealthy; plentiful; rich; affluent",
+        "media": {
+            "svg": "08c4a.svg"
+        }
+    },
+    "象": {
+        "furigana": "ぞう",
+        "meaning": "elephant (Elephantidae spp.)",
+        "media": {
+            "svg": "08c61.svg"
+        }
+    },
+    "貝": {
+        "furigana": "かい",
+        "meaning": "shellfish",
+        "media": {
+            "svg": "08c9d.svg"
+        }
+    },
+    "負": {
+        "furigana": "おい",
+        "meaning": "negative; minus",
+        "media": {
+            "svg": "08ca0.svg"
+        }
+    },
+    "財": {
+        "furigana": "ざい",
+        "meaning": "fortune; riches",
+        "media": {
+            "svg": "08ca1.svg"
+        }
+    },
+    "貧": {
+        "furigana": "ひん",
+        "meaning": "poverty; penury; want; need",
+        "media": {
+            "svg": "08ca7.svg"
+        }
+    },
+    "貨": {
+        "furigana": "もつ",
+        "meaning": "treasure",
+        "media": {
+            "svg": "08ca8.svg"
+        }
+    },
+    "販": {
+        "furigana": "はん",
+        "meaning": "sales; selling; marketing",
+        "media": {
+            "svg": "08ca9.svg"
+        }
+    },
+    "責": {
+        "furigana": "せき",
+        "meaning": "responsibility; duty; obligation",
+        "media": {
+            "svg": "08cac.svg"
+        }
+    },
+    "貯": {
+        "furigana": "ちょ",
+        "meaning": "putting money aside; savings; deposit (e.g. in a bank)",
+        "media": {
+            "svg": "08caf.svg"
+        }
+    },
+    "買": {
+        "furigana": "もの",
+        "meaning": "shopping; purchased goods",
+        "media": {
+            "svg": "08cb7.svg"
+        }
+    },
+    "貸": {
+        "furigana": "かし",
+        "meaning": "loan; lending",
+        "media": {
+            "svg": "08cb8.svg"
+        }
+    },
+    "費": {
+        "furigana": "よう",
+        "meaning": "cost; expense",
+        "media": {
+            "svg": "08cbb.svg"
+        }
+    },
+    "貿": {
+        "furigana": "ぼう",
+        "meaning": "trade (foreign)",
+        "media": {
+            "svg": "08cbf.svg"
+        }
+    },
+    "賃": {
+        "furigana": "ちん",
+        "meaning": "wages",
+        "media": {
+            "svg": "08cc3.svg"
+        }
+    },
+    "資": {
+        "furigana": "かく",
+        "meaning": "funds; capital",
+        "media": {
+            "svg": "08cc7.svg"
+        }
+    },
+    "賛": {
+        "furigana": "さん",
+        "meaning": "praise; tribute",
+        "media": {
+            "svg": "08cdb.svg"
+        }
+    },
+    "賞": {
+        "furigana": "きん",
+        "meaning": "prize; award",
+        "media": {
+            "svg": "08cde.svg"
+        }
+    },
+    "賢": {
+        "furigana": "けん",
+        "meaning": "intelligence; genius; scholarship; virtue",
+        "media": {
+            "svg": "08ce2.svg"
+        }
+    },
+    "質": {
+        "furigana": "しつ",
+        "meaning": "quality; value",
+        "media": {
+            "svg": "08cea.svg"
+        }
+    },
+    "贈": {
+        "furigana": "おく",
+        "meaning": "present; gift",
+        "media": {
+            "svg": "08d08.svg"
+        }
+    },
+    "赤": {
+        "furigana": "あか",
+        "meaning": "red; crimson; scarlet",
+        "media": {
+            "svg": "08d64.svg"
+        }
+    },
+    "走": {
+        "furigana": "そう",
+        "meaning": "run; race",
+        "media": {
+            "svg": "08d70.svg"
+        }
+    },
+    "起": {
+        "furigana": "げん",
+        "meaning": "source; origin; cause; beginning; genesis",
+        "media": {
+            "svg": "08d77.svg"
+        }
+    },
+    "超": {
+        "furigana": "えつ",
+        "meaning": "super-; ultra-; hyper-; extreme",
+        "media": {
+            "svg": "08d85.svg"
+        }
+    },
+    "越": {
+        "furigana": "えつ",
+        "meaning": "Yue; kingdom in ancient China (6th C-334 BCE)",
+        "media": {
+            "svg": "08d8a.svg"
+        }
+    },
+    "足": {
+        "furigana": "あし",
+        "meaning": "foot; paw; arm (of an octopus, squid, etc.)",
+        "media": {
+            "svg": "08db3.svg"
+        }
+    },
+    "路": {
+        "furigana": "みち",
+        "meaning": "road; path; street; lane; passage",
+        "media": {
+            "svg": "08def.svg"
+        }
+    },
+    "踊": {
+        "furigana": "おど",
+        "meaning": "dance",
+        "media": {
+            "svg": "08e0a.svg"
+        }
+    },
+    "身": {
+        "furigana": "かた",
+        "meaning": "body",
+        "media": {
+            "svg": "08eab.svg"
+        }
+    },
+    "車": {
+        "furigana": "しゃ",
+        "meaning": "car; automobile; vehicle",
+        "media": {
+            "svg": "08eca.svg"
+        }
+    },
+    "軍": {
+        "furigana": "ぐん",
+        "meaning": "army; armed forces; troops",
+        "media": {
+            "svg": "08ecd.svg"
+        }
+    },
+    "軒": {
+        "furigana": "のき",
+        "meaning": "eaves",
+        "media": {
+            "svg": "08ed2.svg"
+        }
+    },
+    "軟": {
+        "furigana": "なん",
+        "meaning": "soft",
+        "media": {
+            "svg": "08edf.svg"
+        }
+    },
+    "転": {
+        "furigana": "てん",
+        "meaning": "more and more; increasingly; all the more",
+        "media": {
+            "svg": "08ee2.svg"
+        }
+    },
+    "軽": {
+        "furigana": "けい",
+        "meaning": "light (e.g. aircraft, truck)",
+        "media": {
+            "svg": "08efd.svg"
+        }
+    },
+    "較": {
+        "furigana": "くら",
+        "meaning": "to compare; to make a comparison",
+        "media": {
+            "svg": "08f03.svg"
+        }
+    },
+    "輪": {
+        "furigana": "りん",
+        "meaning": "ring; circle; loop",
+        "media": {
+            "svg": "08f2a.svg"
+        }
+    },
+    "輸": {
+        "furigana": "けつ",
+        "meaning": "import; importation; introduction",
+        "media": {
+            "svg": "08f38.svg"
+        }
+    },
+    "辛": {
+        "furigana": "かろ",
+        "meaning": "8th in rank; eighth sign of the Chinese calendar",
+        "media": {
+            "svg": "08f9b.svg"
+        }
+    },
+    "辞": {
+        "furigana": "こと",
+        "meaning": "language; dialect",
+        "media": {
+            "svg": "08f9e.svg"
+        }
+    },
+    "農": {
+        "furigana": "のう",
+        "meaning": "farming; agriculture",
+        "media": {
+            "svg": "08fb2.svg"
+        }
+    },
+    "辺": {
+        "furigana": "へん",
+        "meaning": "area; vicinity; region",
+        "media": {
+            "svg": "08fba.svg"
+        }
+    },
+    "込": {
+        "furigana": null,
+        "meaning": "to be crowded; to be packed",
+        "media": {
+            "svg": "08fbc.svg"
+        }
+    },
+    "迎": {
+        "furigana": "むか",
+        "meaning": "to go out to meet",
+        "media": {
+            "svg": "08fce.svg"
+        }
+    },
+    "近": {
+        "furigana": "ちか",
+        "meaning": "near; close; short (distance)",
+        "media": {
+            "svg": "08fd1.svg"
+        }
+    },
+    "返": {
+        "furigana": "へん",
+        "meaning": "number of times",
+        "media": {
+            "svg": "08fd4.svg"
+        }
+    },
+    "述": {
+        "furigana": "どう",
+        "meaning": "dictation; verbal statement",
+        "media": {
+            "svg": "08ff0.svg"
+        }
+    },
+    "迷": {
+        "furigana": "めい",
+        "meaning": "superstition; superstitious belief",
+        "media": {
+            "svg": "08ff7.svg"
+        }
+    },
+    "追": {
+        "furigana": "つい",
+        "meaning": "to catch up (with); to draw level; to pull even; to reach",
+        "media": {
+            "svg": "08ffd.svg"
+        }
+    },
+    "退": {
+        "furigana": "たい",
+        "meaning": "tedium; boredom; dullness",
+        "media": {
+            "svg": "09000.svg"
+        }
+    },
+    "送": {
+        "furigana": "おく",
+        "meaning": "to send (a thing); to dispatch; to despatch; to transmit",
+        "media": {
+            "svg": "09001.svg"
+        }
+    },
+    "逃": {
+        "furigana": "のが",
+        "meaning": "to escape; to run away",
+        "media": {
+            "svg": "09003.svg"
+        }
+    },
+    "逆": {
+        "furigana": "さか",
+        "meaning": "reverse; opposite",
+        "media": {
+            "svg": "09006.svg"
+        }
+    },
+    "途": {
+        "furigana": "みち",
+        "meaning": "road; path; street; lane; passage",
+        "media": {
+            "svg": "09014.svg"
+        }
+    },
+    "通": {
+        "furigana": "つう",
+        "meaning": "connoisseur; authority",
+        "media": {
+            "svg": "0901a.svg"
+        }
+    },
+    "速": {
+        "furigana": "そく",
+        "meaning": "gear; speed (e.g. 4-speed transmission)",
+        "media": {
+            "svg": "0901f.svg"
+        }
+    },
+    "造": {
+        "furigana": "つく",
+        "meaning": "to make; to produce; to manufacture; to build; to construct",
+        "media": {
+            "svg": "09020.svg"
+        }
+    },
+    "連": {
+        "furigana": "れん",
+        "meaning": "two reams (of paper); 1000 sheets (of paper)",
+        "media": {
+            "svg": "09023.svg"
+        }
+    },
+    "週": {
+        "furigana": "かん",
+        "meaning": "week",
+        "media": {
+            "svg": "09031.svg"
+        }
+    },
+    "進": {
+        "furigana": "しん",
+        "meaning": "progress; advance; improvement; development",
+        "media": {
+            "svg": "09032.svg"
+        }
+    },
+    "遅": {
+        "furigana": "おそ",
+        "meaning": "slow; time-consuming; sluggish",
+        "media": {
+            "svg": "09045.svg"
+        }
+    },
+    "遊": {
+        "furigana": "あそ",
+        "meaning": "playing",
+        "media": {
+            "svg": "0904a.svg"
+        }
+    },
+    "運": {
+        "furigana": "うん",
+        "meaning": "fortune; luck",
+        "media": {
+            "svg": "0904b.svg"
+        }
+    },
+    "過": {
+        "furigana": "しつ",
+        "meaning": "surplus- (attaches to start of Sino-Japanese words); excess-; over-",
+        "media": {
+            "svg": "0904e.svg"
+        }
+    },
+    "道": {
+        "furigana": "みち",
+        "meaning": "road; path; street; lane; passage",
+        "media": {
+            "svg": "09053.svg"
+        }
+    },
+    "達": {
+        "furigana": "たち",
+        "meaning": "pluralizing suffix (esp. for people and animals; formerly honorific)",
+        "media": {
+            "svg": "09054.svg"
+        }
+    },
+    "違": {
+        "furigana": "ちが",
+        "meaning": "to differ (from); to vary",
+        "media": {
+            "svg": "09055.svg"
+        }
+    },
+    "遠": {
+        "furigana": "とお",
+        "meaning": "distant",
+        "media": {
+            "svg": "09060.svg"
+        }
+    },
+    "適": {
+        "furigana": "たま",
+        "meaning": "occasionally; once in a while; seldom",
+        "media": {
+            "svg": "09069.svg"
+        }
+    },
+    "選": {
+        "furigana": "せん",
+        "meaning": "selection; choice; choosing; picking; election",
+        "media": {
+            "svg": "09078.svg"
+        }
+    },
+    "郊": {
+        "furigana": "こう",
+        "meaning": "suburb; residential area on the outskirt of a city; commuter belt",
+        "media": {
+            "svg": "090ca.svg"
+        }
+    },
+    "郡": {
+        "furigana": "ぐん",
+        "meaning": "district; county",
+        "media": {
+            "svg": "090e1.svg"
+        }
+    },
+    "部": {
+        "furigana": "へや",
+        "meaning": "department (in an organization); division; bureau",
+        "media": {
+            "svg": "090e8.svg"
+        }
+    },
+    "郵": {
+        "furigana": "ゆう",
+        "meaning": "post office",
+        "media": {
+            "svg": "090f5.svg"
+        }
+    },
+    "都": {
+        "furigana": "ごう",
+        "meaning": "capital; metropolis; seat of government",
+        "media": {
+            "svg": "090fd.svg"
+        }
+    },
+    "配": {
+        "furigana": "はい",
+        "meaning": "delivery",
+        "media": {
+            "svg": "0914d.svg"
+        }
+    },
+    "酒": {
+        "furigana": "さけ",
+        "meaning": "alcohol; sake",
+        "media": {
+            "svg": "09152.svg"
+        }
+    },
+    "里": {
+        "furigana": "さと",
+        "meaning": "Japanese league; ri; old Japanese unit of distance, approx. 3.927km or 2.44 miles",
+        "media": {
+            "svg": "091cc.svg"
+        }
+    },
+    "重": {
+        "furigana": "おも",
+        "meaning": "jūbako; multi-tiered food box",
+        "media": {
+            "svg": "091cd.svg"
+        }
+    },
+    "野": {
+        "furigana": "さい",
+        "meaning": "plain; field",
+        "media": {
+            "svg": "091ce.svg"
+        }
+    },
+    "量": {
+        "furigana": "はか",
+        "meaning": "quantity; amount; volume; capacity; portion (of food)",
+        "media": {
+            "svg": "091cf.svg"
+        }
+    },
+    "金": {
+        "furigana": "おう",
+        "meaning": "gold (Au)",
+        "media": {
+            "svg": "091d1.svg"
+        }
+    },
+    "針": {
+        "furigana": "はり",
+        "meaning": "needle; pin",
+        "media": {
+            "svg": "091dd.svg"
+        }
+    },
+    "鈍": {
+        "furigana": "どん",
+        "meaning": "dull; slow; stupid; dull-brained",
+        "media": {
+            "svg": "0920d.svg"
+        }
+    },
+    "鉄": {
+        "furigana": "てつ",
+        "meaning": "iron (Fe)",
+        "media": {
+            "svg": "09244.svg"
+        }
+    },
+    "鉱": {
+        "furigana": "あら",
+        "meaning": "ore",
+        "media": {
+            "svg": "09271.svg"
+        }
+    },
+    "銀": {
+        "furigana": "ぎん",
+        "meaning": "silver (Ag)",
+        "media": {
+            "svg": "09280.svg"
+        }
+    },
+    "銅": {
+        "furigana": "どう",
+        "meaning": "copper (Cu)",
+        "media": {
+            "svg": "09285.svg"
+        }
+    },
+    "鋭": {
+        "furigana": "えい",
+        "meaning": "sharpness",
+        "media": {
+            "svg": "092ed.svg"
+        }
+    },
+    "録": {
+        "furigana": "ろく",
+        "meaning": "record; transcript",
+        "media": {
+            "svg": "09332.svg"
+        }
+    },
+    "鏡": {
+        "furigana": "だい",
+        "meaning": "mirror; looking-glass",
+        "media": {
+            "svg": "093e1.svg"
+        }
+    },
+    "長": {
+        "furigana": "たけ",
+        "meaning": "height; stature",
+        "media": {
+            "svg": "09577.svg"
+        }
+    },
+    "門": {
+        "furigana": "もん",
+        "meaning": "door (esp. Japanese-style)",
+        "media": {
+            "svg": "09580.svg"
+        }
+    },
+    "閉": {
+        "furigana": "へい",
+        "meaning": "to close; to shut",
+        "media": {
+            "svg": "09589.svg"
+        }
+    },
+    "開": {
+        "furigana": "ひら",
+        "meaning": "to open (a door, etc.); to unwrap (e.g. parcel, package); to unlock",
+        "media": {
+            "svg": "0958b.svg"
+        }
+    },
+    "間": {
+        "furigana": "かん",
+        "meaning": "space (between); gap; interval; distance",
+        "media": {
+            "svg": "09593.svg"
+        }
+    },
+    "関": {
+        "furigana": "せき",
+        "meaning": "barrier; gate",
+        "media": {
+            "svg": "095a2.svg"
+        }
+    },
+    "防": {
+        "furigana": "ふせ",
+        "meaning": "to defend against; to protect against",
+        "media": {
+            "svg": "09632.svg"
+        }
+    },
+    "降": {
+        "furigana": "くだ",
+        "meaning": "to descend (e.g. a mountain); to go down; to come down",
+        "media": {
+            "svg": "0964d.svg"
+        }
+    },
+    "限": {
+        "furigana": "かぎ",
+        "meaning": "end; finish; stop",
+        "media": {
+            "svg": "09650.svg"
+        }
+    },
+    "院": {
+        "furigana": "いん",
+        "meaning": "house of parliament (congress, diet, etc.)",
+        "media": {
+            "svg": "09662.svg"
+        }
+    },
+    "除": {
+        "furigana": "じょ",
+        "meaning": "division",
+        "media": {
+            "svg": "09664.svg"
+        }
+    },
+    "陸": {
+        "furigana": "りく",
+        "meaning": "land; shore",
+        "media": {
+            "svg": "09678.svg"
+        }
+    },
+    "険": {
+        "furigana": "けん",
+        "meaning": "steepness; steep place",
+        "media": {
+            "svg": "0967a.svg"
+        }
+    },
+    "陽": {
+        "furigana": "よう",
+        "meaning": "day; days",
+        "media": {
+            "svg": "0967d.svg"
+        }
+    },
+    "隅": {
+        "furigana": "すみ",
+        "meaning": "corner; nook; recess",
+        "media": {
+            "svg": "09685.svg"
+        }
+    },
+    "隊": {
+        "furigana": "たい",
+        "meaning": "party; group; crew; team; body",
+        "media": {
+            "svg": "0968a.svg"
+        }
+    },
+    "階": {
+        "furigana": "かい",
+        "meaning": "storey; story; floor",
+        "media": {
+            "svg": "0968e.svg"
+        }
+    },
+    "際": {
+        "furigana": "さい",
+        "meaning": "on the occasion of; circumstances; juncture",
+        "media": {
+            "svg": "0969b.svg"
+        }
+    },
+    "集": {
+        "furigana": "だん",
+        "meaning": "collection; compilation",
+        "media": {
+            "svg": "096c6.svg"
+        }
+    },
+    "雇": {
+        "furigana": "やと",
+        "meaning": "employee; employment",
+        "media": {
+            "svg": "096c7.svg"
+        }
+    },
+    "雑": {
+        "furigana": "ざつ",
+        "meaning": "rough; crude; sloppy; messy",
+        "media": {
+            "svg": "096d1.svg"
+        }
+    },
+    "難": {
+        "furigana": "なん",
+        "meaning": "difficulty; trouble; hardship",
+        "media": {
+            "svg": "096e3.svg"
+        }
+    },
+    "雨": {
+        "furigana": "あめ",
+        "meaning": "rain",
+        "media": {
+            "svg": "096e8.svg"
+        }
+    },
+    "雪": {
+        "furigana": "ゆき",
+        "meaning": "snow",
+        "media": {
+            "svg": "096ea.svg"
+        }
+    },
+    "雲": {
+        "furigana": "くも",
+        "meaning": "cloud",
+        "media": {
+            "svg": "096f2.svg"
+        }
+    },
+    "零": {
+        "furigana": "れい",
+        "meaning": "zero; nought",
+        "media": {
+            "svg": "096f6.svg"
+        }
+    },
+    "電": {
+        "furigana": "いな",
+        "meaning": "lightning; flash of lightning; lightning bolt",
+        "media": {
+            "svg": "096fb.svg"
+        }
+    },
+    "震": {
+        "furigana": "しん",
+        "meaning": "zhen (one of the trigrams of the I Ching: thunder, east)",
+        "media": {
+            "svg": "09707.svg"
+        }
+    },
+    "青": {
+        "furigana": "あお",
+        "meaning": "blue; azure",
+        "media": {
+            "svg": "09752.svg"
+        }
+    },
+    "静": {
+        "furigana": "しず",
+        "meaning": "quiet; calm; still",
+        "media": {
+            "svg": "09759.svg"
+        }
+    },
+    "非": {
+        "furigana": "ひど",
+        "meaning": "fault; error; mistake",
+        "media": {
+            "svg": "0975e.svg"
+        }
+    },
+    "面": {
+        "furigana": "めん",
+        "meaning": "face",
+        "media": {
+            "svg": "09762.svg"
+        }
+    },
+    "革": {
+        "furigana": "かわ",
+        "meaning": "leather",
+        "media": {
+            "svg": "09769.svg"
+        }
+    },
+    "靴": {
+        "furigana": "くつ",
+        "meaning": "shoe; shoes; boots; footwear; footgear",
+        "media": {
+            "svg": "09774.svg"
+        }
+    },
+    "音": {
+        "furigana": "おと",
+        "meaning": "sound; noise; report",
+        "media": {
+            "svg": "097f3.svg"
+        }
+    },
+    "頂": {
+        "furigana": "てん",
+        "meaning": "crown (of head); summit (of mountain); spire",
+        "media": {
+            "svg": "09802.svg"
+        }
+    },
+    "順": {
+        "furigana": "ばん",
+        "meaning": "order; turn; sorting",
+        "media": {
+            "svg": "09806.svg"
+        }
+    },
+    "預": {
+        "furigana": "げん",
+        "meaning": "prediction; prophecy; prognostication",
+        "media": {
+            "svg": "09810.svg"
+        }
+    },
+    "領": {
+        "furigana": "えり",
+        "meaning": "collar; lapel; neckband; neck",
+        "media": {
+            "svg": "09818.svg"
+        }
+    },
+    "頭": {
+        "furigana": "とう",
+        "meaning": "head",
+        "media": {
+            "svg": "0982d.svg"
+        }
+    },
+    "頼": {
+        "furigana": "たの",
+        "meaning": "to request; to beg; to ask",
+        "media": {
+            "svg": "0983c.svg"
+        }
+    },
+    "題": {
+        "furigana": "だい",
+        "meaning": "title; subject; theme; topic",
+        "media": {
+            "svg": "0984c.svg"
+        }
+    },
+    "額": {
+        "furigana": "がく",
+        "meaning": "(picture) frame; framed picture",
+        "media": {
+            "svg": "0984d.svg"
+        }
+    },
+    "顔": {
+        "furigana": "かお",
+        "meaning": "face; visage",
+        "media": {
+            "svg": "09854.svg"
+        }
+    },
+    "願": {
+        "furigana": "ねが",
+        "meaning": "desire; wish; hope",
+        "media": {
+            "svg": "09858.svg"
+        }
+    },
+    "類": {
+        "furigana": "るい",
+        "meaning": "kind; sort; type; class; genus; order; family",
+        "media": {
+            "svg": "0985e.svg"
+        }
+    },
+    "風": {
+        "furigana": "かぜ",
+        "meaning": "wind; breeze; draught; draft",
+        "media": {
+            "svg": "098a8.svg"
+        }
+    },
+    "飛": {
+        "furigana": "こう",
+        "meaning": "rook",
+        "media": {
+            "svg": "098db.svg"
+        }
+    },
+    "食": {
+        "furigana": "どう",
+        "meaning": "food; foodstuff",
+        "media": {
+            "svg": "098df.svg"
+        }
+    },
+    "飲": {
+        "furigana": "いん",
+        "meaning": "drinking (sometimes esp. alcohol); drink; drinking party",
+        "media": {
+            "svg": "098f2.svg"
+        }
+    },
+    "養": {
+        "furigana": "よう",
+        "meaning": "training; education; development; cultivation",
+        "media": {
+            "svg": "0990a.svg"
+        }
+    },
+    "館": {
+        "furigana": "かん",
+        "meaning": "house; hall; building",
+        "media": {
+            "svg": "09928.svg"
+        }
+    },
+    "首": {
+        "furigana": "くび",
+        "meaning": "neck",
+        "media": {
+            "svg": "09996.svg"
+        }
+    },
+    "香": {
+        "furigana": "かお",
+        "meaning": "aroma; fragrance; scent; smell",
+        "media": {
+            "svg": "09999.svg"
+        }
+    },
+    "馬": {
+        "furigana": "うま",
+        "meaning": "horse",
+        "media": {
+            "svg": "099ac.svg"
+        }
+    },
+    "駅": {
+        "furigana": "えき",
+        "meaning": "railway station; train station",
+        "media": {
+            "svg": "099c5.svg"
+        }
+    },
+    "駐": {
+        "furigana": "しゃ",
+        "meaning": "parking lot; parking place; car park; carpark",
+        "media": {
+            "svg": "099d0.svg"
+        }
+    },
+    "験": {
+        "furigana": "ため",
+        "meaning": "trial; test",
+        "media": {
+            "svg": "09a13.svg"
+        }
+    },
+    "骨": {
+        "furigana": "ほね",
+        "meaning": "bone",
+        "media": {
+            "svg": "09aa8.svg"
+        }
+    },
+    "高": {
+        "furigana": "たか",
+        "meaning": "quantity; amount; volume; number; amount of money",
+        "media": {
+            "svg": "09ad8.svg"
+        }
+    },
+    "髪": {
+        "furigana": "かみ",
+        "meaning": "hair (on the head)",
+        "media": {
+            "svg": "09aea.svg"
+        }
+    },
+    "魚": {
+        "furigana": "ぎょ",
+        "meaning": "fish",
+        "media": {
+            "svg": "09b5a.svg"
+        }
+    },
+    "鳥": {
+        "furigana": "とり",
+        "meaning": "bird",
+        "media": {
+            "svg": "09ce5.svg"
+        }
+    },
+    "鳴": {
+        "furigana": "ごえ",
+        "meaning": "to sing (bird)",
+        "media": {
+            "svg": "09cf4.svg"
+        }
+    },
+    "麦": {
+        "furigana": "むぎ",
+        "meaning": "wheat; barley; oat (oats)",
+        "media": {
+            "svg": "09ea6.svg"
+        }
+    },
+    "黄": {
+        "furigana": "いろ",
+        "meaning": "yellow",
+        "media": {
+            "svg": "09ec4.svg"
+        }
+    },
+    "黒": {
+        "furigana": "くろ",
+        "meaning": "black",
+        "media": {
+            "svg": "09ed2.svg"
+        }
+    },
+    "鼻": {
+        "furigana": "はな",
+        "meaning": "nose",
+        "media": {
+            "svg": "09f3b.svg"
+        }
+    },
+    "齢": {
+        "furigana": "れい",
+        "meaning": "(one's) age",
+        "media": {
+            "svg": "09f62.svg"
+        }
+    }
+}

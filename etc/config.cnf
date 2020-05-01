@@ -1,0 +1,12 @@
+[service]
+port = 8085
+base-url = /api/v1
+;cdn-url = 
+
+[logging]
+;access-logfile = /var/log/service/access.log
+;access-maxbytes = 1000000
+;access-backupcount = 5
+;error-logfile = /var/log/service/error.log
+;error-maxbytes = 1000000
+;error-backupcount = 5
