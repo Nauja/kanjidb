@@ -26,6 +26,8 @@ Run 'kanjidb COMMAND --help' for more information on a command.
 
 ```
 
+Build kanji database from Kanjidic2 XML file:
+
 ```
 > echo "U4E00;U4E8D" | python -m kanjidb build \
   --sep ";" \
