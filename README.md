@@ -4,7 +4,7 @@ WIP
 
 Kanji database builder and REST API.
 
-## How to use
+# How to use
 
 Show help:
 
