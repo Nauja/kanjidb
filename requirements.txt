@@ -2,3 +2,4 @@ aiohttp
 aiohttp_cors
 aiohttp_swagger
 jamdict
+pyyaml

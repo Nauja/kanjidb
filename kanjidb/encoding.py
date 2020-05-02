@@ -1,57 +1,90 @@
 # -*- coding: utf-8 -*-
-__all__ = ["get_codepoint", "decode_unicode", "encode_unicode"]
+__all__ = ["UNICODE_ESCAPE", "UNICODE_PLUS", "UTF8", "encode", "decode", "get_codepoint"]
 import re
+
+UNICODE_ESCAPE = "unicode_escape"
+UNICODE_PLUS = "unicode_plus"
+UTF8 = "utf8"
 
 
 def get_codepoint(kanji):
     return kanji.encode("unicode_escape")[2:].decode().lower()
 
 
-def decode_unicode(s):
-    """Decode an unicode encoded kanji.
+def decode(s, *, encoding=None):
+    """Decode a kanji.
 
-    Input string may be in following formats:
+    The kanji may be unicode encoded:
 
     ..code-block:: python
 
-        >> decode_unicode("U+4E00")
+        >> decode("U+4E00", encoding=UNICODE_PLUS)
         "一"
 
-        >> decode_unicode("U4E00")
+        >> decode("U4E00", encoding=UNICODE_PLUS)
         "一"
 
-        >> decode_unicode("\\u4E00")
+        >> decode("\\u4E00", encoding=UNICODE_ESCAPE)
         "一"
 
-    :param s: unicode character to decode
-    :return: decoded character
+    Or UTF-8 encoded:
+
+    ..code-block:: python
+
+        >> decode("一", encoding=UTF8)
+        "一"
+
+        >> decode("一")
+        "一"
+
+    :param s: kanji to decode
+    :param encoding: how kanji is encoded
+    :return: decoded kanji
     """
-    m = re.match("^(?:\\\\[uU]|[uU][+]?)([0-9a-fA-F]+)$", s)
-    if not m:
-        raise Exception('Invalid unicode string "{}"'.format(s))
+    if encoding == UNICODE_ESCAPE or encoding == UNICODE_PLUS:
+        m = re.match("^(?:\\\\[uU]|[uU][+]?)([0-9a-fA-F]+)$", s)
+        if not m:
+            raise Exception('Invalid unicode string "{}"'.format(s))
 
-    return chr(int(m.group(1).upper(), 16))
+        return chr(int(m.group(1).upper(), 16))
+    else:
+        return s
 
 
-def encode_unicode(s, *, prefix=None):
-    """Encode an UTF8 kanji to unicode.
+def encode(s, *, encoding=None, prefix=None):
+    """Encode a kanji.
 
-    Usage examples:
+    The kanji may be unicode encoded:
 
     ..code-block:: python
 
-        >> encode_unicode("一")
-        "U4e00"
-
-        >> decode_unicode("一", prefix="U+")
+        >> encode("一", encoding=UNICODE_PLUS)
         "U+4e00"
 
-        >> decode_unicode("一", prefix="\\u")
+        >> encode("一", encoding=UNICODE_PLUS, prefix="U")
+        "U4e00"
+
+        >> encode("一", encoding=UNICODE_ESCAPE)
         "\u4e00"
 
-    :param s: UTF8 character to encode
-    :return: encoded character
-    """
-    prefix = prefix if prefix is not None else "U"
+    Or UTF-8 encoded:
 
-    return "{}{}".format(prefix, get_codepoint(s))
+    ..code-block:: python
+
+        >> encode("一", encoding=UTF8)
+        "一"
+
+        >> encode("一")
+        "一"
+
+    :param s: kanji to encode
+    :return: encoded kanji
+    """
+    if encoding == UNICODE_PLUS or encoding == UNICODE_ESCAPE:
+        prefix = prefix if prefix is not None else (
+            "U+" if encoding == UNICODE_PLUS else "\\u"
+        )
+
+        return "{}{}".format(prefix, get_codepoint(s))
+
+    return s

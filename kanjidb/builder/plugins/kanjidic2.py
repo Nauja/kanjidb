@@ -1,6 +1,7 @@
 """Use jamdict to load Kanjidic2 XML file.
 """
-__all__ = ["load", "Kanjidic2Plugin"]
+__all__ = ["load", "Plugin"]
+from kanjidb.builder.plugins import PluginBase
 try:
     from jamdict.kanjidic2 import Kanjidic2XMLParser
 except Exception as e:
@@ -20,22 +21,24 @@ def load(stream):
         return parser.parse_file(stream)
 
 
-class Kanjidic2Plugin:
-    def __init__(self, stream):
-        """Initialize this plugin with a Kanjidic2 XML file.
+class Plugin(PluginBase):
+    def template_config(self):
+        return {
+            "kd2_file": "kd2.xml"
+        }
 
-        :param stream: filelike object or filename
-        """
-        data = load(stream)
+    def configure(self, **kwargs):
+        super().configure(**kwargs)
 
+        data = load(self.plugin_config["kd2_file"])
         self._kanjis = {_.literal: _ for _ in data.characters}
 
-    def __call__(self, *, db, verbose=None):
+    def __call__(self, **kwargs):
         """Fill database with Kanjidic2 infos.
 
         :param db: database
         """
-        for kanji, infos in db.items():
+        for kanji, infos in kwargs["db"].items():
             infos.update(self.get_infos(kanji))
 
     def get_infos(self, kanji):

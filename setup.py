@@ -37,7 +37,8 @@ setup(
     long_description_content_type="text/markdown",
     packages=find_packages(exclude=['tests']),
     install_requires=[
-        "jamdict >= 0.1a6"
+        "jamdict >= 0.1a6",
+        "pyyaml"
     ],
     test_suite='test',
     tests_require=["nose", "nose-cover3"],

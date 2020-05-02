@@ -1,10 +1,13 @@
 # -*- coding: utf-8 -*-
-__all__ = ["loads", "load"]
+__all__ = ["loads", "load", "load_plugin_modules"]
+import sys
 import os
 import re
+import functools
+import kanjidb.encoding
 
 
-def loads(s, decode=None, sep=None):
+def loads(s, *, encoding=None, decode=None, sep=None):
     """Load a list of kanjis from string.
 
     Usage example:
@@ -21,26 +24,35 @@ def loads(s, decode=None, sep=None):
         >> loader.loads("一;二"), sep=";")
         ['一', '二']
 
-    Default behaviour is that kanjis must be UTF8 encoded, but
-    this can customized by providing a custom `decode` function:
+    Default behaviour is that kanjis must be UTF-8 encoded, but
+    this can customized:
 
     .. code-block:: python
 
-        >> loader.loads("\u4E00", decode=encoding.decode_unicode)
+        >> loader.loads("U+4E00", encoding=encoding.UNICODE_PLUS)
+        ['一']
+
+        >> loader.loads("\u4E00", encoding=encoding.UNICODE_ESCAPE)
         ['一']
 
     :param s: string to decode
+    :param encoding: kanjis encoding
     :param decode: how to decode kanjis
     :param sep: separator between kanjis
     :return: list of decoded kanjis
     """
+    decode = decode if decode is not None else functools.partial(
+        kanjidb.encoding.decode,
+        encoding=encoding
+    )
+
     symbols = s if sep is None else s.split(sep)
     symbols = [re.sub("[ \t\r\n]", "", _) for _ in symbols]
 
-    return [_ if decode is None else decode(_) for _ in symbols]
+    return [decode(_) for _ in symbols]
 
 
-def load(*streams, decode=None, sep=None):
+def load(*streams, encoding=None, decode=None, sep=None):
     """Load a list of kanjis from input streams.
 
     Usage example:
@@ -66,6 +78,7 @@ def load(*streams, decode=None, sep=None):
         load_kanjis("a.txt", "b.txt", sep=";")
 
     :param streams: list of input streams to read
+    :param encoding: kanjis encoding
     :param decode: how to decode kanjis
     :param sep: separator between kanjis
     :return: list of decoded kanjis
@@ -74,6 +87,9 @@ def load(*streams, decode=None, sep=None):
 
     def wrapper():
         for stream in streams:
+            # stdin
+            if stream == "-":
+                stream = sys.stdin
             # Filelike object
             if hasattr(stream, "read"):
                 content = stream.read()
@@ -82,6 +98,26 @@ def load(*streams, decode=None, sep=None):
                 with open(stream, "rb") as f:
                     content = f.read().decode()
 
-            yield from loads(content, decode=decode, sep=sep)
+            yield from loads(content, encoding=encoding, decode=decode, sep=sep)
 
     return list(wrapper())
+
+
+def load_plugin_modules(names):
+    import pkgutil
+    import importlib
+    import kanjidb.builder.plugins
+    names = ["kanjidb.builder.plugins.{}".format(_) for _ in names]
+
+    def iter_namespace(ns_pkg):
+        return pkgutil.iter_modules(ns_pkg.__path__, ns_pkg.__name__ + ".")
+
+    def normalize(name):
+        return name[name.rfind('.')+1:]
+
+    return {
+        normalize(name): importlib.import_module(name)
+        for finder, name, ispkg
+        in iter_namespace(kanjidb.builder.plugins)
+        if name in names
+    }

@@ -10,6 +10,7 @@ A kanji database accessible via REST API
 
 Options:
   -v, --version            Print version information and quit
+  -h, --help               Show this help
 
 Commands:
   build       Build kanji database from sources

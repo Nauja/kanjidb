@@ -15,7 +15,13 @@ class PluginsKanjidic2TestCase(unittest.TestCase):
         kanjis = loader.load(KANJIS_UTF8_TXT, sep=";")
         db = {_: {} for _ in kanjis}
 
-        plugin = kanjidic2.Kanjidic2Plugin(KANJIDIC2_XML)
+        plugin = kanjidic2.Plugin()
+        plugin.configure(
+            global_config={},
+            plugin_config={
+                "kd2_file": KANJIDIC2_XML
+            }
+        )
         infos = plugin.get_infos("一")
         print(infos)
         plugin(db=db)

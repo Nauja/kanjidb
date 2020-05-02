@@ -3,9 +3,11 @@ __all__ = ["dumps", "dump"]
 import sys
 import os
 import json
+import functools
+import kanjidb.encoding
 
 
-def dumps(db, *, encode=None, indent=None):
+def dumps(db, *, encoding=None, encode=None, indent=None):
     """Dump the JSON database.
 
     Parameter `output` may be a `str` or `filelike` object:
@@ -34,11 +36,13 @@ def dumps(db, *, encode=None, indent=None):
 
         save_db(db=db, dumps=json.dumps)
 
-    :param output: output file
-    :param db: JSON database
-    :param indent: JSON indent level
-    :param dumps: dumps JSON database
+    :param db: database
     """
+    encode = encode if encode is not None else functools.partial(
+        kanjidb.encoding.encode,
+        encoding=encoding
+    )
+
     indent = indent if indent is not None else 4
 
     if encode:
@@ -47,7 +51,7 @@ def dumps(db, *, encode=None, indent=None):
     return json.dumps(db, indent=indent, ensure_ascii=False)
 
 
-def dump(db, output=None, *, encode=None, indent=None):
+def dump(db, output=None, *, encoding=None, encode=None, indent=None):
     """Dump the JSON database.
 
     Parameter `output` may be a `str` or `filelike` object:
@@ -84,7 +88,7 @@ def dump(db, output=None, *, encode=None, indent=None):
     """
     output = output if output is not None else sys.stdout
 
-    content = dumps(db, encode=encode, indent=indent)
+    content = dumps(db, encoding=encoding, encode=encode, indent=indent)
 
     # Filelike object
     if hasattr(output, "write"):

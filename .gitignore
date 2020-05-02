@@ -3,6 +3,7 @@
 database/_src
 static/svg
 *.bat
+config.yml
 
 .project
 .pydevproject
