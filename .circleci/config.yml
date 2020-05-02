@@ -6,7 +6,7 @@ orbs:
 jobs:
   build-and-test:
     docker:
-	  - image: circleci/python:3.6.4
+      - image: circleci/python:3.6.4
     steps:
       - checkout
       - python/load-cache
@@ -14,15 +14,18 @@ jobs:
       - python/save-cache
       - run:
           command: |
-		    python --version
-            pip install -q --user --ignore-installed --upgrade virtualenv
-            pip install -q tox --user
+            python --version
             pip install -q coverage --user
-            echo 'export PATH=~/.local/bin:$PATH' >> $BASH_ENV
+            echo $HOME
           name: Prepare Env
       - run:
-          command: coverage run --source=kanjidb setup.py test
-          name: Test
+          command: |
+            $HOME/.local/bin/coverage run --source=kanjidb setup.py test
+            $HOME/.local/bin/coverage report
+            $HOME/.local/bin/coverage html  # open htmlcov/index.html in a browser
+          name: Run Tests
+      - store_artifacts:
+          path: htmlcov
 
 workflows:
   main:
