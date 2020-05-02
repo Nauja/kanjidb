@@ -15,7 +15,6 @@ jobs:
       - run:
           command: |
             mkdir test-results
-            mkdir test-results/kanjidb
             python --version
             pip install -q coverage --user
             echo $HOME
@@ -25,7 +24,7 @@ jobs:
             $HOME/.local/bin/coverage run --source=kanjidb setup.py test
             $HOME/.local/bin/coverage report
             $HOME/.local/bin/coverage html  # open htmlcov/index.html in a browser
-            $HOME/.local/bin/coverage xml -o test-results/kanjidb/results.xml
+            $HOME/.local/bin/coverage xml -o test-results/coverage.xml
           name: Run Tests
       - store_test_results:
           path: test-results
