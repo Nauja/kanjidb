@@ -68,7 +68,7 @@ run:
     indent: 4
 ```
 
-It is all the steps that will KanjiDB will run to build the database.
+It's all the steps that KanjiDB will run to build the database.
 Each step correspond to a plugin located in `kanjidb.builder.plugins` and
 can have its own configuration.
 
