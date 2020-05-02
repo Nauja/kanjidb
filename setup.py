@@ -1,9 +1,9 @@
 import io
-from setuptools import setup
+from setuptools import find_packages, setup
 
 
 def readme():
-    with open("README.rst") as f:
+    with open("README.md", "r") as f:
         return f.read()
 
 
@@ -25,16 +25,20 @@ exec(read("kanjidb/__version__.py"), pkg_info)
 setup(
     name="kanjidb",
     version=pkg_info["__version__"],
+    author=pkg_info["__author__"],
+    author_email=pkg_info["__author_email__"],
+    url=pkg_info["__url__"],
+    project_urls={
+        "Bug Tracker": "https://github.com/Nauja/kanjidb/issues",
+        "Source Code": "https://github.com/Nauja/kanjidb/",
+    },
     description="Kanji Database",
     long_description=readme(),
-    packages=[
-        "kanjidb",
-        "kanjidb.builder",
-        "kanjidb.builder.plugins",
-        "kanjidb.service",
-    ],
-    test_suite="nose.collector",
+    long_description_content_type="text/markdown",
+    packages=find_packages(exclude=['tests']),
+    test_suite='test',
     tests_require=["nose", "nose-cover3"],
     include_package_data=True,
     zip_safe=False,
+    python_requires=">=3.6",
 )

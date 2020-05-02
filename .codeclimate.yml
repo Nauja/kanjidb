@@ -1,0 +1,12 @@
+engines:
+  duplication:
+    enabled: true
+    config:
+      languages:
+      - python
+ratings:
+  paths:
+  - kanjidb
+  - "**.py"
+exclude_paths:
+- test

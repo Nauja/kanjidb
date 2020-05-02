@@ -19,7 +19,7 @@ retrieve those informations and built services uppon.
 
 Show help:
 
-```
+```bash
 > python -m kanjidb
 
 Usage:  kanjidb COMMAND [OPTIONS]
@@ -39,7 +39,7 @@ Run 'kanjidb COMMAND --help' for more information on a command.
 
 Build kanji database from Kanjidic2 XML file:
 
-```
+```bash
 > echo "U4E00;U4E8D" | python -m kanjidb build \
   --sep ";" \
   --kd2-file /path/to/kanjidic2.xml
