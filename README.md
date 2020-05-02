@@ -20,12 +20,18 @@ need to build your own app (database, viewer, Anki deck builder, ...) and
 progress in learning Japanese. KanjiDB also comes with a REST API allowing to
 retrieve those informations and built services uppon.
 
-# How to use
+# Install
+
+Using pip:
+
+```bash
+> pip install kanjidb
+```
 
 Show help:
 
 ```bash
-> python -m kanjidb
+> python -m kanjidb -h
 
 Usage:  kanjidb COMMAND [OPTIONS]
 
@@ -33,6 +39,7 @@ A kanji database accessible via REST API
 
 Options:
   -v, --version            Print version information and quit
+  -h, --help               Show this help
 
 Commands:
   build       Build kanji database from sources
@@ -41,6 +48,8 @@ Commands:
 Run 'kanjidb COMMAND --help' for more information on a command.
 
 ```
+
+# Build database
 
 Build kanji database from Kanjidic2 XML file:
 
