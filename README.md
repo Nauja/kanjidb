@@ -51,7 +51,26 @@ Run 'kanjidb COMMAND --help' for more information on a command.
 
 # Build database
 
-Build kanji database from Kanjidic2 XML file:
+Building a database is done by executing multiple steps described in
+a YAML configuration file. KanjiDB will create a default `config.yaml`
+file if an existing configuration doesn't exist or none is provided.
+This default configuration file looks like this:
+
+```yaml
+run:
+- kanjiloader:
+    encoding: unicode_plus
+    separator: "\r\n"
+- kanjidic2:
+    kd2_file: kd2.xml
+- dbexporter:
+    encoding: unicode_plus
+    indent: 4
+```
+
+It is all the steps that will KanjiDB will run to build the database.
+Each step correspond to a plugin located in `kanjidb.builder.plugins` and
+can have its own configuration.
 
 ```bash
 > echo "U4E00;U4E8D" | python -m kanjidb build \
