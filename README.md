@@ -49,7 +49,7 @@ Run 'kanjidb COMMAND --help' for more information on a command.
 
 ```
 
-# Build a kanji database
+# Build database
 
 Build kanji database from Kanjidic2 XML file:
 
