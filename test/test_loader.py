@@ -1,8 +1,13 @@
 # -*- coding: utf-8 -*-
 __all__ = ["LoaderTestCase"]
+import os
 import unittest
 from kanjidb.encoding import decode_unicode
 from kanjidb import loader
+
+DATA_DIR = os.path.join(os.path.dirname(__file__), "data")
+KANJIS_UTF8_TXT = os.path.join(DATA_DIR, "kanjis_utf8.txt")
+KANJIS_UNICODE_TXT = os.path.join(DATA_DIR, "kanjis_unicode.txt")
 
 
 class LoaderTestCase(unittest.TestCase):
@@ -21,10 +26,10 @@ class LoaderTestCase(unittest.TestCase):
 
     def test_load(self):
         # UTF8 encoded
-        self.assertEqual(loader.load("data/kanjis_utf8.txt", sep=";"), ["一", "二"])
+        self.assertEqual(loader.load(KANJIS_UTF8_TXT, sep=";"), ["一", "二"])
         # Unicode
         self.assertEqual(
-            loader.load("data/kanjis_unicode.txt", decode=decode_unicode, sep=";"),
+            loader.load(KANJIS_UNICODE_TXT, decode=decode_unicode, sep=";"),
             ["一", "二"],
         )
 
