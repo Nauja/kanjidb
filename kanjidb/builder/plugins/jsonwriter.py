@@ -12,18 +12,12 @@ import kanjidb.encoding
 class Plugin(PluginBase):
     @property
     def template_config(self):
-        return {
-            "encoding": kanjidb.encoding.UNICODE_PLUS,
-            "indent": 4
-        }
+        return {"encoding": kanjidb.encoding.UNICODE_PLUS, "indent": 4}
 
     @property
     def required_config(self):
         config = self.template_config
-        config.update({
-            "in": "db",
-            "out": "-"
-        })
+        config.update({"in": "db", "out": "-"})
 
         return config
 
@@ -34,7 +28,7 @@ class Plugin(PluginBase):
             db,
             output=self.plugin_config["out"],
             encoding=self.plugin_config["encoding"],
-            indent=self.plugin_config["indent"]
+            indent=self.plugin_config["indent"],
         )
 
         print("Saved to {}".format(self.plugin_config["out"]))
@@ -74,9 +68,10 @@ def dumps(db, *, encoding=None, encode=None, indent=None):
 
     :param db: database
     """
-    encode = encode if encode is not None else functools.partial(
-        kanjidb.encoding.encode,
-        encoding=encoding
+    encode = (
+        encode
+        if encode is not None
+        else functools.partial(kanjidb.encoding.encode, encoding=encoding)
     )
 
     indent = indent if indent is not None else 4

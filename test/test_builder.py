@@ -14,9 +14,7 @@ KANJIS_UNICODE_TXT = os.path.join(DATA_DIR, "kanjis_unicode.txt")
 class BuilderTestCase(unittest.TestCase):
     def test_build(self):
         config = Configuration(
-            targets=[KANJIS_UNICODE_TXT],
-            output=sys.stdout,
-            verbose=True
+            targets=[KANJIS_UNICODE_TXT], output=sys.stdout, verbose=True
         )
 
         builder.build(config)

@@ -4,11 +4,7 @@ import yaml
 from kanjidb import loader
 
 
-DEFAULT_PLUGINS = [
-    "kanjistream",
-    "kanjidic2",
-    "jsonwriter"
-]
+DEFAULT_PLUGINS = ["kanjistream", "kanjidic2", "jsonwriter"]
 
 DEFAULT_CONFIG_YML = "config.yml"
 
@@ -21,7 +17,7 @@ class Configuration:
         self.verbose = verbose
 
     def template_config(self):
-        '''Build the default configuration.
+        """Build the default configuration.
 
         This is for first use of KanjiDB to initialize
         a YAML configuration file.
@@ -30,21 +26,19 @@ class Configuration:
         for default active plugins (see `DEFAULT_PLUGINS`).
 
         :return: default JSON config dict
-        '''
+        """
         modules = loader.load_plugin_modules(DEFAULT_PLUGINS)
 
         return {
-            "run": [{
-                _: modules[_].Plugin().template_config
-            } for _ in DEFAULT_PLUGINS]
+            "run": [{_: modules[_].Plugin().template_config} for _ in DEFAULT_PLUGINS]
         }
 
     def load(self, stream=None, *, default=DEFAULT_CONFIG_YML):
-        '''Load configuration from YAML input.
+        """Load configuration from YAML input.
 
         :param stream: filelike or str object
         :param default: default filename
-        '''
+        """
         # Filelike object
         if hasattr(stream, "read"):
             config = yaml.safe_load(stream)
@@ -79,9 +73,6 @@ class Configuration:
                 c.update(plugin.required_config)
                 c.update(config)
 
-                plugin.configure(
-                    global_config=self,
-                    plugin_config=c
-                )
+                plugin.configure(global_config=self, plugin_config=c)
 
         return result

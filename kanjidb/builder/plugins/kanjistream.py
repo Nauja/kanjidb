@@ -27,20 +27,15 @@ class Plugin(PluginBase):
         ["一", "二", ...]
 
     """
+
     @property
     def template_config(self):
-        return {
-            "separator": os.linesep,
-            "encoding": kanjidb.encoding.UNICODE_PLUS
-        }
+        return {"separator": os.linesep, "encoding": kanjidb.encoding.UNICODE_PLUS}
 
     @property
     def required_config(self):
         config = self.template_config
-        config.update({
-            "in": ["-"],
-            "out": "kanjis"
-        })
+        config.update({"in": ["-"], "out": "kanjis"})
 
         return config
 
@@ -93,9 +88,10 @@ def loads(s, *, encoding=None, decode=None, sep=None):
     :param sep: separator between kanjis
     :return: list of decoded kanjis
     """
-    decode = decode if decode is not None else functools.partial(
-        kanjidb.encoding.decode,
-        encoding=encoding
+    decode = (
+        decode
+        if decode is not None
+        else functools.partial(kanjidb.encoding.decode, encoding=encoding)
     )
 
     symbols = s if sep is None else s.split(sep)

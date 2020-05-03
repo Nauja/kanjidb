@@ -14,17 +14,16 @@ class PluginsKanjiStreamTestCase(unittest.TestCase):
     def test(self):
         plugin = kanjistream.Plugin()
         config = plugin.required_config
-        config.update({
-            "encoding": UNICODE_PLUS,
-            "separator": ";",
-            "in": [KANJIS_UNICODE_TXT],
-            "out": "kanjis"
-        })
-
-        plugin.configure(
-            global_config={},
-            plugin_config=config
+        config.update(
+            {
+                "encoding": UNICODE_PLUS,
+                "separator": ";",
+                "in": [KANJIS_UNICODE_TXT],
+                "out": "kanjis",
+            }
         )
+
+        plugin.configure(global_config={}, plugin_config=config)
 
         result = plugin()
         print(result)
@@ -39,10 +38,13 @@ class PluginsKanjiStreamTestCase(unittest.TestCase):
         # With custom separator
         self.assertEqual(kanjistream.loads("一;二", sep=";"), ["一", "二"])
         # Unicode, keep same encoding
-        self.assertEqual(kanjistream.loads("U+4E00;U4E8C", sep=";"), ["U+4E00", "U4E8C"])
+        self.assertEqual(
+            kanjistream.loads("U+4E00;U4E8C", sep=";"), ["U+4E00", "U4E8C"]
+        )
         # Unicode, convert to UTF8
         self.assertEqual(
-            kanjistream.loads("U+4E00;U4E8C", encoding=UNICODE_PLUS, sep=";"), ["一", "二"]
+            kanjistream.loads("U+4E00;U4E8C", encoding=UNICODE_PLUS, sep=";"),
+            ["一", "二"],
         )
 
     def test_load(self):

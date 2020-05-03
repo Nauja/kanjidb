@@ -1,5 +1,6 @@
 __all__ = ["Plugin", "load"]
 from kanjidb.builder.plugins import PluginBase
+
 try:
     from jamdict.kanjidic2 import Kanjidic2XMLParser
 except Exception as e:
@@ -11,19 +12,15 @@ class Plugin(PluginBase):
 
     Kanjidic2 XML file is parsed using `jamdict`.
     """
+
     @property
     def template_config(self):
-        return {
-            "kd2_file": "kd2.xml"
-        }
+        return {"kd2_file": "kd2.xml"}
 
     @property
     def required_config(self):
         config = self.template_config
-        config.update({
-            "in": "kanjis",
-            "out": "db"
-        })
+        config.update({"in": "kanjis", "out": "db"})
 
         return config
 
@@ -41,9 +38,7 @@ class Plugin(PluginBase):
         """
         kanjis = kwargs[self.plugin_config["in"]]
 
-        kwargs[self.plugin_config["out"]] = {
-            _: self.get_infos(_) for _ in kanjis
-        }
+        kwargs[self.plugin_config["out"]] = {_: self.get_infos(_) for _ in kanjis}
 
         return kwargs
 

@@ -35,13 +35,9 @@ setup(
     description="Kanji Database",
     long_description=readme(),
     long_description_content_type="text/markdown",
-    packages=find_packages(exclude=['tests']),
-    install_requires=[
-        "jamdict >= 0.1a6",
-        "pyyaml",
-        "genanki"
-    ],
-    test_suite='test',
+    packages=find_packages(exclude=["tests"]),
+    install_requires=["jamdict >= 0.1a6", "pyyaml", "genanki"],
+    test_suite="test",
     tests_require=["nose", "nose-cover3"],
     include_package_data=True,
     zip_safe=False,

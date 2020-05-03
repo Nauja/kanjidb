@@ -31,13 +31,8 @@ def main(argv):
     args = parser.parse_args(argv)
 
     config = Configuration(
-        targets=args.targets,
-        output=args.output,
-        verbose=args.verbose
+        targets=args.targets, output=args.output, verbose=args.verbose
     )
-    config.load(
-        args.config,
-        default=args.config
-    )
+    config.load(args.config, default=args.config)
 
     build(config)

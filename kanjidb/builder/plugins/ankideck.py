@@ -9,21 +9,15 @@ class Plugin(PluginBase):
 
     This plugin require genanki to generate Anki decks.
     """
+
     @property
     def template_config(self):
-        return {
-            "output": "ankideck.apkg",
-            "deck_id": 1,
-            "title": "AnkiDeck"
-        }
+        return {"output": "ankideck.apkg", "deck_id": 1, "title": "AnkiDeck"}
 
     @property
     def required_config(self):
         config = self.template_config
-        config.update({
-            "in": "db",
-            "only": "kanjis"
-        })
+        config.update({"in": "db", "only": "kanjis"})
 
         return config
 
@@ -33,21 +27,19 @@ class Plugin(PluginBase):
 
         model = genanki.Model(
             1607392319,
-            'Simple Model',
-            fields=[
-                {'name': 'Question'},
-                {'name': 'Answer'},
+            "Simple Model",
+            fields=[{"name": "Question"}, {"name": "Answer"},],
+            templates=[
+                {
+                    "name": "Card 1",
+                    "qfmt": "{{Question}}",
+                    "afmt": '{{FrontSide}}<hr id="answer">{{Answer}}',
+                }
             ],
-            templates=[{
-                'name': 'Card 1',
-                'qfmt': '{{Question}}',
-                'afmt': '{{FrontSide}}<hr id="answer">{{Answer}}',
-            }]
         )
 
         deck = genanki.Deck(
-            int(self.plugin_config["deck_id"]),
-            self.plugin_config["title"]
+            int(self.plugin_config["deck_id"]), self.plugin_config["title"]
         )
 
         notes = [generate_note(_, db.get(_, None), model) for _ in only_kanjis]
@@ -65,6 +57,6 @@ def generate_note(kanji, data, model):
         model=model,
         fields=[
             kanji,
-            "\n".join("{}: {}".format(_["type"], _["value"]) for _ in data["readings"])
-        ]
+            "\n".join("{}: {}".format(_["type"], _["value"]) for _ in data["readings"]),
+        ],
     )

@@ -1,5 +1,12 @@
 # -*- coding: utf-8 -*-
-__all__ = ["UNICODE_ESCAPE", "UNICODE_PLUS", "UTF8", "encode", "decode", "get_codepoint"]
+__all__ = [
+    "UNICODE_ESCAPE",
+    "UNICODE_PLUS",
+    "UTF8",
+    "encode",
+    "decode",
+    "get_codepoint",
+]
 import re
 
 UNICODE_ESCAPE = "unicode_escape"
@@ -81,8 +88,10 @@ def encode(s, *, encoding=None, prefix=None):
     :return: encoded kanji
     """
     if encoding == UNICODE_PLUS or encoding == UNICODE_ESCAPE:
-        prefix = prefix if prefix is not None else (
-            "U+" if encoding == UNICODE_PLUS else "\\u"
+        prefix = (
+            prefix
+            if prefix is not None
+            else ("U+" if encoding == UNICODE_PLUS else "\\u")
         )
 
         return "{}{}".format(prefix, get_codepoint(s))

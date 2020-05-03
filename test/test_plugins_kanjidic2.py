@@ -13,15 +13,8 @@ class PluginsKanjidic2TestCase(unittest.TestCase):
     def test(self):
         plugin = kanjidic2.Plugin()
         config = plugin.required_config
-        config.update({
-            "kd2_file": KANJIDIC2_XML,
-            "in": "kanjis",
-            "out": "db"
-        })
-        plugin.configure(
-            global_config={},
-            plugin_config=config
-        )
+        config.update({"kd2_file": KANJIDIC2_XML, "in": "kanjis", "out": "db"})
+        plugin.configure(global_config={}, plugin_config=config)
 
         result = plugin(kanjis=kanjistream.load(KANJIS_UTF8_TXT, sep=";"))
         print(result)

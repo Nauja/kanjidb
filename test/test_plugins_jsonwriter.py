@@ -19,13 +19,9 @@ UNICODE_OUTPUT = """{
 class JSONWriterTestCase(unittest.TestCase):
     def test_dumps(self):
         db = {"一": {}, "二": {}}
+        self.assertEqual(jsonwriter.dumps(db, indent=0), UTF8_OUTPUT)
         self.assertEqual(
-            jsonwriter.dumps(db, indent=0),
-            UTF8_OUTPUT
-        )
-        self.assertEqual(
-            jsonwriter.dumps(db, encoding=UNICODE_PLUS, indent=0),
-            UNICODE_OUTPUT
+            jsonwriter.dumps(db, encoding=UNICODE_PLUS, indent=0), UNICODE_OUTPUT
         )
 
     def test_dump(self):
