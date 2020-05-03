@@ -1,4 +1,4 @@
-__all__ = ["build", "main"]
+__all__ = ["build", "main"] 
 from kanjidb.builder.configuration import Configuration
 
 
@@ -23,15 +23,13 @@ def build(config):
 def main(argv):
     import argparse
 
-    parser = argparse.ArgumentParser(prog="KanjiDB", description="Kanji Database")
-    parser.add_argument("--config", nargs="?", help="YAML configuration file")
-    parser.add_argument("-o", "--output", nargs="?", help="Output file")
+    parser = argparse.ArgumentParser(prog="KanjiDB builder", description="Kanji database builder")
     parser.add_argument("-v", "--verbose", action="store_true", help="Verbosity level")
-    parser.add_argument("targets", nargs="+", help="Files containing kanjis")
+    parser.add_argument("config", nargs="?", help="YAML configuration file")
     args = parser.parse_args(argv)
 
     config = Configuration(
-        targets=args.targets, output=args.output, verbose=args.verbose
+        verbose=args.verbose
     )
     config.load(args.config, default=args.config)
 

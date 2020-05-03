@@ -10,10 +10,8 @@ DEFAULT_CONFIG_YML = "config.yml"
 
 
 class Configuration:
-    def __init__(self, *, targets, output=None, verbose=None):
+    def __init__(self, *, verbose=None):
         self.run = []
-        self.targets = targets
-        self.output = output
         self.verbose = verbose
 
     def template_config(self):
@@ -33,12 +31,14 @@ class Configuration:
             "run": [{_: modules[_].Plugin().template_config} for _ in DEFAULT_PLUGINS]
         }
 
-    def load(self, stream=None, *, default=DEFAULT_CONFIG_YML):
+    def load(self, stream=None, *, default=None):
         """Load configuration from YAML input.
 
         :param stream: filelike or str object
         :param default: default filename
         """
+        default = default if default is not None else DEFAULT_CONFIG_YML
+
         # Filelike object
         if hasattr(stream, "read"):
             config = yaml.safe_load(stream)
