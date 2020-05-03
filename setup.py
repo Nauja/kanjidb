@@ -38,7 +38,8 @@ setup(
     packages=find_packages(exclude=['tests']),
     install_requires=[
         "jamdict >= 0.1a6",
-        "pyyaml"
+        "pyyaml",
+        "genanki"
     ],
     test_suite='test',
     tests_require=["nose", "nose-cover3"],
