@@ -1,10 +1,46 @@
-# -*- coding: utf-8 -*-
-__all__ = ["dumps", "dump"]
+"""This plugin simply save database to an external JSON file.
+"""
+__all__ = ["Plugin", "dumps", "dump"]
 import sys
 import os
 import json
 import functools
+from kanjidb.builder.plugins import PluginBase
 import kanjidb.encoding
+
+
+class Plugin(PluginBase):
+    @property
+    def template_config(self):
+        return {
+            "encoding": kanjidb.encoding.UNICODE_PLUS,
+            "indent": 4
+        }
+
+    @property
+    def required_config(self):
+        config = self.template_config
+        config.update({
+            "in": "db",
+            "out": "-"
+        })
+
+        return config
+
+    def __call__(self, **kwargs):
+        db = kwargs[self.plugin_config["in"]]
+
+        dump(
+            db,
+            output=self.plugin_config["out"],
+            encoding=self.plugin_config["encoding"],
+            indent=self.plugin_config["indent"]
+        )
+
+        print("Saved to {}".format(self.plugin_config["out"]))
+
+    def __repr__(self):
+        return "JSONWriter"
 
 
 def dumps(db, *, encoding=None, encode=None, indent=None):
@@ -89,6 +125,9 @@ def dump(db, output=None, *, encoding=None, encode=None, indent=None):
     output = output if output is not None else sys.stdout
 
     content = dumps(db, encoding=encoding, encode=encode, indent=indent)
+
+    if output == "-":
+        output = sys.stdout
 
     # Filelike object
     if hasattr(output, "write"):

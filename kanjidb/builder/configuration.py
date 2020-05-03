@@ -5,9 +5,9 @@ from kanjidb import loader
 
 
 DEFAULT_PLUGINS = [
-    "kanjiloader",
+    "kanjistream",
     "kanjidic2",
-    "dbexporter"
+    "jsonwriter"
 ]
 
 DEFAULT_CONFIG_YML = "config.yml"
@@ -35,7 +35,7 @@ class Configuration:
 
         return {
             "run": [{
-                _: modules[_].Plugin().template_config()
+                _: modules[_].Plugin().template_config
             } for _ in DEFAULT_PLUGINS]
         }
 
@@ -75,7 +75,8 @@ class Configuration:
                 plugin = modules[name].Plugin()
                 result.append(plugin)
 
-                c = plugin.template_config()
+                c = plugin.template_config
+                c.update(plugin.required_config)
                 c.update(config)
 
                 plugin.configure(

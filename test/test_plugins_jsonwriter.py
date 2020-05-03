@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
-__all__ = ["DumperTestCase"]
+__all__ = ["JSONWriterTestCase"]
 import sys
 import unittest
 from kanjidb.encoding import UNICODE_PLUS
-from kanjidb import dumper
+from kanjidb.builder.plugins import jsonwriter
 
 UTF8_OUTPUT = """{
 "一": {},
@@ -16,22 +16,22 @@ UNICODE_OUTPUT = """{
 }"""
 
 
-class DumperTestCase(unittest.TestCase):
+class JSONWriterTestCase(unittest.TestCase):
     def test_dumps(self):
         db = {"一": {}, "二": {}}
         self.assertEqual(
-            dumper.dumps(db, indent=0),
+            jsonwriter.dumps(db, indent=0),
             UTF8_OUTPUT
         )
         self.assertEqual(
-            dumper.dumps(db, encoding=UNICODE_PLUS, indent=0),
+            jsonwriter.dumps(db, encoding=UNICODE_PLUS, indent=0),
             UNICODE_OUTPUT
         )
 
     def test_dump(self):
         db = {"一": {}, "二": {}}
-        dumper.dump(db, sys.stdout)
-        dumper.dump(db, sys.stdout, encoding=UNICODE_PLUS)
+        jsonwriter.dump(db, sys.stdout)
+        jsonwriter.dump(db, sys.stdout, encoding=UNICODE_PLUS)
 
 
 if __name__ == "__main__":

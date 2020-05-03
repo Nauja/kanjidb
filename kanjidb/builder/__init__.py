@@ -1,10 +1,4 @@
 __all__ = ["build", "main"]
-import os
-import sys
-import json
-import functools
-from kanjidb import loader, dumper, encoding
-from kanjidb.builder.plugins import kanjidic2
 from kanjidb.builder.configuration import Configuration
 
 
@@ -17,6 +11,7 @@ def build(config):
     kwargs = {}
 
     for step in config.run:
+        print(step)
         new_kwargs = step(**kwargs)
 
         if new_kwargs is not None:
@@ -40,6 +35,9 @@ def main(argv):
         output=args.output,
         verbose=args.verbose
     )
-    config.load(args.config)
+    config.load(
+        args.config,
+        default=args.config
+    )
 
     build(config)
