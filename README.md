@@ -52,8 +52,7 @@ Run 'kanjidb COMMAND --help' for more information on a command.
 # Building a database
 
 The command `kanjidb build` requires a YAML configuration file describing all
-steps that will run for building the database. Start by creating a file named `config.yml`
-and looking like this:
+steps that will run for building the database. Start by creating a file named `config.yml` looking like this:
 
 ```yaml
 run:
