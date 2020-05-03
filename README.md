@@ -49,12 +49,10 @@ Run 'kanjidb COMMAND --help' for more information on a command.
 
 ```
 
-# Build database
+# Building a database
 
-Building a database is done by executing multiple steps described in
-a YAML configuration file. KanjiDB will create a default `config.yaml`
-file if an existing configuration doesn't exist or none is provided.
-This default configuration file looks like this:
+Start by creating a `config.yml` file. This is the YAML configuration file
+that KanjiDB will use to build the database. A basic configuration looks like this:
 
 ```yaml
 run:
