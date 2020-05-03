@@ -18,7 +18,7 @@ or to arrange already written plugins to meet your needs. It's goal
 is to be flexible enough to let you export all the informations you
 need to build your own app (database, viewer, Anki deck builder, ...) and
 progress in learning Japanese. KanjiDB also comes with a REST API allowing to
-retrieve those informations and built services uppon.
+retrieve those informations and build services uppon.
 
 # Install
 
