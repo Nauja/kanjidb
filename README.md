@@ -18,7 +18,7 @@ or to arrange already written plugins to meet your needs. It's goal
 is to be flexible enough to let you export all the informations you
 need to build your own app (database, viewer, Anki deck builder, ...) and
 progress in learning Japanese. KanjiDB also comes with a REST API allowing to
-retrieve those informations and built services uppon.
+retrieve those informations and build services uppon.
 
 # Install
 
@@ -49,9 +49,26 @@ Run 'kanjidb COMMAND --help' for more information on a command.
 
 ```
 
-# Build database
+# Building a database
 
-Build kanji database from Kanjidic2 XML file:
+Start by creating a `config.yml` file. This is the YAML configuration file
+that KanjiDB will use to build the database. A basic configuration looks like this:
+
+```yaml
+run:
+- kanjiloader:
+    encoding: unicode_plus
+    separator: "\r\n"
+- kanjidic2:
+    kd2_file: kd2.xml
+- dbexporter:
+    encoding: unicode_plus
+    indent: 4
+```
+
+It's all the steps that KanjiDB will run to build the database.
+Each step correspond to a plugin located in `kanjidb.builder.plugins` and
+can have its own configuration.
 
 ```bash
 > echo "U4E00;U4E8D" | python -m kanjidb build \
