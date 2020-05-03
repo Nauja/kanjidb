@@ -51,49 +51,58 @@ Run 'kanjidb COMMAND --help' for more information on a command.
 
 # Building a database
 
-Start by creating a `config.yml` file. This is the YAML configuration file
-that KanjiDB will use to build the database. A basic configuration looks like this:
+The command `kanjidb build` requires a YAML configuration file describing all
+steps to run for building a database. Start by creating a file named `config.yml`
+and looking like this:
 
 ```yaml
 run:
-- kanjiloader:
+- kanjistream:
     encoding: unicode_plus
-    separator: "\r\n"
+    separator: ";"
 - kanjidic2:
-    kd2_file: kd2.xml
-- dbexporter:
+    kd2_file: kanjidic2.xml
+- jsonwriter:
     encoding: unicode_plus
     indent: 4
 ```
 
-It's all the steps that KanjiDB will run to build the database.
-Each step correspond to a plugin located in `kanjidb.builder.plugins` and
-can have its own configuration.
+Each step listed in `run` correspond to a plugin located in `kanjidb.builder.plugins` and
+can have its own configuration. You can arrange plugins as you want and even run them
+multiple times.
+
+Now running `kanjidb build` will produce following output:
 
 ```bash
-> echo "U4E00;U4E8D" | python -m kanjidb build \
-  --sep ";" \
-  --kd2-file /path/to/kanjidic2.xml
+> echo "U4E00;U4E8D" | python -m kanjidb build config.yml
 {
-    "U4e00": {
-        "stroke_count": 1,
-        "codepoints": [
+    "U+4e00": {
+        ...
+        "meanings": [
             {
-                "type": "ucs",
-                "value": "4e00"
+                "m_lang": "",
+                "value": "one"
             },
+        ...
+        ]
+    },
+    "U+4e8d": {
+        ...
+        "meanings": [
             {
-                "type": "jis208",
-                "value": "16-76"
-            }
-        ],
-        "readings": [
-            {
-                "type": "pinyin",
-                "value": "yi1",
-                "on_type": "",
-                "r_status": ""
-...
+                "m_lang": "",
+                "value": "to take small steps"
+            },
+            ...
+        ]
+    }
+}
 ```
+
+Here KanjiDB simply read two kanjis from `stdin` and produced a JSON dict containing
+informations on these kanjis.
+
+This example give you a glimpse of how KanjiDB works and how you can assemble
+its plugins to output useful informations on kanjis.
 
 http://www.edrdg.org/wiki/index.php/KANJIDIC_Project
