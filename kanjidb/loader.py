@@ -1,27 +1,26 @@
 # -*- coding: utf-8 -*-
 __all__ = ["load_plugin_modules"]
-import sys
-import os
-import re
+import pkgutil
+import importlib
+import pkg_resources
 import functools
-import kanjidb.encoding
+import kanjidb.builder.plugins
 
 
 def load_plugin_modules(names):
-    import pkgutil
-    import importlib
-    import kanjidb.builder.plugins
-
     names = ["kanjidb.builder.plugins.{}".format(_) for _ in names]
 
     def iter_namespace(ns_pkg):
-        return pkgutil.iter_modules(ns_pkg.__path__, ns_pkg.__name__ + ".")
+        for finder, name, ispkg in pkgutil.iter_modules(ns_pkg.__path__, ns_pkg.__name__ + "."):
+            yield name, functools.partial(importlib.import_module, name)
+        for _ in pkg_resources.iter_entry_points("kanjidb.builder.plugins"):
+            yield "kanjidb.builder.plugins.{}".format(_.name), _.load
 
     def normalize(name):
         return name[name.rfind(".") + 1 :]
 
     return {
-        normalize(name): importlib.import_module(name)
-        for finder, name, ispkg in iter_namespace(kanjidb.builder.plugins)
+        normalize(name): load()
+        for name, load in iter_namespace(kanjidb.builder.plugins)
         if name in names
     }
