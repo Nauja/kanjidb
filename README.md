@@ -80,7 +80,7 @@ multiple times.
 
 In this configuration:
   * `kanjistream`: read kanjis from `sys.stdin`.
-  * `kanjidic2`: produce a JSON dict with data from external Kanjidic2 XML file `kanjidic2.xml` ([download](http://www.edrdg.org/kanjidic/kanjidic2.xml.gz)).
+  * `kanjidic2`: produce a JSON dict with data from external Kanjidic2 XML file `kanjidic2.xml` ([download](http://www.edrdg.org/wiki/index.php/KANJIDIC_Project)).
   * `jsonwriter`: write the JSON dict to `db.json` and `sys.stdout`.
 
 Now running `kanjidb build` will produce following output:
