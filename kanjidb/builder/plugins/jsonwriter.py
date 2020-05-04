@@ -11,6 +11,7 @@ class Plugin(PluginBase):
     in: variable
     out: [stream]
     """
+
     @property
     def template_config(self):
         return {"indent": 4}
@@ -26,9 +27,7 @@ class Plugin(PluginBase):
         db = kwargs[self.plugin_config["in"]]
 
         dump(
-            db,
-            *self.plugin_config["out"],
-            indent=self.plugin_config["indent"],
+            db, *self.plugin_config["out"], indent=self.plugin_config["indent"],
         )
 
     def __repr__(self):
