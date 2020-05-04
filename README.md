@@ -59,16 +59,29 @@ run:
 - kanjistream:
     encoding: unicode_plus
     separator: ";"
+    in: "-"
+    out: kanjis
 - kanjidic2:
     kd2_file: kanjidic2.xml
+    in: kanjis
+    out: db
 - jsonwriter:
     encoding: unicode_plus
     indent: 4
+    in: db
+    out:
+    - db.json
+    - "-"
 ```
 
 Each step listed in `run` correspond to a plugin located in `kanjidb.builder.plugins` and
 can have its own configuration. You can arrange plugins as you want and even run them
 multiple times.
+
+In this configuration:
+  * `kanjistream`: read kanjis from `sys.stdin`.
+  * `kanjidic2`: produce a JSON dict with data from external Kanjidic2 XML file `kanjidic2.xml`.
+  * `jsonwriter`: write the JSON dict to `db.json` and `sys.stdout`.
 
 Now running `kanjidb build` will produce following output:
 
@@ -98,10 +111,11 @@ Now running `kanjidb build` will produce following output:
 }
 ```
 
-Here KanjiDB simply read two kanjis from `stdin` and produced a JSON dict containing
-informations on these kanjis.
+As described in configuration, KanjiDB simply produced a JSON dict containing
+Kanjidic2 data for the two kanjis from `sys.stdin`. It also created a file
+called `db.json` containing this JSON dict.
 
 This example give you a glimpse of how KanjiDB works and how you can assemble
-its plugins to output useful informations on kanjis.
+its plugins to output useful data on kanjis.
 
 http://www.edrdg.org/wiki/index.php/KANJIDIC_Project
