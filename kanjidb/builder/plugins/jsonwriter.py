@@ -1,23 +1,24 @@
-"""This plugin simply save database to an external JSON file.
-"""
 __all__ = ["Plugin", "dumps", "dump"]
 import sys
 import os
 import json
-import functools
 from kanjidb.builder.plugins import PluginBase
-import kanjidb.encoding
 
 
 class Plugin(PluginBase):
+    """This plugin simply dumps a JSON object to file or stream.
+
+    in: variable
+    out: [stream]
+    """
     @property
     def template_config(self):
-        return {"encoding": kanjidb.encoding.UNICODE_PLUS, "indent": 4}
+        return {"indent": 4}
 
     @property
     def required_config(self):
         config = self.template_config
-        config.update({"in": "db", "out": "-"})
+        config.update({"in": "db", "out": ["-"]})
 
         return config
 
@@ -26,64 +27,26 @@ class Plugin(PluginBase):
 
         dump(
             db,
-            output=self.plugin_config["out"],
-            encoding=self.plugin_config["encoding"],
+            *self.plugin_config["out"],
             indent=self.plugin_config["indent"],
         )
-
-        print("Saved to {}".format(self.plugin_config["out"]))
 
     def __repr__(self):
         return "JSONWriter"
 
 
-def dumps(db, *, encoding=None, encode=None, indent=None):
-    """Dump the JSON database.
+def dumps(o, *, indent=None):
+    """Dump a JSON object.
 
-    Parameter `output` may be a `str` or `filelike` object:
-
-    .. code-block:: python
-
-        # Create and write to "foo.json" file
-        with open("foo.json", "wb+") as f:
-            save_db(f, db=db)
-
-        # Create and write to "foo.json" file
-        save_db("foo.json", db=db)
-
-        # Write to sys.stdout
-        save_db(sys.stdout, db=db)
-
-    Parameter `output` may be omitted to print to `sys.stdout`:
-
-    .. code-block:: python
-
-        save_db(db=db)
-
-    Parameter `dumps` can be provided to customize how db is printed:
-
-    .. code-block:: python
-
-        save_db(db=db, dumps=json.dumps)
-
-    :param db: database
+    :param o: JSON object
     """
-    encode = (
-        encode
-        if encode is not None
-        else functools.partial(kanjidb.encoding.encode, encoding=encoding)
-    )
-
     indent = indent if indent is not None else 4
 
-    if encode:
-        db = {encode(k): v for k, v in db.items()}
-
-    return json.dumps(db, indent=indent, ensure_ascii=False)
+    return json.dumps(o, indent=indent, ensure_ascii=False)
 
 
-def dump(db, output=None, *, encoding=None, encode=None, indent=None):
-    """Dump the JSON database.
+def dump(o, *streams, indent=None):
+    """Dump a JSON object to streams.
 
     Parameter `output` may be a `str` or `filelike` object:
 
@@ -111,30 +74,31 @@ def dump(db, output=None, *, encoding=None, encode=None, indent=None):
 
         save_db(db=db, dumps=json.dumps)
 
-    :param output: output file
-    :param db: JSON database
+    :param o: JSON object
+    :param streams: output streams
     :param indent: JSON indent level
     :param dumps: dumps JSON database
     :param verbose: verbosity level
     """
-    output = output if output is not None else sys.stdout
+    streams = streams if streams else sys.stdout
 
-    content = dumps(db, encoding=encoding, encode=encode, indent=indent)
+    content = dumps(o, indent=indent)
 
-    if output == "-":
-        output = sys.stdout
+    for stream in streams:
+        if stream == "-":
+            stream = sys.stdout
 
-    # Filelike object
-    if hasattr(output, "write"):
-        output.write(content)
-    # For filename
-    elif isinstance(output, str):
-        parent = os.path.dirname(output)
-        if parent:
-            os.makedirs(parent, exist_ok=True)
+        # Filelike object
+        if hasattr(stream, "write"):
+            stream.write(content)
+        # For filename
+        elif isinstance(stream, str):
+            parent = os.path.dirname(stream)
+            if parent:
+                os.makedirs(parent, exist_ok=True)
 
-        with open(output, "wb+") as f:
-            f.write(content.encode())
-    # Unknown output type
-    else:
-        raise Exception("output expected to be str, filelike or callable")
+            with open(stream, "wb+") as f:
+                f.write(content.encode())
+        # Unknown output type
+        else:
+            raise Exception("output expected to be str, filelike or callable")
