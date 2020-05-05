@@ -1,5 +1,3 @@
-WIP
-
 # KanjiDB
 
 [![PyPI version](https://badge.fury.io/py/kanjidb.svg)](https://badge.fury.io/py/kanjidb)
@@ -100,6 +98,29 @@ Now running `kanjidb build` will output:
 一
 二
 ```
+
+Equivalent in Python:
+
+```python
+from kanjidb.encoding import UNICODE_PLUS, UTF8
+from kanjidb.builder.plugins import kanjistream
+
+kanjistream.run(
+    inputs=[{
+        "type": "stream",
+        "encoding": UNICODE_PLUS,
+        "separator": ";",
+        "path": "kanjis.txt"
+    }],
+    outputs=[{
+        "type": "stream",
+        "encoding": UTF8,
+        "separator": "\n",
+        "path": "-"
+    }]
+)
+```
+
 
 ## Building a database
 
