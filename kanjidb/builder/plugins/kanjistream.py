@@ -199,10 +199,10 @@ def dump(kanjis, *streams, encoding=None, encode=None, sep=None):
     for stream in streams:
         # stdout
         if stream == "-":
-            stream = sys.stdout
+            stream = sys.stdout.buffer
         # Filelike object
         if hasattr(stream, "write"):
-            stream.write(content)
+            stream.write(content.encode())
         # Filename
         else:
             with open(stream, "wb") as f:
