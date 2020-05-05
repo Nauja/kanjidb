@@ -58,7 +58,8 @@ class Configuration:
 
         self.run = self._load_steps(config["run"])
 
-        print("Configuration loaded")
+        if self.verbose:
+            print("Configuration loaded")
 
     def _load_steps(self, steps):
         result = []

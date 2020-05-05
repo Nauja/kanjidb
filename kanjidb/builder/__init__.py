@@ -11,7 +11,9 @@ def build(config):
     kwargs = {}
 
     for step in config.run:
-        print(step)
+        if config.verbose:
+            print("Running {}...".format(step))
+
         new_kwargs = step(**kwargs)
 
         if new_kwargs is not None:
