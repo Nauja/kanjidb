@@ -35,7 +35,8 @@ But like many people, you may like to learn kanjis and Japanese by learning thin
 If so you may start to create Anki decks with a subset of words or kanjis you are more interested in, and
 this is where you may find it starting difficult to merge informations coming from multiple external resources.
 
-That's why KanjiDB exists, not to be another ... WIP
+So, KanjiDB is a collection of simple tools that let you work with kanjis, extract informations from external resources,
+merge them together, and eventually build something useful for you or others.
 
 # Install
 
