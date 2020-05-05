@@ -38,7 +38,6 @@ extensions = [
     "sphinx.ext.viewcode",
     "sphinx.ext.autodoc",
     "sphinx_autodoc_typehints",
-    "m2r",
 ]
 
 source_suffix = [".rst", ".md"]

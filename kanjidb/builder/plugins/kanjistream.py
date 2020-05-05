@@ -31,16 +31,15 @@ class Plugin(PluginBase):
     @property
     def template_config(self):
         return {
-            "inputs": [{
-                "type": "stream",
-                "separator": os.linesep,
-                "encoding": kanjidb.encoding.UNICODE_PLUS,
-                "path": "-"
-            }],
-            "outputs": [{
-                "type": "var",
-                "name": "result"
-            }]
+            "inputs": [
+                {
+                    "type": "stream",
+                    "separator": os.linesep,
+                    "encoding": kanjidb.encoding.UNICODE_PLUS,
+                    "path": "-",
+                }
+            ],
+            "outputs": [{"type": "var", "name": "result"}],
         }
 
     @property
@@ -53,7 +52,7 @@ class Plugin(PluginBase):
         run(
             inputs=self.plugin_config["inputs"],
             outputs=self.plugin_config["outputs"],
-            kwargs=kwargs
+            kwargs=kwargs,
         )
 
         return kwargs
@@ -68,27 +67,22 @@ def run(inputs, outputs, kwargs):
     # Read from inputs
     for _ in inputs:
         if _["type"] == "stream":
-            in_kanjis = load(
-                _["path"],
-                sep=_.get("separator", None)
-            )
+            in_kanjis = load(_["path"], sep=_.get("separator", None))
         elif _["type"] == "var":
             in_kanjis = kwargs[_["name"]]
         else:
             raise Exception("Invalid input {}".format(_["type"]))
 
-        kanjis += kanjidb.encoding.decode_all(in_kanjis, encoding=_.get("encoding", None))
+        kanjis += kanjidb.encoding.decode_all(
+            in_kanjis, encoding=_.get("encoding", None)
+        )
 
     # Write to outputs
     for _ in outputs:
         out_kanjis = kanjidb.encoding.encode_all(kanjis, encoding=_.get("encoding"))
 
         if _["type"] == "stream":
-            dump(
-                out_kanjis,
-                _["path"],
-                sep=_.get("separator", None)
-            )
+            dump(out_kanjis, _["path"], sep=_.get("separator", None))
         elif _["type"] == "var":
             kwargs[_["name"]] = out_kanjis
         else:

@@ -46,6 +46,25 @@ need to build your own app (database, viewer, Anki deck builder, ...) and
 progress in learning Japanese. KanjiDB also comes with a REST API allowing to
 retrieve those informations and build services uppon.
 
+Why ?
+=====
+
+There already exist various resources one can use to make
+learning Japanese easier. For example, you can use the online
+dictionary `jisho.org <https://jisho.org/>`_\ , many websites will teach
+you grammar, you can read books, `KanjiVG <https://kanjivg.tagaini.net/>`_ gives a
+SVG representation of kanjis, the `Edict Dictionary <http://www.edrdg.org/jmdict/edict.html>`_ and
+`Kanjidic2 <http://nihongo.monash.edu/kanjidic2/index.html>`_ provide many useful informations on
+kanjis, you can find REST API such as `Kanji Alive <https://www.programmableweb.com/api/kanji-alive-rest-api>`_ to query kanjis informations, and `Anki <https://apps.ankiweb.net/>`_ is a great tool to help you remember things (plus you can find
+many already made Anki decks for learning Japanese).
+
+But like many people, you may like to learn kanjis and Japanese by learning things you can relate to.
+If so you may start to create Anki decks with a subset of words or kanjis you are more interested in, and
+this is where you may find it starting difficult to merge informations coming from multiple external resources.
+
+So, KanjiDB is a collection of simple tools that let you work with kanjis, extract informations from external resources,
+merge them together, and eventually build something useful for you or others.
+
 Install
 =======
 
@@ -87,15 +106,30 @@ steps that will run for building the database. Start by creating a file named ``
    - kanjistream:
        encoding: unicode_plus
        separator: ";"
+       in: "-"
+       out: kanjis
    - kanjidic2:
        kd2_file: kanjidic2.xml
+       in: kanjis
+       out: db
    - jsonwriter:
        encoding: unicode_plus
        indent: 4
+       in: db
+       out:
+       - db.json
+       - "-"
 
 Each step listed in ``run`` correspond to a plugin located in ``kanjidb.builder.plugins`` and
 can have its own configuration. You can arrange plugins as you want and even run them
 multiple times.
+
+In this configuration:
+
+
+* ``kanjistream``\ : read kanjis from ``sys.stdin``.
+* `kanjidic2`: produce a JSON dict with data from external Kanjidic2 XML file `kanjidic2.xml` ([download](http://www.edrdg.org/wiki/index.php/KANJIDIC_Project)).
+* ``jsonwriter``\ : write the JSON dict to ``db.json`` and ``sys.stdout``.
 
 Now running ``kanjidb build`` will produce following output:
 
@@ -125,10 +159,11 @@ Now running ``kanjidb build`` will produce following output:
        }
    }
 
-Here KanjiDB simply read two kanjis from ``stdin`` and produced a JSON dict containing
-informations on these kanjis.
+As described in configuration, KanjiDB simply produced a JSON dict containing
+Kanjidic2 data for the two kanjis from ``sys.stdin``. It also created a file
+called ``db.json`` containing this JSON dict.
 
 This example give you a glimpse of how KanjiDB works and how you can assemble
-its plugins to output useful informations on kanjis.
+its plugins to output useful data on kanjis.
 
 http://www.edrdg.org/wiki/index.php/KANJIDIC_Project

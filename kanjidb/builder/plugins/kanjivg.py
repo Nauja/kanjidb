@@ -32,9 +32,11 @@ class Plugin(PluginBase):
                 cp = "0{}".format(cp)
             filename = "{}.svg".format(cp)
 
-            data["vectorial"] = filename if os.path.isfile(
-                os.path.join(self.plugin_config["sources"], filename)
-            ) else None
+            data["vectorial"] = (
+                filename
+                if os.path.isfile(os.path.join(self.plugin_config["sources"], filename))
+                else None
+            )
 
     def __repr__(self):
         return "KanjiVG"

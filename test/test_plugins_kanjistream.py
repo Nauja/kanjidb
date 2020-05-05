@@ -12,22 +12,21 @@ KANJIS_UNICODE_TXT = os.path.join(DATA_DIR, "kanjis_unicode.txt")
 
 class PluginsKanjiStreamTestCase(unittest.TestCase):
     def test_plugin(self):
-        '''Running via Plugin interface.
-        '''
+        """Running via Plugin interface.
+        """
         plugin = kanjistream.Plugin()
         config = plugin.required_config
         config.update(
             {
-                "inputs": [{
-                    "type": "stream",
-                    "encoding": UNICODE_PLUS,
-                    "separator": ";",
-                    "path": KANJIS_UNICODE_TXT
-                }],
-                "outputs": [{
-                    "type": "var",
-                    "name": "kanjis"
-                }]
+                "inputs": [
+                    {
+                        "type": "stream",
+                        "encoding": UNICODE_PLUS,
+                        "separator": ";",
+                        "path": KANJIS_UNICODE_TXT,
+                    }
+                ],
+                "outputs": [{"type": "var", "name": "kanjis"}],
             }
         )
 
@@ -39,23 +38,22 @@ class PluginsKanjiStreamTestCase(unittest.TestCase):
         self.assertEqual(kanjis, ["一", "二"], "Invalid result")
 
     def test_run(self):
-        '''Running via code.
-        '''
+        """Running via code.
+        """
         kwargs = {}
 
         # Read file and store to "result"
         kanjistream.run(
-            inputs=[{
-                "type": "stream",
-                "encoding": UNICODE_PLUS,
-                "separator": ";",
-                "path": KANJIS_UNICODE_TXT
-            }],
-            outputs=[{
-                "type": "var",
-                "name": "result"
-            }],
-            kwargs=kwargs
+            inputs=[
+                {
+                    "type": "stream",
+                    "encoding": UNICODE_PLUS,
+                    "separator": ";",
+                    "path": KANJIS_UNICODE_TXT,
+                }
+            ],
+            outputs=[{"type": "var", "name": "result"}],
+            kwargs=kwargs,
         )
 
         self.assertTrue("result" in kwargs, "Invalid output")
@@ -63,17 +61,16 @@ class PluginsKanjiStreamTestCase(unittest.TestCase):
 
         # Get "result" and write to stdout
         kanjistream.run(
-            inputs=[{
-                "type": "var",
-                "name": "result"
-            }],
-            outputs=[{
-                "type": "stream",
-                "encoding": UNICODE_PLUS,
-                "separator": ";",
-                "path": "-"
-            }],
-            kwargs=kwargs
+            inputs=[{"type": "var", "name": "result"}],
+            outputs=[
+                {
+                    "type": "stream",
+                    "encoding": UNICODE_PLUS,
+                    "separator": ";",
+                    "path": "-",
+                }
+            ],
+            kwargs=kwargs,
         )
 
     def test_loads(self):
