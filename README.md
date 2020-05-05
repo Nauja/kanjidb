@@ -178,7 +178,7 @@ Don't hesitate to take a look at samples as it's a good way to learn how to use 
 
 ## Testing
 
-The `test` directory contains many tests that you can run with following command:
+The `test` directory contains many tests that you can run with:
 
 ```python
 > python setup.py test
