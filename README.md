@@ -123,7 +123,7 @@ kanjistream.run(
 
 You can read more about the `kanjistream` plugin and its configuration [here](https://kanjidb.readthedocs.io/en/latest/plugins.html#kanjistream).
 
-## Running tests
+## Testing
 
 The `test` directory contains many tests that you can run with following command:
 
