@@ -123,6 +123,18 @@ kanjistream.run(
 
 You can read more about the `kanjistream` plugin and its configuration [here](https://kanjidb.readthedocs.io/en/latest/plugins.html#kanjistream).
 
+## Running samples
+
+In `test.data` directory you will find many sample configuration files that you can run with
+`kanjidb builder`. For example, you can run `sample_helloworld.yml` with following command:
+
+```python
+> python -m kanjidb build test/data/sample_helloworld.yml
+今日わ
+```
+
+Don't hesitate to take a look at samples as it's a good way to learn how to use KanjiDB.
+
 ## Testing
 
 The `test` directory contains many tests that you can run with following command:
@@ -136,15 +148,3 @@ Or with coverage:
 ```python
 > coverage run --source=kanjidb setup.py test
 ```
-
-## Running samples
-
-In the `test/data` directory you will find many sample configuration files that you can run with
-`kanjidb builder`. For example, you can run `sample_helloworld.yml` with following command:
-
-```python
-> python -m kanjidb build test/data/sample_helloworld.yml
-今日わ
-```
-
-Don't hesitate to take a look at samples as it's a good way to learn how to use KanjiDB.
