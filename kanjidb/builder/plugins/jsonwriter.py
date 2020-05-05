@@ -34,17 +34,17 @@ class Plugin(PluginBase):
         return "JSONWriter"
 
 
-def dumps(o, *, indent=None):
+def dumps(o, *, sort_keys=None, indent=None):
     """Dump a JSON object.
 
     :param o: JSON object
     """
     indent = indent if indent is not None else 4
 
-    return json.dumps(o, indent=indent, ensure_ascii=False)
+    return json.dumps(o, indent=indent, sort_keys=sort_keys, ensure_ascii=False)
 
 
-def dump(o, *streams, indent=None):
+def dump(o, *streams, sort_keys=None, indent=None):
     """Dump a JSON object to streams.
 
     Parameter `output` may be a `str` or `filelike` object:
@@ -81,7 +81,7 @@ def dump(o, *streams, indent=None):
     """
     streams = streams if streams else sys.stdout
 
-    content = dumps(o, indent=indent)
+    content = dumps(o, sort_keys=sort_keys, indent=indent)
 
     for stream in streams:
         if stream == "-":

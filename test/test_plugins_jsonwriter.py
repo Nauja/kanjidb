@@ -13,11 +13,11 @@ UTF8_OUTPUT = """{
 class JSONWriterTestCase(unittest.TestCase):
     def test_dumps(self):
         db = {"一": {}, "二": {}}
-        self.assertEqual(jsonwriter.dumps(db, indent=0), UTF8_OUTPUT)
+        self.assertEqual(jsonwriter.dumps(db, sort_keys=True, indent=0), UTF8_OUTPUT)
 
     def test_dump(self):
         db = {"一": {}, "二": {}}
-        jsonwriter.dump(db, sys.stdout)
+        jsonwriter.dump(db, sys.stdout, sort_keys=True)
 
 
 if __name__ == "__main__":
