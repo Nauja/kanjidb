@@ -1,6 +1,4 @@
 
-WIP
-
 KanjiDB
 =======
 
@@ -125,13 +123,35 @@ Create a ``kanjis.txt`` file containing unicode encoded kanjis separated by semi
 
    U+4E00;U+4E8C
 
-Now running ``kanjidb build`` will output:
+Now running ``kanjidb build`` will output one UTF-8 encoded kanji per line:
 
 .. code-block:: bash
 
    > python -m kanjidb build sample.yml
    一
    二
+
+Equivalent in Python:
+
+.. code-block:: python
+
+   from kanjidb.encoding import UNICODE_PLUS, UTF8
+   from kanjidb.builder.plugins import kanjistream
+
+   kanjistream.run(
+       inputs=[{
+           "type": "stream",
+           "encoding": UNICODE_PLUS,
+           "separator": ";",
+           "path": "kanjis.txt"
+       }],
+       outputs=[{
+           "type": "stream",
+           "encoding": UTF8,
+           "separator": "\n",
+           "path": "-"
+       }]
+   )
 
 Building a database
 -------------------

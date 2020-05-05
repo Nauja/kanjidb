@@ -1,0 +1,7 @@
+Plugins
+=======
+
+kanjistream
+-----------
+
+wip

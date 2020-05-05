@@ -11,6 +11,7 @@ Welcome to KanjiDB's documentation!
    :caption: Contents:
 
    intro
+   plugins
 
 
 
