@@ -91,7 +91,7 @@ Create a `kanjis.txt` file containing unicode encoded kanjis separated by semico
 U+4E00;U+4E8C
 ```
 
-Now running `kanjidb build` will output:
+Now running `kanjidb build` will output one UTF-8 encoded kanji per line:
 
 ```bash
 > python -m kanjidb build sample.yml
