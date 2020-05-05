@@ -12,11 +12,7 @@ class Plugin(PluginBase):
     @property
     def required_config(self):
         return {
-            "output": {
-                "type": "stream",
-                "encoding": kanjidb.encoding.UTF8,
-                "path": "-"
-            }
+            "output": {"type": "stream", "encoding": kanjidb.encoding.UTF8, "path": "-"}
         }
 
     def __call__(self, **kwargs):
@@ -33,12 +29,7 @@ def run(output):
         output["separator"] = ""
 
     kanjistream.run(
-        inputs=[{
-            "type": "var",
-            "name": "kanjis"
-        }],
+        inputs=[{"type": "var", "name": "kanjis"}],
         outputs=[output],
-        kwargs={
-            "kanjis": "今日わ"
-        }
+        kwargs={"kanjis": "今日わ"},
     )

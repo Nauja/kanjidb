@@ -11,13 +11,15 @@ class PluginsHelloWorldTestCase(unittest.TestCase):
         """
         plugin = helloworld.Plugin()
         config = plugin.required_config
-        config.update({
-            "output": {
-                "type": "stream",
-                "encoding": kanjidb.encoding.UNICODE_ESCAPE,
-                "path": "-"
+        config.update(
+            {
+                "output": {
+                    "type": "stream",
+                    "encoding": kanjidb.encoding.UNICODE_ESCAPE,
+                    "path": "-",
+                }
             }
-        })
+        )
 
         plugin.configure(global_config={}, plugin_config=config)
 
@@ -27,11 +29,7 @@ class PluginsHelloWorldTestCase(unittest.TestCase):
         """Running via code.
         """
         helloworld.run(
-            output={
-                "type": "stream",
-                "encoding": kanjidb.encoding.UTF8,
-                "path": "-"
-            }
+            output={"type": "stream", "encoding": kanjidb.encoding.UTF8, "path": "-"}
         )
 
 
