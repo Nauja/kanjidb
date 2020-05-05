@@ -61,7 +61,9 @@ class Plugin(PluginBase):
         return "KanjiStream"
 
 
-def run(inputs, outputs, kwargs):
+def run(inputs, outputs, *, kwargs=None):
+    kwargs = kwargs if kwargs is not None else {}
+
     kanjis = []
 
     # Read from inputs

@@ -2,12 +2,14 @@
 __all__ = ["PluginsKanjiStreamTestCase"]
 import os
 import unittest
+from kanjidb import builder
 from kanjidb.builder.plugins import kanjistream
 from kanjidb.encoding import UNICODE_PLUS
 
 DATA_DIR = os.path.join(os.path.dirname(__file__), "data")
 KANJIS_UTF8_TXT = os.path.join(DATA_DIR, "kanjis_utf8.txt")
 KANJIS_UNICODE_TXT = os.path.join(DATA_DIR, "kanjis_unicode.txt")
+SAMPLE_TXT = os.path.join(DATA_DIR, "sample_kanjistream.yml")
 
 
 class PluginsKanjiStreamTestCase(unittest.TestCase):
@@ -72,6 +74,9 @@ class PluginsKanjiStreamTestCase(unittest.TestCase):
             ],
             kwargs=kwargs,
         )
+
+    def test_sample(self):
+        builder.main([SAMPLE_TXT])
 
     def test_loads(self):
         # UTF8 encoded

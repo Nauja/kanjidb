@@ -97,6 +97,48 @@ Show help:
 
    Run 'kanjidb COMMAND --help' for more information on a command.
 
+Usage
+-----
+
+Generating a kanji database is done with the ``kanjidb build`` command.
+It requires a YAML configuration file to describe and configure all the steps
+that will be run in order to generate the database.
+
+Start by creating a ``helloworld.yml`` file containing:
+
+.. code-block::
+
+   run:
+   - helloworld: {}
+
+Each step listed in ``run`` correspond to a `plugin <https://kanjidb.readthedocs.io/en/latest/plugins.html>`_ located in ``kanjidb.builder.plugins``.
+A plugin is a simple function you can use and configure from the YAML configuration
+file. Here we tell that we will run a single step with the plugin `helloworld <https://kanjidb.readthedocs.io/en/latest/plugins.html#helloworld>`_\ , which only output "今日わ" to ``sys.stdout``.
+
+Now, you can run this small script with following command:
+
+.. code-block:: bash
+
+   > python -m kanjidb build helloworld.yml
+   今日わ
+
+This is how you can use ``kanjidb build`` to work with kanjis.
+Some plugins allow to read kanjis from inputs while others are dedicated to
+combine informations from external resources. Take a look at the `documentation <https://kanjidb.readthedocs.io/>`_
+for a full list of builtin plugins.
+
+But you are not limited to script the build process with a YAML configuration file.
+For instance, here is how you would obtain the same result with a Python script:
+
+.. code-block:: python
+
+   > from kanjidb.builder.plugins import helloworld
+   > helloworld.run()
+   今日わ
+
+This option has the advantages of being a more powerful and versatile way of using KanjiDB.
+It even allows you to write custom plugins to code new features, but it requires to write and distribute Python scripts.
+
 Reading kanjis from file
 ------------------------
 
@@ -171,7 +213,7 @@ Don't hesitate to take a look at samples as it's a good way to learn how to use 
 Testing
 -------
 
-The ``test`` directory contains many tests that you can run with following command:
+The ``test`` directory contains many tests that you can run with:
 
 .. code-block:: python
 

@@ -1,10 +1,10 @@
-__all__ = ["Plugin", "load"]
-from kanjidb.builder.plugins import PluginBase
+__all__ = ["Plugin", "run", "load"]
+from kanjidb.builder.plugins import PluginBase, kanjistream
 
 try:
     from jamdict.kanjidic2 import Kanjidic2XMLParser
 except Exception as e:
-    raise Exception("Kanjidic2Plugin requires jamdict to be installed") from e
+    raise Exception("kanjidic2 requires jamdict to be installed") from e
 
 
 class Plugin(PluginBase):
@@ -15,62 +15,48 @@ class Plugin(PluginBase):
 
     @property
     def template_config(self):
-        return {"kd2_file": "kd2.xml"}
+        return {
+            "inputs": [{"type": "var", "name": "kanjis"}],
+            "output": {"type": "var", "name": "db"},
+            "kd2_file": "kd2.xml",
+        }
 
     @property
     def required_config(self):
-        config = self.template_config
-        config.update({"in": "kanjis", "out": "db"})
-
-        return config
-
-    def configure(self, **kwargs):
-        super().configure(**kwargs)
-
-        data = load(self.plugin_config["kd2_file"])
-        print("{} loaded".format(self.plugin_config["kd2_file"]))
-        self._kanjis = {_.literal: _ for _ in data.characters}
+        return self.template_config
 
     def __call__(self, **kwargs):
         """Fill database with Kanjidic2 infos.
-
-        :param db: database
         """
-        kanjis = kwargs[self.plugin_config["in"]]
-
-        kwargs[self.plugin_config["out"]] = {_: self.get_infos(_) for _ in kanjis}
+        run(
+            inputs=self.plugin_config["inputs"],
+            output=self.plugin_config["output"],
+            kd2_file=self.plugin_config["kd2_file"],
+            kwargs=kwargs,
+        )
 
         return kwargs
 
-    def get_infos(self, kanji):
-        """Get infos from Kanjidic2 for a single kanji.
-
-        :param kanji: kanji to retrieve
-        :return: dict containing all infos
-        """
-        data = self._kanjis[kanji]
-
-        return {
-            "stroke_count": data.stroke_count,
-            "codepoints": [
-                {"type": cp.cp_type, "value": cp.value} for cp in data.codepoints
-            ],
-            "readings": self.get_readings(kanji),
-            "meanings": self.get_meanings(kanji),
-        }
-
-    def get_readings(self, kanji):
-        data = self._kanjis[kanji].rm_groups[0]
-
-        return [_.to_json() for _ in data.readings]
-
-    def get_meanings(self, kanji):
-        data = self._kanjis[kanji].rm_groups[0]
-
-        return [_.to_json() for _ in data.meanings]
-
     def __repr__(self):
         return "Kanjidic2"
+
+
+def run(inputs, output, *, kd2_file, kwargs=None):
+    kwargs = kwargs if kwargs is not None else {}
+
+    # Read kanjis to generate
+    kanjistream.run(
+        inputs=inputs, outputs=[{"type": "var", "name": output["name"]}], kwargs=kwargs
+    )
+
+    kanjis = kwargs[output["name"]]
+
+    # Load external Kanjidic2 XML file
+    data = load(kd2_file)
+    data = {_.literal: _ for _ in data.characters}
+
+    # Merge infos with kanjis
+    kwargs[output["name"]] = {_: data[_].to_json() for _ in kanjis}
 
 
 def load(stream):
