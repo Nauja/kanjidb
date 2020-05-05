@@ -11,25 +11,70 @@ KANJIS_UNICODE_TXT = os.path.join(DATA_DIR, "kanjis_unicode.txt")
 
 
 class PluginsKanjiStreamTestCase(unittest.TestCase):
-    def test(self):
+    def test_plugin(self):
+        '''Running via Plugin interface.
+        '''
         plugin = kanjistream.Plugin()
         config = plugin.required_config
         config.update(
             {
-                "encoding": UNICODE_PLUS,
-                "separator": ";",
-                "in": [KANJIS_UNICODE_TXT],
-                "out": "kanjis",
+                "inputs": [{
+                    "type": "stream",
+                    "encoding": UNICODE_PLUS,
+                    "separator": ";",
+                    "path": KANJIS_UNICODE_TXT
+                }],
+                "outputs": [{
+                    "type": "var",
+                    "name": "kanjis"
+                }]
             }
         )
 
         plugin.configure(global_config={}, plugin_config=config)
 
         result = plugin()
-        print(result)
         self.assertTrue("kanjis" in result, "Invalid output")
         kanjis = result["kanjis"]
         self.assertEqual(kanjis, ["一", "二"], "Invalid result")
+
+    def test_run(self):
+        '''Running via code.
+        '''
+        kwargs = {}
+
+        # Read file and store to "result"
+        kanjistream.run(
+            inputs=[{
+                "type": "stream",
+                "encoding": UNICODE_PLUS,
+                "separator": ";",
+                "path": KANJIS_UNICODE_TXT
+            }],
+            outputs=[{
+                "type": "var",
+                "name": "result"
+            }],
+            kwargs=kwargs
+        )
+
+        self.assertTrue("result" in kwargs, "Invalid output")
+        self.assertEqual(kwargs["result"], ["一", "二"], "Invalid result")
+
+        # Get "result" and write to stdout
+        kanjistream.run(
+            inputs=[{
+                "type": "var",
+                "name": "result"
+            }],
+            outputs=[{
+                "type": "stream",
+                "encoding": UNICODE_PLUS,
+                "separator": ";",
+                "path": "-"
+            }],
+            kwargs=kwargs
+        )
 
     def test_loads(self):
         # UTF8 encoded
@@ -55,6 +100,9 @@ class PluginsKanjiStreamTestCase(unittest.TestCase):
             kanjistream.load(KANJIS_UNICODE_TXT, encoding=UNICODE_PLUS, sep=";"),
             ["一", "二"],
         )
+
+    def test_dump(self):
+        kanjistream.dump(["一", "二"], "-", encoding=UNICODE_PLUS, sep=";")
 
 
 if __name__ == "__main__":

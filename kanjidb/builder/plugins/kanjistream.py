@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-__all__ = ["Plugin", "loads", "load"]
+__all__ = ["Plugin", "run", "loads", "load", "dump"]
 import sys
 import os
 import functools
@@ -30,28 +30,69 @@ class Plugin(PluginBase):
 
     @property
     def template_config(self):
-        return {"separator": os.linesep, "encoding": kanjidb.encoding.UNICODE_PLUS}
+        return {
+            "inputs": [{
+                "type": "stream",
+                "separator": os.linesep,
+                "encoding": kanjidb.encoding.UNICODE_PLUS,
+                "path": "-"
+            }],
+            "outputs": [{
+                "type": "var",
+                "name": "result"
+            }]
+        }
 
     @property
     def required_config(self):
         config = self.template_config
-        config.update({"in": ["-"], "out": "kanjis"})
 
         return config
 
     def __call__(self, **kwargs):
-        kanjis = load(
-            *self.plugin_config["in"],
-            encoding=self.plugin_config["encoding"],
-            sep=self.plugin_config["separator"]
+        run(
+            inputs=self.plugin_config["inputs"],
+            outputs=self.plugin_config["outputs"],
+            kwargs=kwargs
         )
-
-        kwargs[self.plugin_config["out"]] = kanjis
 
         return kwargs
 
     def __repr__(self):
         return "KanjiStream"
+
+
+def run(inputs, outputs, kwargs):
+    kanjis = []
+
+    # Read from inputs
+    for _ in inputs:
+        if _["type"] == "stream":
+            in_kanjis = load(
+                _["path"],
+                sep=_.get("separator", None)
+            )
+        elif _["type"] == "var":
+            in_kanjis = kwargs[_["name"]]
+        else:
+            raise Exception("Invalid input {}".format(_["type"]))
+
+        kanjis += kanjidb.encoding.decode_all(in_kanjis, encoding=_.get("encoding", None))
+
+    # Write to outputs
+    for _ in outputs:
+        out_kanjis = kanjidb.encoding.encode_all(kanjis, encoding=_.get("encoding"))
+
+        if _["type"] == "stream":
+            dump(
+                out_kanjis,
+                _["path"],
+                sep=_.get("separator", None)
+            )
+        elif _["type"] == "var":
+            kwargs[_["name"]] = out_kanjis
+        else:
+            raise Exception("Invalid output {}".format(_["type"]))
 
 
 def loads(s, *, encoding=None, decode=None, sep=None):
@@ -149,3 +190,26 @@ def load(*streams, encoding=None, decode=None, sep=None):
             yield from loads(content, encoding=encoding, decode=decode, sep=sep)
 
     return list(wrapper())
+
+
+def dump(kanjis, *streams, encoding=None, encode=None, sep=None):
+    sep = sep if sep is not None else os.linesep
+    encode = (
+        encode
+        if encode is not None
+        else functools.partial(kanjidb.encoding.encode, encoding=encoding)
+    )
+
+    content = sep.join([encode(_) for _ in kanjis])
+
+    for stream in streams:
+        # stdout
+        if stream == "-":
+            stream = sys.stdout
+        # Filelike object
+        if hasattr(stream, "write"):
+            stream.write(content)
+        # Filename
+        else:
+            with open(stream, "wb") as f:
+                f.write(content.encode())

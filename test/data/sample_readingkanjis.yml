@@ -1,0 +1,10 @@
+run:
+- kanjistream:
+    inputs:
+    - type: stream
+      encoding: unicode_plus
+      separator: ";"
+      path: data/kanjis_unicode.txt
+    outputs:
+    - type: var
+      name: kanjis

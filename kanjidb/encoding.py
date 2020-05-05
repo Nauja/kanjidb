@@ -5,6 +5,8 @@ __all__ = [
     "UTF8",
     "encode",
     "decode",
+    "encode_all",
+    "decode_all",
     "get_codepoint",
 ]
 import re
@@ -97,3 +99,27 @@ def encode(s, *, encoding=None, prefix=None):
         return "{}{}".format(prefix, get_codepoint(s))
 
     return s
+
+
+def decode_all(kanjis, *, encoding=None):
+    '''Decode a list of kanjis.
+
+    :param kanjis: list of kanjis
+    :param encoding: encoding
+    :return: list of decoded kanjis
+    '''
+    encoding = encoding if encoding is not None else UTF8
+
+    return [decode(_, encoding=encoding) for _ in kanjis]
+
+
+def encode_all(kanjis, *, encoding=None):
+    '''Reencode a list of UTF-8 encoded kanjis with a new encoding.
+
+    :param kanjis: list of kanjis
+    :param encoding: new encoding
+    :return: list of encoded kanjis
+    '''
+    encoding = encoding if encoding is not None else UTF8
+
+    return [encode(_, encoding=encoding) for _ in kanjis]
