@@ -4,6 +4,7 @@ WIP
 
 [![PyPI version](https://badge.fury.io/py/kanjidb.svg)](https://badge.fury.io/py/kanjidb)
 [![Build Status](https://travis-ci.org/Nauja/kanjidb.png?branch=master)](https://travis-ci.org/Nauja/kanjidb)
+[![Documentation Status](https://readthedocs.org/projects/kanjidb/badge/?version=latest)](https://kanjidb.readthedocs.io/en/latest/?badge=latest)
 [![CircleCI](https://circleci.com/gh/Nauja/kanjidb/tree/circleci-project-setup.svg?style=svg)](https://circleci.com/gh/Nauja/kanjidb/tree/circleci-project-setup)
 [![Test Coverage](https://codeclimate.com/github/Nauja/kanjidb/badges/coverage.svg)](https://codeclimate.com/github/Nauja/kanjidb/coverage)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
@@ -20,7 +21,7 @@ need to build your own app (database, viewer, Anki deck builder, ...) and
 progress in learning Japanese. KanjiDB also comes with a REST API allowing to
 retrieve those informations and build services uppon.
 
-# Why ?
+## Why ?
 
 There already exist various resources one can use to make
 learning Japanese easier. For example, you can use the online
@@ -38,7 +39,7 @@ this is where you may find it starting difficult to merge informations coming fr
 So, KanjiDB is a collection of simple tools that let you work with kanjis, extract informations from external resources,
 merge them together, and eventually build something useful for you or others.
 
-# Install
+## Install
 
 Using pip:
 
@@ -67,7 +68,40 @@ Run 'kanjidb COMMAND --help' for more information on a command.
 
 ```
 
-# Building a database
+## Reading kanjis from file
+
+Create a `sample.yml` file containing:
+
+```
+run:
+- kanjistream:
+    inputs:
+    - type: stream
+      encoding: unicode_plus
+      separator: ";"
+      path: kanjis.txt
+    outputs:
+    - type: stream
+      encoding: utf8
+      separator: "\n"
+      path: "-"
+```
+
+Create a `kanjis.txt` file containing unicode encoded kanjis separated by semicolon:
+
+```
+U+4E00;U+4E8C
+```
+
+Now running `kanjidb build` will output:
+
+```bash
+> python -m kanjidb build sample.yml
+一
+二
+```
+
+## Building a database
 
 The command `kanjidb build` requires a YAML configuration file describing all
 steps that will run for building the database. Start by creating a file named `config.yml` looking like this:
