@@ -123,4 +123,16 @@ kanjistream.run(
 
 You can read more about the `kanjistream` plugin and its configuration [here](https://kanjidb.readthedocs.io/en/latest/plugins.html#kanjistream).
 
-http://www.edrdg.org/wiki/index.php/KANJIDIC_Project
+## Running tests
+
+The `test` directory contains many tests that you can run with following command:
+
+```python
+> python setup.py test
+```
+
+Or with coverage:
+
+```python
+> coverage run --source=kanjidb setup.py test
+```
