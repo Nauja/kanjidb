@@ -68,9 +68,7 @@ Run 'kanjidb COMMAND --help' for more information on a command.
 
 ## Usage
 
-Generating a kanji database is done with the `kanjidb build` command.
-It requires a YAML configuration file to describe and configure all the steps
-that will be run in order to generate the database.
+Generating a database is done with the `kanjidb build` command.
 
 Start by creating a `helloworld.yml` file containing:
 
@@ -79,11 +77,12 @@ run:
 - helloworld: {}
 ```
 
-Each step listed in `run` correspond to a [plugin](https://kanjidb.readthedocs.io/en/latest/plugins.html) located in `kanjidb.builder.plugins`.
+This YAML configuration file serves to describe and configure all the steps
+that will be run in order to generate the database. Each step listed in `run` correspond to a [plugin](https://kanjidb.readthedocs.io/en/latest/plugins.html) located in `kanjidb.builder.plugins`.
 A plugin is a simple function you can use and configure from the YAML configuration
 file. Here we tell that we will run a single step with the plugin [helloworld](https://kanjidb.readthedocs.io/en/latest/plugins.html#helloworld), which only output "今日わ" to `sys.stdout`.
 
-Now, you can run this small script with following command:
+Now, run the following command:
 
 ```bash
 > python -m kanjidb build helloworld.yml
@@ -95,7 +94,7 @@ Some plugins allow to read kanjis from inputs while others are dedicated to
 combine informations from external resources. Take a look at the [documentation](https://kanjidb.readthedocs.io/)
 for a full list of builtin plugins.
 
-But you are not limited to script the build process with a YAML configuration file.
+But you are not limited to scripting the build process with a YAML configuration file.
 For instance, here is how you would obtain the same result with a Python script:
 
 ```python
