@@ -72,7 +72,7 @@ Generating a database is done with the `kanjidb build` command.
 
 Start by creating a `helloworld.yml` file containing:
 
-```
+```yaml
 run:
 - helloworld: {}
 ```
@@ -110,7 +110,7 @@ It even allows you to write custom plugins to code new features, but it requires
 
 Create a `sample.yml` file containing:
 
-```
+```yaml
 run:
 - kanjistream:
     inputs:
