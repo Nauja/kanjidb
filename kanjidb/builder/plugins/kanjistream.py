@@ -9,25 +9,6 @@ import kanjidb.encoding
 
 
 class Plugin(PluginBase):
-    """This plugin read/write kanjis from/to streams.
-
-    Given an input stream containing one unicode encoded kanji
-    per line such as:
-
-    .. code-block::
-
-        U+4E00
-        U+4E8C
-        ...
-
-    This plugin will produce a list containing:
-
-    .. code-block::
-
-        ["一", "二", ...]
-
-    """
-
     @property
     def template_config(self):
         return {
@@ -35,7 +16,7 @@ class Plugin(PluginBase):
                 {
                     "type": "stream",
                     "separator": os.linesep,
-                    "encoding": kanjidb.encoding.UNICODE_PLUS,
+                    "encoding": kanjidb.encoding.UTF8,
                     "path": "-",
                 }
             ],
@@ -61,7 +42,114 @@ class Plugin(PluginBase):
         return "KanjiStream"
 
 
-def run(inputs, outputs, *, kwargs=None):
+def run(inputs, outputs=None, *, kwargs=None):
+    """Read/write kanjis from/to streams.
+
+    Given an input stream containing one unicode encoded kanji
+    per line such as:
+
+    .. code-block::
+
+        U+4E00
+        U+4E8C
+        ...
+
+    This plugin will produce a list containing:
+
+    .. code-block::
+
+        ["一", "二", ...]
+
+    Configuration:
+
+    .. code-block:: yaml
+
+        run:
+        - kanjistream:
+          inputs:
+          - type: stream|var
+            [separator: string] # stream only
+            [encoding: string] # stream only
+            [path: string] # stream only
+            [name: string] # var only
+          outputs:
+          - type: stream|var
+            [separator: string] # stream only
+            [encoding: string] # stream only
+            [path: string] # stream only
+            [name: string] # var only
+
+    Read from stdin and store to `result`:
+
+    .. code-block:: yaml
+
+        run:
+        - kanjistream:
+          inputs:
+          - type: stream
+            encoding: utf8
+            separator: "\\n"
+            path: "-"
+          outputs:
+          - type: var
+            name: result
+
+    Python equivalent:
+
+    .. code-block:: python
+
+        from kanjidb.builder.plugins import kanjistream
+
+        result = kanjistream.run(
+            inputs=[{
+                "type": "stream",
+                "encoding": "utf8",
+                "separator": "\\n",
+                "path": "-"
+            }]
+        )
+
+    Get from `result` and write to stdout:
+
+    .. code-block:: yaml
+
+        run:
+        - kanjistream:
+          inputs:
+          - type: var
+            name: result
+          outputs:
+          - type: stream
+            encoding: utf8
+            separator: "\\n"
+            path: "-"
+
+    Python equivalent:
+
+    .. code-block:: python
+
+        from kanjidb.builder.plugins import kanjistream
+
+        kanjistream.run(
+            inputs=[{
+                "type": "var",
+                "name": "result"
+            }],
+            outputs=[{
+                "type": "stream",
+                "encoding": "utf8",
+                "separator": "\\n",
+                "path": "-"
+            }],
+            kwargs={"result": ["一", "二"]}
+        )
+
+    :param inputs: input streams
+    :param output: output streams
+    :param kwargs: context
+    :return: a list of kanjis read from input streams
+    """
+    outputs = outputs if outputs is not None else []
     kwargs = kwargs if kwargs is not None else {}
 
     kanjis = []
@@ -89,6 +177,8 @@ def run(inputs, outputs, *, kwargs=None):
             kwargs[_["name"]] = out_kanjis
         else:
             raise Exception("Invalid output {}".format(_["type"]))
+
+    return kanjis
 
 
 def loads(s, *, encoding=None, decode=None, sep=None):

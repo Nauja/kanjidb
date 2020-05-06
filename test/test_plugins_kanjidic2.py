@@ -18,7 +18,7 @@ class PluginsKanjidic2TestCase(unittest.TestCase):
         config.update(
             {
                 "inputs": [{"type": "var", "name": "kanjis"}],
-                "output": {"type": "var", "name": "db"},
+                "outputs": [{"type": "var", "name": "db"}],
                 "kd2_file": KANJIDIC2_XML,
             }
         )
@@ -31,12 +31,14 @@ class PluginsKanjidic2TestCase(unittest.TestCase):
         self.assertTrue(len(db) == 2, "Invalid result")
 
     def test_run(self):
-        kanjidic2.run(
+        db = kanjidic2.run(
             inputs=[{"type": "var", "name": "kanjis"}],
-            output={"type": "var", "name": "db"},
+            outputs=[{"type": "var", "name": "db"}],
             kd2_file=KANJIDIC2_XML,
             kwargs={"kanjis": kanjistream.load(KANJIS_UTF8_TXT, sep=";")},
         )
+
+        self.assertTrue(len(db) == 2, "Invalid result")
 
     def test_sample(self):
         builder.main([SAMPLE_TXT])

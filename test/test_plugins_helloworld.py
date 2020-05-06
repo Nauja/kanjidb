@@ -18,11 +18,13 @@ class PluginsHelloWorldTestCase(unittest.TestCase):
         config = plugin.required_config
         config.update(
             {
-                "output": {
-                    "type": "stream",
-                    "encoding": kanjidb.encoding.UNICODE_ESCAPE,
-                    "path": "-",
-                }
+                "outputs": [
+                    {
+                        "type": "stream",
+                        "encoding": kanjidb.encoding.UNICODE_ESCAPE,
+                        "path": "-",
+                    }
+                ]
             }
         )
 

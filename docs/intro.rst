@@ -57,7 +57,7 @@ learning Japanese easier. For example, you can use the online
 dictionary `jisho.org <https://jisho.org/>`_\ , many websites will teach
 you grammar, you can read books, `KanjiVG <https://kanjivg.tagaini.net/>`_ gives a
 SVG representation of kanjis, the `Edict Dictionary <http://www.edrdg.org/jmdict/edict.html>`_ and
-`Kanjidic2 <http://nihongo.monash.edu/kanjidic2/index.html>`_ provide many useful informations on
+`Kanjidic2 <http://www.edrdg.org/wiki/index.php/KANJIDIC_Project>`_ provide many useful informations on
 kanjis, you can find REST API such as `Kanji Alive <https://www.programmableweb.com/api/kanji-alive-rest-api>`_ to query kanjis informations, and `Anki <https://apps.ankiweb.net/>`_ is a great tool to help you remember things (plus you can find
 many already made Anki decks for learning Japanese).
 
@@ -100,22 +100,21 @@ Show help:
 Usage
 -----
 
-Generating a kanji database is done with the ``kanjidb build`` command.
-It requires a YAML configuration file to describe and configure all the steps
-that will be run in order to generate the database.
+Generating a database is done with the ``kanjidb build`` command.
 
 Start by creating a ``helloworld.yml`` file containing:
 
-.. code-block::
+.. code-block:: yaml
 
    run:
    - helloworld: {}
 
-Each step listed in ``run`` correspond to a `plugin <https://kanjidb.readthedocs.io/en/latest/plugins.html>`_ located in ``kanjidb.builder.plugins``.
+This YAML configuration file serves to describe and configure all the steps
+that will be run in order to generate the database. Each step listed in ``run`` correspond to a `plugin <https://kanjidb.readthedocs.io/en/latest/plugins.html>`_ located in ``kanjidb.builder.plugins``.
 A plugin is a simple function you can use and configure from the YAML configuration
 file. Here we tell that we will run a single step with the plugin `helloworld <https://kanjidb.readthedocs.io/en/latest/plugins.html#helloworld>`_\ , which only output "今日わ" to ``sys.stdout``.
 
-Now, you can run this small script with following command:
+Now, run the following command:
 
 .. code-block:: bash
 
@@ -127,7 +126,7 @@ Some plugins allow to read kanjis from inputs while others are dedicated to
 combine informations from external resources. Take a look at the `documentation <https://kanjidb.readthedocs.io/>`_
 for a full list of builtin plugins.
 
-But you are not limited to script the build process with a YAML configuration file.
+But you are not limited to scripting the build process with a YAML configuration file.
 For instance, here is how you would obtain the same result with a Python script:
 
 .. code-block:: python
@@ -144,7 +143,7 @@ Reading kanjis from file
 
 Create a ``sample.yml`` file containing:
 
-.. code-block::
+.. code-block:: yaml
 
    run:
    - kanjistream:

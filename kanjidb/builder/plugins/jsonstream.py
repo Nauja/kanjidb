@@ -33,7 +33,90 @@ class Plugin(PluginBase):
         return "JSONStream"
 
 
-def run(inputs, outputs, *, kwargs=None):
+def run(inputs, outputs=None, *, kwargs=None):
+    """Read/write JSON objects from/to streams.
+
+    Configuration:
+
+    .. code-block:: yaml
+
+        run:
+        - jsonstream:
+          inputs:
+          - type: stream|var
+            [path: string] # stream only
+            [name: string] # var only
+          outputs:
+          - type: stream|var
+            [path: string] # stream only
+            [indent: int] # stream only
+            [name: string] # var only
+
+    Read from stdin and store to `result`:
+
+    .. code-block:: yaml
+
+        run:
+        - jsonstream:
+          inputs:
+          - type: stream
+            path: "-"
+          outputs:
+          - type: var
+            name: result
+
+    Python equivalent:
+
+    .. code-block:: python
+
+        from kanjidb.builder.plugins import jsonstream
+
+        result = jsonstream.run(
+            inputs=[{
+                "type": "stream",
+                "path": "-"
+            }]
+        )
+
+    Get from `result` and write to stdout:
+
+    .. code-block:: yaml
+
+        run:
+        - jsonstream:
+          inputs:
+          - type: var
+            name: result
+          outputs:
+          - type: stream
+            indent: 4
+            path: "-"
+
+    Python equivalent:
+
+    .. code-block:: python
+
+        from kanjidb.builder.plugins import jsonstream
+
+        jsonstream.run(
+            inputs=[{
+                "type": "var",
+                "name": "result"
+            }],
+            outputs=[{
+                "type": "stream",
+                "indent": 4,
+                "path": "-"
+            }],
+            kwargs={"result": {...}}
+        )
+
+    :param inputs: input streams
+    :param output: output streams
+    :param kwargs: context
+    :return: a JSON object read from input streams
+    """
+    outputs = outputs if outputs is not None else []
     kwargs = kwargs if kwargs is not None else {}
 
     o = {}
@@ -50,11 +133,13 @@ def run(inputs, outputs, *, kwargs=None):
     # Write to outputs
     for _ in outputs:
         if _["type"] == "stream":
-            dump(o, _["path"])
+            dump(o, _["path"], indent=_.get("indent", 4))
         elif _["type"] == "var":
             kwargs[_["name"]] = o
         else:
             raise Exception("Invalid output {}".format(_["type"]))
+
+    return o
 
 
 def load(*streams, loads=None):

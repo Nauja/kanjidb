@@ -44,8 +44,8 @@ class PluginsKanjiStreamTestCase(unittest.TestCase):
         """
         kwargs = {}
 
-        # Read file and store to "result"
-        kanjistream.run(
+        # Read file and store to "kanjis"
+        kanjis = kanjistream.run(
             inputs=[
                 {
                     "type": "stream",
@@ -54,16 +54,19 @@ class PluginsKanjiStreamTestCase(unittest.TestCase):
                     "path": KANJIS_UNICODE_TXT,
                 }
             ],
-            outputs=[{"type": "var", "name": "result"}],
+            outputs=[{"type": "var", "name": "kanjis"}],
             kwargs=kwargs,
         )
 
-        self.assertTrue("result" in kwargs, "Invalid output")
-        self.assertEqual(kwargs["result"], ["一", "二"], "Invalid result")
+        # Check both kwargs and return value
+        self.assertTrue("kanjis" in kwargs, "Invalid output")
+        self.assertEqual(kwargs["kanjis"], ["一", "二"], "Invalid result")
+        self.assertTrue(kanjis, "Invalid output")
+        self.assertEqual(kanjis, ["一", "二"], "Invalid result")
 
-        # Get "result" and write to stdout
+        # Get "kanjis" and write to stdout
         kanjistream.run(
-            inputs=[{"type": "var", "name": "result"}],
+            inputs=[{"type": "var", "name": "kanjis"}],
             outputs=[
                 {
                     "type": "stream",

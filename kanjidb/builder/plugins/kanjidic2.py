@@ -1,5 +1,5 @@
 __all__ = ["Plugin", "run", "load"]
-from kanjidb.builder.plugins import PluginBase, kanjistream
+from kanjidb.builder.plugins import PluginBase, kanjistream, jsonstream
 
 try:
     from jamdict.kanjidic2 import Kanjidic2XMLParser
@@ -8,16 +8,11 @@ except Exception as e:
 
 
 class Plugin(PluginBase):
-    """This plugin load kanjis data from an external Kanjidic2 XML file.
-
-    Kanjidic2 XML file is parsed using `jamdict`.
-    """
-
     @property
     def template_config(self):
         return {
             "inputs": [{"type": "var", "name": "kanjis"}],
-            "output": {"type": "var", "name": "db"},
+            "outputs": [{"type": "var", "name": "db"}],
             "kd2_file": "kd2.xml",
         }
 
@@ -30,7 +25,7 @@ class Plugin(PluginBase):
         """
         run(
             inputs=self.plugin_config["inputs"],
-            output=self.plugin_config["output"],
+            outputs=self.plugin_config["outputs"],
             kd2_file=self.plugin_config["kd2_file"],
             kwargs=kwargs,
         )
@@ -41,22 +36,131 @@ class Plugin(PluginBase):
         return "Kanjidic2"
 
 
-def run(inputs, output, *, kd2_file, kwargs=None):
+def run(inputs, outputs=None, *, kd2_file, kwargs=None):
+    """Produce a JSON dict containing kanjis data from a Kanjidic2 XML file
+    (`download here <http://www.edrdg.org/wiki/index.php/KANJIDIC_Project>`_).
+
+    Kanjidic2 contains the whole dictionary, but only kanjis read from
+    input streams are generated.
+
+    Configuration:
+
+    .. code-block:: yaml
+
+        run:
+        - kanjidic2:
+          kd2_file: string
+          inputs:
+          - type: stream|var
+            [separator: string] # stream only
+            [encoding: string] # stream only
+            [path: string] # stream only
+            [name: string] # var only
+          outputs:
+          - type: stream|var
+            [path: string] # stream only
+            [indent: int] # stream only
+            [name: string] # var only
+
+    Generate data for kanjis read from stdin:
+
+    .. code-block:: yaml
+
+        run:
+        - kanjidic2:
+          kd2_file: path/to/kanjidic2.xml
+          inputs:
+          - type: stream
+            encoding: utf8
+            separator: "\\n"
+            path: "-"
+          outputs:
+          - type: var
+            name: result
+
+    Python equivalent:
+
+    .. code-block:: python
+
+        from kanjidb.builder.plugins import kanjidic2
+
+        result = kanjidic2.run(
+            kd2_file="path/to/kanjidic2.xml",
+            inputs=[{
+                "type": "stream",
+                "encoding": "utf8",
+                "separator": "\\n",
+                "path": "-"
+            }]
+        )
+
+    Read kanjis from file and export generated data to file:
+
+    .. code-block:: yaml
+
+        run:
+        - kanjidic2:
+          kd2_file: path/to/kanjidic2.xml
+          inputs:
+          - type: stream
+            encoding: utf8
+            separator: "\\n"
+            path: path/to/kanjis.txt
+          outputs:
+          - type: stream
+            indent: 4
+            path: path/to/db.json
+
+    Python equivalent:
+
+    .. code-block:: python
+
+        from kanjidb.builder.plugins import kanjidic2
+
+        kanjidic2.run(
+            kd2_file="path/to/kanjidic2.xml",
+            inputs=[{
+                "type": "stream",
+                "encoding": "utf8",
+                "separator": "\\n",
+                "path": "path/to/kanjis.txt"
+            }],
+            outputs=[{
+                "type": "stream",
+                "indent": 4,
+                "path": "path/to/db.json"
+            }]
+        )
+
+    :param inputs: input streams
+    :param output: output streams
+    :param kwargs: context
+    :return: a JSON object with kanjis data
+    """
+    outputs = outputs if outputs is not None else []
     kwargs = kwargs if kwargs is not None else {}
 
     # Read kanjis to generate
-    kanjistream.run(
-        inputs=inputs, outputs=[{"type": "var", "name": output["name"]}], kwargs=kwargs
-    )
-
-    kanjis = kwargs[output["name"]]
+    kanjis = kanjistream.run(inputs=inputs, kwargs=kwargs)
 
     # Load external Kanjidic2 XML file
     data = load(kd2_file)
     data = {_.literal: _ for _ in data.characters}
+    data = {_: data[_].to_json() for _ in kanjis}
 
-    # Merge infos with kanjis
-    kwargs[output["name"]] = {_: data[_].to_json() for _ in kanjis}
+    # Write to output streams
+    jsonstream.run(
+        inputs=[{"type": "var", "name": "data"}],
+        outputs=outputs,
+        kwargs={"data": data},
+    )
+
+    # Store to variables
+    for _ in outputs:
+        if _["type"] == "var":
+            kwargs[_["name"]] = data
+
+    return data
 
 
 def load(stream):
