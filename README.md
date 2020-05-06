@@ -26,7 +26,7 @@ learning Japanese easier. For example, you can use the online
 dictionary [jisho.org](https://jisho.org/), many websites will teach
 you grammar, you can read books, [KanjiVG](https://kanjivg.tagaini.net/) gives a
 SVG representation of kanjis, the [Edict Dictionary](http://www.edrdg.org/jmdict/edict.html) and
-[Kanjidic2](http://nihongo.monash.edu/kanjidic2/index.html) provide many useful informations on
+[Kanjidic2](http://www.edrdg.org/wiki/index.php/KANJIDIC_Project) provide many useful informations on
 kanjis, you can find REST API such as [Kanji Alive](https://www.programmableweb.com/api/kanji-alive-rest-api) to query kanjis informations, and [Anki](https://apps.ankiweb.net/) is a great tool to help you remember things (plus you can find
 many already made Anki decks for learning Japanese).
 
