@@ -145,19 +145,20 @@ Run the following command:
 ```
 
 This generate a `db.json` file containing the generated JSON database.
-Depending on your configuration this file can be quite big, so here is only a sample:
+Depending on your configuration this file can be quite big, so here is only an example of what you
+would obtain:
 
 ```json
 {
-  "一": {
-    "meanings": [{"m_lang": "", "value": "one"}]
-  },
-  "二": {
-    "meanings": [{"m_lang": "", "value": "two"}]
-  },
-  "三": {
-    "meanings": [{"m_lang": "", "value": "three"}]
-  }
+    "一": {
+        "meanings": [{"m_lang": "", "value": "one"}]
+    },
+    "二": {
+        "meanings": [{"m_lang": "", "value": "two"}]
+    },
+    "三": {
+        "meanings": [{"m_lang": "", "value": "three"}]
+    }
 }
 ```
 
