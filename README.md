@@ -173,7 +173,7 @@ WIP
 
 ## Running samples
 
-In `test.data` directory you will find many sample configuration files that you can run with
+In the `test.data` directory you will find many sample configuration files that you can run with
 `kanjidb builder`. For example, you can run `sample_helloworld.yml` with following command:
 
 ```python
