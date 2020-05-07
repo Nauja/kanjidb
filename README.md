@@ -68,8 +68,6 @@ Run 'kanjidb COMMAND --help' for more information on a command.
 
 ## Usage
 
-Generating a database is done with the `kanjidb build` command.
-
 Start by creating a `helloworld.yml` file containing:
 
 ```yaml
@@ -77,8 +75,8 @@ run:
 - helloworld: {}
 ```
 
-This YAML configuration file serves to describe and configure all the steps
-that will be run in order to generate the database. Each step listed in `run` correspond to a [plugin](https://kanjidb.readthedocs.io/en/latest/plugins.html) located in `kanjidb.builder.plugins`.
+This YAML configuration file serves to describe and configure a series of steps that will
+be run by the `kanjidb build` command. Each step listed in `run` correspond to a [plugin](https://kanjidb.readthedocs.io/en/latest/plugins.html) located in `kanjidb.builder.plugins`.
 A plugin is a simple function you can use and configure from the YAML configuration
 file. Here we tell that we will run a single step with the plugin [helloworld](https://kanjidb.readthedocs.io/en/latest/plugins.html#helloworld), which only output "今日わ" to `sys.stdout`.
 
@@ -89,7 +87,7 @@ Now, run the following command:
 今日わ
 ```
 
-This is how you can use `kanjidb build` to work with kanjis.
+This is how you can use KanjiDB to work with kanjis.
 Some plugins allow to read kanjis from inputs while others are dedicated to
 combine informations from external resources. Take a look at the [documentation](https://kanjidb.readthedocs.io/)
 for a full list of builtin plugins.
@@ -106,59 +104,62 @@ For instance, here is how you would obtain the same result with a Python script:
 This option has the advantages of being a more powerful and versatile way of using KanjiDB.
 It even allows you to write custom plugins to code new features, but it requires to write and distribute Python scripts.
 
-## Reading kanjis from file
+## Generating a JSON database
 
-Create a `sample.yml` file containing:
+Create a `kanjis.txt` file containing one UTF-8 encoded kanji per line:
+
+```
+一
+二
+三
+```
+
+Create a `config.yml` file containing:
 
 ```yaml
 run:
-- kanjistream:
+- kanjidic2:
+    kd2_file: path/to/kanjidic2.xml
     inputs:
-    - type: stream
-      encoding: unicode_plus
-      separator: ";"
-      path: kanjis.txt
-    outputs:
     - type: stream
       encoding: utf8
       separator: "\n"
-      path: "-"
+      path: path/to/kanjis.txt
+    outputs:
+    - type: stream
+      indent: 4
+      path: path/to/db.json
 ```
 
-Create a `kanjis.txt` file containing unicode encoded kanjis separated by semicolon:
+In this configuration:
+  * **kanjistream**: is a plugin that generate a JSON dict with data from a Kanjidic2 XML file.
+  * **path/to/kanjidic2.xml**: is the path to a Kanjidic2 XML file ([download here](http://www.edrdg.org/wiki/index.php/KANJIDIC_Project)).
+  * **path/to/kanjis.txt**: is the path to the `kanjis.txt` file.
+  * **path/to/db.json**: is the destination of generated JSON database.
 
-```
-U+4E00;U+4E8C
-```
-
-Now running `kanjidb build` will output one UTF-8 encoded kanji per line:
+Run the following command:
 
 ```bash
-> python -m kanjidb build sample.yml
-一
-二
+> python -m kanjidb build config.yml
 ```
 
-Equivalent in Python:
+This will generate a `db.json` file containing the generated database:
 
-```python
-from kanjidb.encoding import UNICODE_PLUS, UTF8
-from kanjidb.builder.plugins import kanjistream
-
-kanjistream.run(
-    inputs=[{
-        "type": "stream",
-        "encoding": UNICODE_PLUS,
-        "separator": ";",
-        "path": "kanjis.txt"
-    }],
-    outputs=[{
-        "type": "stream",
-        "encoding": UTF8,
-        "separator": "\n",
-        "path": "-"
-    }]
-)
+```json
+{
+    "一": {
+		"meanings": [{"m_lang": "", "value": "one"}, ...],
+		...
+	},
+    "二": {
+		"meanings": [{"m_lang": "", "value": "two"}, ...],
+		...
+	},
+    "三": {
+		"meanings": [{"m_lang": "", "value": "three"}, ...],
+		...
+    }
+}
 ```
 
 You can read more about the `kanjistream` plugin and its configuration [here](https://kanjidb.readthedocs.io/en/latest/plugins.html#kanjistream).
