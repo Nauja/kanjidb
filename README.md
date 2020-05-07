@@ -106,7 +106,8 @@ It even allows you to write custom plugins to code new features, but it requires
 
 ## Generating a JSON database
 
-Create a `kanjis.txt` file containing one UTF-8 encoded kanji per line:
+Create a `kanjis.txt` file containing one UTF-8 encoded kanji per line. This is the list of kanjis
+that will be included in our database:
 
 ```
 一
@@ -114,7 +115,7 @@ Create a `kanjis.txt` file containing one UTF-8 encoded kanji per line:
 三
 ```
 
-Create a `config.yml` file containing:
+Now, create a `config.yml` file containing:
 
 ```yaml
 run:
@@ -143,7 +144,8 @@ Run the following command:
 > python -m kanjidb build config.yml
 ```
 
-This will generate a `db.json` file containing the generated database:
+This generate a `db.json` file containing the generated JSON database.
+Depending on your configuration this file can be quite big, so here is only a sample:
 
 ```json
 {
