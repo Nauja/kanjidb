@@ -149,18 +149,15 @@ Depending on your configuration this file can be quite big, so here is only a sa
 
 ```json
 {
-    "一": {
-		"meanings": [{"m_lang": "", "value": "one"}, ...],
-		...
-	},
-    "二": {
-		"meanings": [{"m_lang": "", "value": "two"}, ...],
-		...
-	},
-    "三": {
-		"meanings": [{"m_lang": "", "value": "three"}, ...],
-		...
-    }
+  "一": {
+    "meanings": [{"m_lang": "", "value": "one"}]
+  },
+  "二": {
+    "meanings": [{"m_lang": "", "value": "two"}]
+  },
+  "三": {
+    "meanings": [{"m_lang": "", "value": "three"}]
+  }
 }
 ```
 
