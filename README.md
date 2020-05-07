@@ -162,7 +162,14 @@ would obtain:
 }
 ```
 
-You can read more about the `kanjistream` plugin and its configuration [here](https://kanjidb.readthedocs.io/en/latest/plugins.html#kanjistream).
+You can read more about the `kanjidic2` plugin and its configuration [here](https://kanjidb.readthedocs.io/en/latest/plugins.html#kanjidic2).
+
+## Running a REST API
+
+Now we will run a local server with a REST API allowing us to fetch kanjis informations
+from generated `db.json` file.
+
+WIP
 
 ## Running samples
 
