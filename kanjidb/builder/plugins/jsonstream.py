@@ -112,7 +112,7 @@ def run(inputs, outputs=None, *, kwargs=None):
         )
 
     :param inputs: input streams
-    :param output: output streams
+    :param outputs: output streams
     :param kwargs: context
     :return: a JSON object read from input streams
     """

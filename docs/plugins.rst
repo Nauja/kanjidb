@@ -6,6 +6,11 @@ helloworld
 
 .. autofunction:: kanjidb.builder.plugins.helloworld.run
 
+kanjidic2
+---------
+
+.. autofunction:: kanjidb.builder.plugins.kanjidic2.run
+
 kanjistream
 -----------
 
@@ -16,7 +21,7 @@ jsonstream
 
 .. autofunction:: kanjidb.builder.plugins.jsonstream.run
 
-kanjidic2
+mergedict
 ---------
 
-.. autofunction:: kanjidb.builder.plugins.kanjidic2.run
+.. autofunction:: kanjidb.builder.plugins.mergedict.run

@@ -48,39 +48,12 @@ def validate_required_params(_fun=None, *, names):
 def KanjiView(*, db) -> web.View:
     class Wrapper(web.View, aiohttp_cors.CorsViewMixin):
         async def get(self):
-            """
-            ---
-            description: This end-point allow to test that service is up.
-            tags:
-            - Health check
-            produces:
-            - text/plain
-            responses:
-                "200":
-                    description: successful operation. Return "pong" text
-                "405":
-                    description: invalid HTTP Method
-            """
             kanji = self.request.match_info["kanji"]
             data = db.get(kanji, None)
             if not data:
-                return web.Response(text=json.dumps({"result": "Ko"}))
+                return web.HTTPNotFound(text=json.dumps({"result": "Ko"}))
 
             data["kanji"] = kanji
-            return web.Response(
-                text=json.dumps({"result": "Ok", "params": data}, ensure_ascii=False)
-            )
-
-        async def post(self):
-            text = await self.request.text()
-            query = json.loads(text, encoding="utf8")
-            kanjis = set(query["kanji"])
-
-            data = {}
-            for _ in kanjis:
-                if _ in db:
-                    data[_] = db[_]
-
             return web.Response(
                 text=json.dumps({"result": "Ok", "params": data}, ensure_ascii=False)
             )
@@ -88,8 +61,28 @@ def KanjiView(*, db) -> web.View:
     return Wrapper
 
 
+def KanjiListView(*, db) -> web.View:
+    class Wrapper(web.View, aiohttp_cors.CorsViewMixin):
+        async def get(self):
+            return web.Response(
+                text=json.dumps(
+                    {"result": "Ok", "params": list(db.keys())}, ensure_ascii=False
+                )
+            )
+
+    return Wrapper
+
+
 class Application(web.Application):
-    def __init__(self, *args, db, base_url: str = None, **kwargs):
+    def __init__(
+        self,
+        *args,
+        db,
+        swagger_yml: str,
+        swagger_url: str = None,
+        base_url: str = None,
+        **kwargs
+    ):
         super(Application, self).__init__(*args, **kwargs)
 
         base_url = base_url or ""
@@ -101,7 +94,9 @@ class Application(web.Application):
                 )
             },
         )
+        cors.add(self.router.add_view(base_url + "/kanji", KanjiListView(db=db)))
         cors.add(self.router.add_view(base_url + "/kanji/{kanji}", KanjiView(db=db)))
-        cors.add(self.router.add_view(base_url + "/kanji", KanjiView(db=db)))
 
-        aiohttp_swagger.setup_swagger(self)
+        aiohttp_swagger.setup_swagger(
+            self, swagger_from_file=swagger_yml, swagger_url=swagger_url
+        )

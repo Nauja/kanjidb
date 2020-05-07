@@ -1,4 +1,5 @@
 import os
+import sys
 import argparse
 import json
 from aiohttp import web
@@ -45,29 +46,20 @@ def setup_logging(
         )
 
 
-def run(*, base_url: str, port: int, cdn_url: str, db):
-    db = {
-        k: {
-            "meaning": data["meaning"],
-            "furigana": data.get("furigana", None),
-            "media": {
-                "svg": "{}/svg/{}".format(cdn_url, data["media"]["svg"])
-                if "svg" in data["media"]
-                else None
-            },
-        }
-        for k, data in db.items()
-    }
-
-    app = Application(base_url=base_url, db=db)
+def run(
+    *, swagger_yml: str, swagger_url: str, base_url: str, port: int, cdn_url: str, db
+):
+    app = Application(
+        swagger_yml=swagger_yml, swagger_url=swagger_url, base_url=base_url, db=db
+    )
     web.run_app(app, port=port)
 
 
-def main():
+def main(argv):
     parser = argparse.ArgumentParser(prog="Service", description="Help")
     parser.add_argument("directory", type=str, help="config directory")
     parser.add_argument("-v", "--verbose", action="store_true", help="Verbosity level")
-    args = parser.parse_args()
+    args = parser.parse_args(args=argv)
 
     config_dir = args.directory
     if not os.path.isdir(config_dir):
@@ -86,11 +78,13 @@ def main():
         error_backupcount=int(config["logging"].get("error-backupcount", None)),
     )
 
-    with open(os.path.join(args.directory, "kanjis.json"), "rb") as f:
+    with open(config["service"]["db-file"], "rb") as f:
         content = f.read()
         db = json.loads(content.decode(), encoding="utf8")
 
     run(
+        swagger_yml=config["service"]["swagger-yml"],
+        swagger_url=config["service"]["swagger-url"],
         base_url=config["service"]["base-url"],
         port=int(config["service"]["port"]),
         cdn_url=config["service"]["cdn-url"],
@@ -99,4 +93,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    main(sys.argv)

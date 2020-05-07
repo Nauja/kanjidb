@@ -1,5 +1,6 @@
 __all__ = ["Configuration"]
 import os
+import sys
 import yaml
 from kanjidb import loader
 
@@ -38,6 +39,9 @@ class Configuration:
         :param default: default filename
         """
         default = default if default is not None else DEFAULT_CONFIG_YML
+
+        if stream == "-":
+            stream = sys.stdin
 
         # Filelike object
         if hasattr(stream, "read"):

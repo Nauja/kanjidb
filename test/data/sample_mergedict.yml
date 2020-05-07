@@ -1,0 +1,26 @@
+run:
+- kanjidic2:
+    kd2_file: test/data/kanjidic2.xml
+    inputs:
+    - type: stream
+      encoding: unicode_plus
+      separator: ";"
+      path: test/data/kanjis_unicode.txt
+    outputs:
+    - type: var
+      name: first
+- kanjidic2:
+    kd2_file: test/data/kanjidic2.xml
+    inputs:
+    - type: stream
+      encoding: utf8
+      separator: ";"
+      path: test/data/kanjis_utf8.txt
+    outputs:
+    - type: var
+      name: second
+- mergedict:
+    inputs:
+    - first
+    - second
+    output: result

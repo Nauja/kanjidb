@@ -1,6 +1,9 @@
 [service]
 port = 8085
 base-url = /api/v1
+swagger-yml = etc/swagger.yaml
+swagger-url = /api/v1/doc
+db-file = sample_db.json
 ;cdn-url = 
 
 [logging]

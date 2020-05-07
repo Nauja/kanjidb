@@ -7,5 +7,6 @@ run:
       separator: ";"
       path: test/data/kanjis_unicode.txt
     outputs:
-    - type: var
-      name: db
+    - type: stream
+      indent: 4
+      path: sample_db.json

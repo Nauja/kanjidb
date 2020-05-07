@@ -1,0 +1,43 @@
+---
+swagger: "2.0"
+info:
+  description: "KanjiDB"
+  version: "0.1a1"
+  title: "KanjiDB REST API"
+basePath: "/api/v1"
+tags:
+- name: "kanjis"
+  description: "Retrieve kanjis informations"
+schemes:
+- "https"
+- "http"
+paths:
+  /kanji:
+    get:
+      description: "Get all known kanjis."
+      tags:
+      - kanjis
+      produces:
+      - text/json
+      responses:
+        "200":
+            description: successful operation. Return kanjis
+  /kanji/{kanji}:
+    get:
+      description: "Get complete informations about a single kanji."
+      tags:
+      - kanjis
+      produces:
+      - text/json
+      parameters:
+      - name: "kanji"
+        in: "path"
+        default: "一"
+        description: "UTF-8 encoded kanji to get"
+        required: true
+        type: "string"
+      responses:
+        "200":
+            description: successful operation. Return kanji informations
+        "404":
+          description: "Kanji not found"
