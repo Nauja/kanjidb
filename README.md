@@ -133,7 +133,7 @@ db-file = /path/to/db.json
 
 Just replace:
   * **/path/to/swagger.yml**: by the path to your local [`swagger.yml`](https://github.com/Nauja/kanjidb/blob/master/etc/swagger.yml) file.
-  * **/path/to/db.json**: by the path to your `db.json` file.
+  * **/path/to/db.json**: by the path to your generated `db.json` file.
 
 Now run:
 
