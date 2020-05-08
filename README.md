@@ -10,9 +10,9 @@
 
 Kanji database builder and REST API.
 
-KanjiDB aims to help you build your own kanji database by gathering
-informations from various existing source. It's plugin system let you
-write you own plugin to collect and add new data to kanjis,
+KanjiDB aims to help you build your own kanji database by compiling
+informations from various existing source into a single JSON file.
+It's plugin system let you write you own plugin to collect and add new data to kanjis,
 or to arrange already written plugins to meet your needs. It's goal
 is to be flexible enough to let you export all the informations you
 need to build your own app (database, viewer, Anki deck builder, ...) and
