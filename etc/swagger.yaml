@@ -32,7 +32,7 @@ paths:
       parameters:
       - name: "kanji"
         in: "path"
-        default: "一"
+        default: "&#19968;"
         description: "UTF-8 encoded kanji to get"
         required: true
         type: "string"

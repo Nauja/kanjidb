@@ -60,16 +60,19 @@ class Configuration:
             with open(stream, "r") as f:
                 config = yaml.safe_load(f)
 
-        self.run = self._load_steps(config["run"])
+        self.run = self._load_steps(
+            imports=config.get("import", []),
+            steps=config["run"]
+        )
 
         if self.verbose:
             print("Configuration loaded")
 
-    def _load_steps(self, steps):
+    def _load_steps(self, imports, steps):
         result = []
 
         for step in steps:
-            modules = loader.load_plugin_modules(step.keys())
+            modules = loader.load_plugin_modules(imports, step.keys())
             for name, config in step.items():
                 plugin = modules[name].Plugin()
                 result.append(plugin)
