@@ -138,7 +138,7 @@ Just replace:
 Now run:
 
 ```bash
-python -m kanjidb run /path/to/config/directory/
+python -m kanjidb run /path/to/config.cnf/directory/
 ```
 
 You should see:
