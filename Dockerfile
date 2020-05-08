@@ -18,6 +18,6 @@ RUN apt-get upgrade -y && \
     apt-get install -y python3 python3-pip && \
     python3 -m pip install -r requirements.txt
 
-CMD [ "sh" ]
+CMD [ "python3", "-m", "kanjidb", "run", "/etc/service" ]
 
 EXPOSE 8080
