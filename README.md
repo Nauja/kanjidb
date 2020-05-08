@@ -19,24 +19,6 @@ need to build your own app (database, viewer, Anki deck builder, ...) and
 progress in learning Japanese. KanjiDB also comes with a REST API allowing to
 retrieve those informations and build services uppon.
 
-## Why ?
-
-There already exist various resources one can use to make
-learning Japanese easier. For example, you can use the online
-dictionary [jisho.org](https://jisho.org/), many websites will teach
-you grammar, you can read books, [KanjiVG](https://kanjivg.tagaini.net/) gives a
-SVG representation of kanjis, the [Edict Dictionary](http://www.edrdg.org/jmdict/edict.html) and
-[Kanjidic2](http://www.edrdg.org/wiki/index.php/KANJIDIC_Project) provide many useful informations on
-kanjis, you can find REST API such as [Kanji Alive](https://www.programmableweb.com/api/kanji-alive-rest-api) to query kanjis informations, and [Anki](https://apps.ankiweb.net/) is a great tool to help you remember things (plus you can find
-many already made Anki decks for learning Japanese).
-
-But like many people, you may like to learn kanjis and Japanese by learning things you can relate to.
-If so you may start to create Anki decks with a subset of words or kanjis you are more interested in, and
-this is where you may find it starting difficult to merge informations coming from multiple external resources.
-
-So, KanjiDB is a collection of simple tools that let you work with kanjis, extract informations from external resources,
-merge them together, and eventually build something useful for you or others.
-
 ## Online demo
 
 You can test the REST API online at [kanjidb.jeremymorosi.com/api/v1/doc](http://kanjidb.jeremymorosi.com/api/v1/doc):
