@@ -73,30 +73,25 @@ def KanjiListView(*, db) -> web.View:
     return Wrapper
 
 
-class Application(web.Application):
-    def __init__(
-        self,
-        *args,
-        db,
-        swagger_yml: str,
-        swagger_url: str = None,
-        base_url: str = None,
-        **kwargs
-    ):
-        super(Application, self).__init__(*args, **kwargs)
+def Application(
+    *args, db, swagger_yml: str, swagger_url: str = None, base_url: str = None, **kwargs
+):
+    app = web.Application(*args, **kwargs)
 
-        base_url = base_url or ""
-        cors = aiohttp_cors.setup(
-            self,
-            defaults={
-                "*": aiohttp_cors.ResourceOptions(
-                    allow_credentials=True, expose_headers="*", allow_headers="*",
-                )
-            },
-        )
-        cors.add(self.router.add_view(base_url + "/kanji", KanjiListView(db=db)))
-        cors.add(self.router.add_view(base_url + "/kanji/{kanji}", KanjiView(db=db)))
+    base_url = base_url or ""
+    cors = aiohttp_cors.setup(
+        app,
+        defaults={
+            "*": aiohttp_cors.ResourceOptions(
+                allow_credentials=True, expose_headers="*", allow_headers="*",
+            )
+        },
+    )
+    cors.add(app.router.add_view(base_url + "/kanji", KanjiListView(db=db)))
+    cors.add(app.router.add_view(base_url + "/kanji/{kanji}", KanjiView(db=db)))
 
-        aiohttp_swagger.setup_swagger(
-            self, swagger_from_file=swagger_yml, swagger_url=swagger_url
-        )
+    aiohttp_swagger.setup_swagger(
+        app, swagger_from_file=swagger_yml, swagger_url=swagger_url
+    )
+
+    return app
