@@ -1,5 +1,6 @@
 # KanjiDB
 
+![versions](https://img.shields.io/pypi/pyversions/kanjidb.svg)
 [![PyPI version](https://badge.fury.io/py/kanjidb.svg)](https://badge.fury.io/py/kanjidb)
 [![Build Status](https://travis-ci.org/Nauja/kanjidb.png?branch=master)](https://travis-ci.org/Nauja/kanjidb)
 [![Documentation Status](https://readthedocs.org/projects/kanjidb/badge/?version=latest)](https://kanjidb.readthedocs.io/en/latest/?badge=latest)
