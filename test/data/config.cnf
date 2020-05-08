@@ -1,0 +1,6 @@
+[service]
+port = 8080
+base-url = /api/v1
+swagger-yml = etc/swagger.yml
+swagger-url = /api/v1/doc
+db-file = etc/db.json

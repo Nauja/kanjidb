@@ -1,0 +1,902 @@
+{
+    "一": {
+        "literal": "一",
+        "codepoints": [
+            {
+                "type": "ucs",
+                "value": "4e00"
+            },
+            {
+                "type": "jis208",
+                "value": "16-76"
+            }
+        ],
+        "radicals": [
+            {
+                "type": "classical",
+                "value": "1"
+            }
+        ],
+        "stroke_count": 1,
+        "grade": "1",
+        "stroke_miscounts": [],
+        "variants": [
+            {
+                "type": "jis208",
+                "value": "48-01"
+            }
+        ],
+        "freq": "2",
+        "rad_names": [],
+        "jlpt": "4",
+        "dic_refs": [
+            {
+                "type": "nelson_c",
+                "value": "1",
+                "m_vol": "",
+                "m_page": ""
+            },
+            {
+                "type": "nelson_n",
+                "value": "1",
+                "m_vol": "",
+                "m_page": ""
+            },
+            {
+                "type": "halpern_njecd",
+                "value": "3341",
+                "m_vol": "",
+                "m_page": ""
+            },
+            {
+                "type": "halpern_kkd",
+                "value": "4148",
+                "m_vol": "",
+                "m_page": ""
+            },
+            {
+                "type": "halpern_kkld",
+                "value": "2105",
+                "m_vol": "",
+                "m_page": ""
+            },
+            {
+                "type": "halpern_kkld_2ed",
+                "value": "2850",
+                "m_vol": "",
+                "m_page": ""
+            },
+            {
+                "type": "heisig",
+                "value": "1",
+                "m_vol": "",
+                "m_page": ""
+            },
+            {
+                "type": "heisig6",
+                "value": "1",
+                "m_vol": "",
+                "m_page": ""
+            },
+            {
+                "type": "gakken",
+                "value": "4",
+                "m_vol": "",
+                "m_page": ""
+            },
+            {
+                "type": "oneill_names",
+                "value": "3",
+                "m_vol": "",
+                "m_page": ""
+            },
+            {
+                "type": "oneill_kk",
+                "value": "1",
+                "m_vol": "",
+                "m_page": ""
+            },
+            {
+                "type": "moro",
+                "value": "1",
+                "m_vol": "1",
+                "m_page": "0001"
+            },
+            {
+                "type": "henshall",
+                "value": "1",
+                "m_vol": "",
+                "m_page": ""
+            },
+            {
+                "type": "sh_kk",
+                "value": "2",
+                "m_vol": "",
+                "m_page": ""
+            },
+            {
+                "type": "sh_kk2",
+                "value": "2",
+                "m_vol": "",
+                "m_page": ""
+            },
+            {
+                "type": "sakade",
+                "value": "1",
+                "m_vol": "",
+                "m_page": ""
+            },
+            {
+                "type": "jf_cards",
+                "value": "1",
+                "m_vol": "",
+                "m_page": ""
+            },
+            {
+                "type": "henshall3",
+                "value": "1",
+                "m_vol": "",
+                "m_page": ""
+            },
+            {
+                "type": "tutt_cards",
+                "value": "1",
+                "m_vol": "",
+                "m_page": ""
+            },
+            {
+                "type": "crowley",
+                "value": "1",
+                "m_vol": "",
+                "m_page": ""
+            },
+            {
+                "type": "kanji_in_context",
+                "value": "1",
+                "m_vol": "",
+                "m_page": ""
+            },
+            {
+                "type": "busy_people",
+                "value": "1.A",
+                "m_vol": "",
+                "m_page": ""
+            },
+            {
+                "type": "kodansha_compact",
+                "value": "1",
+                "m_vol": "",
+                "m_page": ""
+            },
+            {
+                "type": "maniette",
+                "value": "1",
+                "m_vol": "",
+                "m_page": ""
+            }
+        ],
+        "q_codes": [
+            {
+                "type": "skip",
+                "value": "4-1-4",
+                "skip_misclass": ""
+            },
+            {
+                "type": "sh_desc",
+                "value": "0a1.1",
+                "skip_misclass": ""
+            },
+            {
+                "type": "four_corner",
+                "value": "1000.0",
+                "skip_misclass": ""
+            },
+            {
+                "type": "deroo",
+                "value": "3072",
+                "skip_misclass": ""
+            }
+        ],
+        "rm": [
+            {
+                "readings": [
+                    {
+                        "type": "pinyin",
+                        "value": "yi1",
+                        "on_type": "",
+                        "r_status": ""
+                    },
+                    {
+                        "type": "korean_r",
+                        "value": "il",
+                        "on_type": "",
+                        "r_status": ""
+                    },
+                    {
+                        "type": "korean_h",
+                        "value": "일",
+                        "on_type": "",
+                        "r_status": ""
+                    },
+                    {
+                        "type": "vietnam",
+                        "value": "Nhất",
+                        "on_type": "",
+                        "r_status": ""
+                    },
+                    {
+                        "type": "ja_on",
+                        "value": "イチ",
+                        "on_type": "",
+                        "r_status": ""
+                    },
+                    {
+                        "type": "ja_on",
+                        "value": "イツ",
+                        "on_type": "",
+                        "r_status": ""
+                    },
+                    {
+                        "type": "ja_kun",
+                        "value": "ひと-",
+                        "on_type": "",
+                        "r_status": ""
+                    },
+                    {
+                        "type": "ja_kun",
+                        "value": "ひと.つ",
+                        "on_type": "",
+                        "r_status": ""
+                    }
+                ],
+                "meanings": [
+                    {
+                        "m_lang": "",
+                        "value": "one"
+                    },
+                    {
+                        "m_lang": "",
+                        "value": "one radical (no.1)"
+                    },
+                    {
+                        "m_lang": "fr",
+                        "value": "un"
+                    },
+                    {
+                        "m_lang": "fr",
+                        "value": "radical un (no. 1)"
+                    },
+                    {
+                        "m_lang": "es",
+                        "value": "uno"
+                    },
+                    {
+                        "m_lang": "es",
+                        "value": "1"
+                    },
+                    {
+                        "m_lang": "pt",
+                        "value": "um"
+                    }
+                ]
+            }
+        ],
+        "nanoris": [
+            "かず",
+            "い",
+            "いっ",
+            "いる",
+            "かつ",
+            "かづ",
+            "てん",
+            "はじめ",
+            "ひ",
+            "ひとつ",
+            "まこと"
+        ]
+    },
+    "二": {
+        "literal": "二",
+        "codepoints": [
+            {
+                "type": "ucs",
+                "value": "4e8c"
+            },
+            {
+                "type": "jis208",
+                "value": "38-83"
+            }
+        ],
+        "radicals": [
+            {
+                "type": "classical",
+                "value": "7"
+            }
+        ],
+        "stroke_count": 2,
+        "grade": "1",
+        "stroke_miscounts": [],
+        "variants": [
+            {
+                "type": "jis208",
+                "value": "48-17"
+            }
+        ],
+        "freq": "9",
+        "rad_names": [],
+        "jlpt": "4",
+        "dic_refs": [
+            {
+                "type": "nelson_c",
+                "value": "273",
+                "m_vol": "",
+                "m_page": ""
+            },
+            {
+                "type": "nelson_n",
+                "value": "72",
+                "m_vol": "",
+                "m_page": ""
+            },
+            {
+                "type": "halpern_njecd",
+                "value": "1922",
+                "m_vol": "",
+                "m_page": ""
+            },
+            {
+                "type": "halpern_kkd",
+                "value": "2421",
+                "m_vol": "",
+                "m_page": ""
+            },
+            {
+                "type": "halpern_kkld",
+                "value": "1224",
+                "m_vol": "",
+                "m_page": ""
+            },
+            {
+                "type": "halpern_kkld_2ed",
+                "value": "1688",
+                "m_vol": "",
+                "m_page": ""
+            },
+            {
+                "type": "heisig",
+                "value": "2",
+                "m_vol": "",
+                "m_page": ""
+            },
+            {
+                "type": "heisig6",
+                "value": "2",
+                "m_vol": "",
+                "m_page": ""
+            },
+            {
+                "type": "gakken",
+                "value": "6",
+                "m_vol": "",
+                "m_page": ""
+            },
+            {
+                "type": "oneill_names",
+                "value": "4",
+                "m_vol": "",
+                "m_page": ""
+            },
+            {
+                "type": "oneill_kk",
+                "value": "2",
+                "m_vol": "",
+                "m_page": ""
+            },
+            {
+                "type": "moro",
+                "value": "247",
+                "m_vol": "1",
+                "m_page": "0416"
+            },
+            {
+                "type": "henshall",
+                "value": "61",
+                "m_vol": "",
+                "m_page": ""
+            },
+            {
+                "type": "sh_kk",
+                "value": "3",
+                "m_vol": "",
+                "m_page": ""
+            },
+            {
+                "type": "sh_kk2",
+                "value": "3",
+                "m_vol": "",
+                "m_page": ""
+            },
+            {
+                "type": "sakade",
+                "value": "2",
+                "m_vol": "",
+                "m_page": ""
+            },
+            {
+                "type": "jf_cards",
+                "value": "9",
+                "m_vol": "",
+                "m_page": ""
+            },
+            {
+                "type": "henshall3",
+                "value": "2",
+                "m_vol": "",
+                "m_page": ""
+            },
+            {
+                "type": "tutt_cards",
+                "value": "2",
+                "m_vol": "",
+                "m_page": ""
+            },
+            {
+                "type": "crowley",
+                "value": "11",
+                "m_vol": "",
+                "m_page": ""
+            },
+            {
+                "type": "kanji_in_context",
+                "value": "2",
+                "m_vol": "",
+                "m_page": ""
+            },
+            {
+                "type": "busy_people",
+                "value": "1.A",
+                "m_vol": "",
+                "m_page": ""
+            },
+            {
+                "type": "kodansha_compact",
+                "value": "31",
+                "m_vol": "",
+                "m_page": ""
+            },
+            {
+                "type": "maniette",
+                "value": "2",
+                "m_vol": "",
+                "m_page": ""
+            }
+        ],
+        "q_codes": [
+            {
+                "type": "skip",
+                "value": "2-1-1",
+                "skip_misclass": ""
+            },
+            {
+                "type": "sh_desc",
+                "value": "0a2.1",
+                "skip_misclass": ""
+            },
+            {
+                "type": "four_corner",
+                "value": "1010.0",
+                "skip_misclass": ""
+            },
+            {
+                "type": "deroo",
+                "value": "3072",
+                "skip_misclass": ""
+            }
+        ],
+        "rm": [
+            {
+                "readings": [
+                    {
+                        "type": "pinyin",
+                        "value": "er4",
+                        "on_type": "",
+                        "r_status": ""
+                    },
+                    {
+                        "type": "korean_r",
+                        "value": "i",
+                        "on_type": "",
+                        "r_status": ""
+                    },
+                    {
+                        "type": "korean_h",
+                        "value": "이",
+                        "on_type": "",
+                        "r_status": ""
+                    },
+                    {
+                        "type": "vietnam",
+                        "value": "Nhị",
+                        "on_type": "",
+                        "r_status": ""
+                    },
+                    {
+                        "type": "ja_on",
+                        "value": "ニ",
+                        "on_type": "",
+                        "r_status": ""
+                    },
+                    {
+                        "type": "ja_on",
+                        "value": "ジ",
+                        "on_type": "",
+                        "r_status": ""
+                    },
+                    {
+                        "type": "ja_kun",
+                        "value": "ふた",
+                        "on_type": "",
+                        "r_status": ""
+                    },
+                    {
+                        "type": "ja_kun",
+                        "value": "ふた.つ",
+                        "on_type": "",
+                        "r_status": ""
+                    },
+                    {
+                        "type": "ja_kun",
+                        "value": "ふたたび",
+                        "on_type": "",
+                        "r_status": ""
+                    }
+                ],
+                "meanings": [
+                    {
+                        "m_lang": "",
+                        "value": "two"
+                    },
+                    {
+                        "m_lang": "",
+                        "value": "two radical (no. 7)"
+                    },
+                    {
+                        "m_lang": "fr",
+                        "value": "deux"
+                    },
+                    {
+                        "m_lang": "fr",
+                        "value": "radical deux (no. 2)"
+                    },
+                    {
+                        "m_lang": "es",
+                        "value": "dos"
+                    },
+                    {
+                        "m_lang": "es",
+                        "value": "2"
+                    },
+                    {
+                        "m_lang": "pt",
+                        "value": "dois"
+                    }
+                ]
+            }
+        ],
+        "nanoris": [
+            "おと",
+            "つぐ",
+            "つぎ",
+            "にい",
+            "は",
+            "ふ",
+            "ふたつ",
+            "ふだ",
+            "わ"
+        ]
+    },
+    "三": {
+        "literal": "三",
+        "codepoints": [
+            {
+                "type": "ucs",
+                "value": "4e09"
+            },
+            {
+                "type": "jis208",
+                "value": "27-16"
+            }
+        ],
+        "radicals": [
+            {
+                "type": "classical",
+                "value": "1"
+            }
+        ],
+        "stroke_count": 3,
+        "grade": "1",
+        "stroke_miscounts": [],
+        "variants": [
+            {
+                "type": "jis212",
+                "value": "28-64"
+            }
+        ],
+        "freq": "14",
+        "rad_names": [],
+        "jlpt": "4",
+        "dic_refs": [
+            {
+                "type": "nelson_c",
+                "value": "8",
+                "m_vol": "",
+                "m_page": ""
+            },
+            {
+                "type": "nelson_n",
+                "value": "8",
+                "m_vol": "",
+                "m_page": ""
+            },
+            {
+                "type": "halpern_njecd",
+                "value": "1924",
+                "m_vol": "",
+                "m_page": ""
+            },
+            {
+                "type": "halpern_kkd",
+                "value": "2423",
+                "m_vol": "",
+                "m_page": ""
+            },
+            {
+                "type": "halpern_kkld",
+                "value": "1225",
+                "m_vol": "",
+                "m_page": ""
+            },
+            {
+                "type": "halpern_kkld_2ed",
+                "value": "1689",
+                "m_vol": "",
+                "m_page": ""
+            },
+            {
+                "type": "heisig",
+                "value": "3",
+                "m_vol": "",
+                "m_page": ""
+            },
+            {
+                "type": "heisig6",
+                "value": "3",
+                "m_vol": "",
+                "m_page": ""
+            },
+            {
+                "type": "gakken",
+                "value": "10",
+                "m_vol": "",
+                "m_page": ""
+            },
+            {
+                "type": "oneill_names",
+                "value": "22",
+                "m_vol": "",
+                "m_page": ""
+            },
+            {
+                "type": "oneill_kk",
+                "value": "3",
+                "m_vol": "",
+                "m_page": ""
+            },
+            {
+                "type": "moro",
+                "value": "12",
+                "m_vol": "1",
+                "m_page": "0107"
+            },
+            {
+                "type": "henshall",
+                "value": "23",
+                "m_vol": "",
+                "m_page": ""
+            },
+            {
+                "type": "sh_kk",
+                "value": "4",
+                "m_vol": "",
+                "m_page": ""
+            },
+            {
+                "type": "sh_kk2",
+                "value": "4",
+                "m_vol": "",
+                "m_page": ""
+            },
+            {
+                "type": "sakade",
+                "value": "3",
+                "m_vol": "",
+                "m_page": ""
+            },
+            {
+                "type": "jf_cards",
+                "value": "4",
+                "m_vol": "",
+                "m_page": ""
+            },
+            {
+                "type": "henshall3",
+                "value": "3",
+                "m_vol": "",
+                "m_page": ""
+            },
+            {
+                "type": "tutt_cards",
+                "value": "10",
+                "m_vol": "",
+                "m_page": ""
+            },
+            {
+                "type": "crowley",
+                "value": "21",
+                "m_vol": "",
+                "m_page": ""
+            },
+            {
+                "type": "kanji_in_context",
+                "value": "3",
+                "m_vol": "",
+                "m_page": ""
+            },
+            {
+                "type": "busy_people",
+                "value": "1.A",
+                "m_vol": "",
+                "m_page": ""
+            },
+            {
+                "type": "kodansha_compact",
+                "value": "5",
+                "m_vol": "",
+                "m_page": ""
+            },
+            {
+                "type": "maniette",
+                "value": "3",
+                "m_vol": "",
+                "m_page": ""
+            }
+        ],
+        "q_codes": [
+            {
+                "type": "skip",
+                "value": "2-1-2",
+                "skip_misclass": ""
+            },
+            {
+                "type": "sh_desc",
+                "value": "0a3.1",
+                "skip_misclass": ""
+            },
+            {
+                "type": "four_corner",
+                "value": "1010.1",
+                "skip_misclass": ""
+            },
+            {
+                "type": "deroo",
+                "value": "3072",
+                "skip_misclass": ""
+            }
+        ],
+        "rm": [
+            {
+                "readings": [
+                    {
+                        "type": "pinyin",
+                        "value": "san1",
+                        "on_type": "",
+                        "r_status": ""
+                    },
+                    {
+                        "type": "korean_r",
+                        "value": "sam",
+                        "on_type": "",
+                        "r_status": ""
+                    },
+                    {
+                        "type": "korean_h",
+                        "value": "삼",
+                        "on_type": "",
+                        "r_status": ""
+                    },
+                    {
+                        "type": "vietnam",
+                        "value": "Tam",
+                        "on_type": "",
+                        "r_status": ""
+                    },
+                    {
+                        "type": "vietnam",
+                        "value": "Tám",
+                        "on_type": "",
+                        "r_status": ""
+                    },
+                    {
+                        "type": "ja_on",
+                        "value": "サン",
+                        "on_type": "",
+                        "r_status": ""
+                    },
+                    {
+                        "type": "ja_on",
+                        "value": "ゾウ",
+                        "on_type": "",
+                        "r_status": ""
+                    },
+                    {
+                        "type": "ja_kun",
+                        "value": "み",
+                        "on_type": "",
+                        "r_status": ""
+                    },
+                    {
+                        "type": "ja_kun",
+                        "value": "み.つ",
+                        "on_type": "",
+                        "r_status": ""
+                    },
+                    {
+                        "type": "ja_kun",
+                        "value": "みっ.つ",
+                        "on_type": "",
+                        "r_status": ""
+                    }
+                ],
+                "meanings": [
+                    {
+                        "m_lang": "",
+                        "value": "three"
+                    },
+                    {
+                        "m_lang": "fr",
+                        "value": "trois"
+                    },
+                    {
+                        "m_lang": "es",
+                        "value": "tres"
+                    },
+                    {
+                        "m_lang": "es",
+                        "value": "3"
+                    },
+                    {
+                        "m_lang": "pt",
+                        "value": "três"
+                    }
+                ]
+            }
+        ],
+        "nanoris": [
+            "か",
+            "さ",
+            "さい",
+            "さえ",
+            "さぶ",
+            "ざ",
+            "ざえ",
+            "ざぶ",
+            "そう",
+            "ぞ",
+            "ただ",
+            "みつ",
+            "みん",
+            "も",
+            "や"
+        ]
+    }
+}

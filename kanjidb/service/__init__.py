@@ -88,7 +88,6 @@ def main(argv):
         swagger_url=config["service"]["swagger-url"],
         base_url=config["service"]["base-url"],
         port=int(config["service"]["port"]),
-        cdn_url=config["service"]["cdn-url"],
         db=db,
     )
 

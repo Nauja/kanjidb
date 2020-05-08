@@ -7,3 +7,4 @@ from test.test_plugins_kanjistream import *
 from test.test_plugins_jsonstream import *
 from test.test_plugins_mergedict import *
 from test.test_sample_generatedb import *
+from test.test_service import *
