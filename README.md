@@ -156,7 +156,7 @@ You can access it via:
  * http://127.0.0.1:8080/api/v1/kanji: list all kanjis in database.
 
 Note that this repository also include a default `config.cnf`, `swagger.yml` and
-`db.json` file you can use to run the server. Simply run:
+`db.json` file you can use to run the server. Simply run checkout this repository and run:
 
 ```bash
 python -m kanjidb run etc
