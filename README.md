@@ -56,44 +56,6 @@ Run 'kanjidb COMMAND --help' for more information on a command.
 
 ```
 
-## Usage
-
-Start by creating a `helloworld.yml` file containing:
-
-```yaml
-run:
-- helloworld: {}
-```
-
-This YAML configuration file serves to describe and configure a series of steps that will
-be run by the `kanjidb build` command. Each step listed in `run` correspond to a [plugin](https://kanjidb.readthedocs.io/en/latest/plugins.html) located in `kanjidb.builder.plugins`.
-A plugin is a simple function you can use and configure from the YAML configuration
-file. Here we tell that we will run a single step with the plugin [helloworld](https://kanjidb.readthedocs.io/en/latest/plugins.html#helloworld), which only output "今日わ" to `sys.stdout`.
-
-Now, run the following command:
-
-```bash
-> python -m kanjidb build helloworld.yml
-今日わ
-```
-
-This is how you can use KanjiDB to work with kanjis.
-Some plugins allow to read kanjis from inputs while others are dedicated to
-combine informations from external resources. Take a look at the [documentation](https://kanjidb.readthedocs.io/)
-for a full list of builtin plugins.
-
-But you are not limited to scripting the build process with a YAML configuration file.
-For instance, here is how you would obtain the same result with a Python script:
-
-```python
-> from kanjidb.builder.plugins import helloworld
-> helloworld.run()
-今日わ
-```
-
-This option has the advantages of being a more powerful and versatile way of using KanjiDB.
-It even allows you to write custom plugins to code new features, but it requires to write and distribute Python scripts.
-
 ## Generating a JSON database
 
 Create a `kanjis.txt` file containing one UTF-8 encoded kanji per line. This is the list of kanjis
