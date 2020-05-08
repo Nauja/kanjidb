@@ -69,13 +69,13 @@ Using pip:
 
 .. code-block:: bash
 
-   > pip install kanjidb
+   pip install kanjidb
 
 Show help:
 
 .. code-block:: bash
 
-   > python -m kanjidb -h
+   python -m kanjidb -h
 
    Usage:  kanjidb COMMAND [OPTIONS]
 
@@ -132,7 +132,7 @@ Run the following command:
 
 .. code-block:: bash
 
-   > python -m kanjidb build config.yml
+   python -m kanjidb build config.yml
 
 This generate a ``db.json`` file containing the generated JSON database.
 Depending on your configuration this file can be quite big, so here is only an example of what you
@@ -154,13 +154,90 @@ would obtain:
 
 You can read more about the ``kanjidic2`` plugin and its configuration `here <https://kanjidb.readthedocs.io/en/latest/plugins.html#kanjidic2>`_.
 
-Locally running the REST API
-----------------------------
+Running the REST API
+--------------------
 
-Now we will run a local server with a REST API allowing us to fetch kanjis informations
-from generated ``db.json`` file.
+Now we will run a local server with a REST API allowing us to query informations from generated ``db.json`` file.
 
-WIP
+First, create a ``config.cnf`` file containing:
+
+.. code-block:: ini
+
+   [service]
+   port = 8080
+   base-url = /api/v1
+   swagger-yml = /path/to/swagger.yml
+   swagger-url = /api/v1/doc
+   db-file = /path/to/db.json
+
+Just replace:
+
+
+* **/path/to/swagger.yml**\ : by the path to your local `\ ``swagger.yml`` <https://github.com/Nauja/kanjidb/blob/master/etc/swagger.yml>`_ file.
+* **/path/to/db.json**\ : by the path to your generated ``db.json`` file.
+
+Now run:
+
+.. code-block:: bash
+
+   python -m kanjidb run /path/to/config.cnf/directory/
+
+You should see:
+
+.. code-block:: bash
+
+   ======== Running on http://0.0.0.0:8080 ========
+   (Press CTRL+C to quit)
+
+Meaning the service is up and ready.
+
+You can access it via:
+
+
+* http://127.0.0.1:8080/api/v1/doc: Swagger documentation
+* http://127.0.0.1:8080/api/v1/kanji: list all kanjis in database.
+
+Note that this repository also include a default ``config.cnf``\ , ``swagger.yml`` and
+``db.json`` file you can use to run the server. Simply checkout this repository and run:
+
+.. code-block:: bash
+
+   python -m kanjidb run etc
+
+Running with Docker
+-------------------
+
+You can build a Docker image by downloading this repository and running:
+
+.. code-block:: bash
+
+   docker build -t kanjidb:latest .
+
+Next, run the Docker image as:
+
+.. code-block:: bash
+
+   docker run \
+    -v /path/to/etc:/etc/service \
+    -v /path/to/log:/var/log/service \
+    -p 8080:8080 \
+    -it kanjidb:latest
+
+Where:
+
+
+* **/path/to/etc**\ : is the path to the service directory containing **config.cnf**.
+* **/path/to/log**\ : is the path to the directory where you wan't to store logs.
+* **8080**\ : is the public port to access the REST API.
+
+You should see:
+
+.. code-block:: bash
+
+   ======== Running on http://0.0.0.0:8080 ========
+   (Press CTRL+C to quit)
+
+Meaning the service is up and ready.
 
 Testing
 -------
@@ -169,10 +246,10 @@ The ``test`` directory contains many tests that you can run with:
 
 .. code-block:: python
 
-   > python setup.py test
+   python setup.py test
 
 Or with coverage:
 
 .. code-block:: python
 
-   > coverage run --source=kanjidb setup.py test
+   coverage run --source=kanjidb setup.py test

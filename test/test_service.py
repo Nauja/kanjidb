@@ -22,7 +22,7 @@ class ServiceTestCase(AioHTTPTestCase):
             swagger_yml=config["service"]["swagger-yml"],
             swagger_url=config["service"]["swagger-url"],
             base_url=config["service"]["base-url"],
-            db=db
+            db=db,
         )
 
     @unittest_run_loop
