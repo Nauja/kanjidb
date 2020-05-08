@@ -3,6 +3,11 @@ KanjiDB
 =======
 
 
+.. image:: https://img.shields.io/pypi/pyversions/kanjidb.svg
+   :target: https://img.shields.io/pypi/pyversions/kanjidb.svg
+   :alt: versions
+
+
 .. image:: https://badge.fury.io/py/kanjidb.svg
    :target: https://badge.fury.io/py/kanjidb
    :alt: PyPI version
