@@ -39,7 +39,7 @@ merge them together, and eventually build something useful for you or others.
 
 ## Online demo
 
-You can test the REST API at (http://kanjidb.jeremymorosi.com/api/v1/doc):
+You can test the REST API online at [kanjidb.jeremymorosi.com/api/v1/doc](http://kanjidb.jeremymorosi.com/api/v1/doc):
 
 ![alt text](http://cdn.jeremymorosi.com/kanjidb/swagger_preview.png "Preview")
 
