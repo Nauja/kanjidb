@@ -25,10 +25,12 @@ def load_plugin_modules(imports, names):
         if normalize(name) in names
     }
 
-    modules.update({
-        _["name"]: importlib.import_module(_["path"])
-        for _ in imports
-        if _["name"] in names
-    })
+    modules.update(
+        {
+            _["name"]: importlib.import_module(_["path"])
+            for _ in imports
+            if _["name"] in names
+        }
+    )
 
     return modules

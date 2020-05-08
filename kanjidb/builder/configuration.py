@@ -61,8 +61,7 @@ class Configuration:
                 config = yaml.safe_load(f)
 
         self.run = self._load_steps(
-            imports=config.get("import", []),
-            steps=config["run"]
+            imports=config.get("import", []), steps=config["run"]
         )
 
         if self.verbose:
