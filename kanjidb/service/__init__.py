@@ -47,9 +47,7 @@ def setup_logging(
         )
 
 
-def run(
-    *, swagger_yml: str, swagger_url: str, base_url: str, port: int, cdn_url: str, db
-):
+def run(*, swagger_yml: str, swagger_url: str, base_url: str, port: int, db):
     app = Application(
         swagger_yml=swagger_yml, swagger_url=swagger_url, base_url=base_url, db=db
     )
