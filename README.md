@@ -116,7 +116,7 @@ would obtain:
 
 You can read more about the `kanjidic2` plugin and its configuration [here](https://kanjidb.readthedocs.io/en/latest/plugins.html#kanjidic2).
 
-## Running a REST API
+## Locally running the REST API
 
 Now we will run a local server with a REST API allowing us to fetch kanjis informations
 from generated `db.json` file.
