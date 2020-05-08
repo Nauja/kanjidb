@@ -118,10 +118,49 @@ You can read more about the `kanjidic2` plugin and its configuration [here](http
 
 ## Locally running the REST API
 
-Now we will run a local server with a REST API allowing us to fetch kanjis informations
-from generated `db.json` file.
+Now we will run a local server with a REST API allowing us to query informations from generated `db.json` file.
 
-WIP
+First, create a `config.cnf` file containing:
+
+```ini
+[service]
+port = 8080
+base-url = /api/v1
+swagger-yml = /path/to/swagger.yml
+swagger-url = /api/v1/doc
+db-file = /path/to/db.json
+```
+
+Just replace:
+  * **/path/to/swagger.yml**: by the path to your local [`swagger.yml`](https://github.com/Nauja/kanjidb/blob/master/etc/swagger.yml) file.
+  * **/path/to/db.json**: by the path to your `db.json` file.
+
+Now run:
+
+```bash
+python -m kanjidb run /path/to/config/directory/
+```
+
+You should see:
+
+```bash
+======== Running on http://0.0.0.0:8080 ========
+(Press CTRL+C to quit)
+
+```
+
+Meaning the service is up and ready.
+
+You can access it via:
+ * http://127.0.0.1:8080/api/v1/doc: Swagger documentation
+ * http://127.0.0.1:8080/api/v1/kanji: list all kanjis in database.
+
+Note that this repository also include a default `config.cnf`, `swagger.yml` and
+`db.json` file you can use to run the server. Simply run:
+
+```bash
+python -m kanjidb run etc
+```
 
 ## Running with Docker
 
