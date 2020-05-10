@@ -12,6 +12,7 @@ Welcome to KanjiDB's documentation!
 
    intro
    plugins
+   roadmap
 
 
 
