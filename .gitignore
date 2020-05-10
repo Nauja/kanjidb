@@ -1,7 +1,9 @@
 # KanjiDB
 
+etc/svg
 database/_src
 static/svg
+test/data/svg/output
 *.bat
 config.yml
 sample.yml
