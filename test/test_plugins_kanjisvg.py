@@ -18,12 +18,8 @@ class PluginsKanjiSVGTestCase(unittest.TestCase):
     @staticmethod
     def generate_db():
         return kanjidic2.run(
-            inputs=[{
-                "type": "stream",
-                "separator": ";",
-                "path": KANJIS_UTF8_TXT
-            }],
-            kd2_file=KANJIDIC2_XML
+            inputs=[{"type": "stream", "separator": ";", "path": KANJIS_UTF8_TXT}],
+            kd2_file=KANJIDIC2_XML,
         )
 
     def test_plugin(self):
@@ -35,7 +31,7 @@ class PluginsKanjiSVGTestCase(unittest.TestCase):
                 "outputs": [{"type": "var", "name": "db"}],
                 "svg_input_dir": SVG_INPUT_DIR,
                 "svg_output_dir": SVG_OUTPUT_DIR,
-                "base_url": BASE_URL
+                "base_url": BASE_URL,
             }
         )
         plugin.configure(global_config={}, plugin_config=config)
@@ -52,7 +48,7 @@ class PluginsKanjiSVGTestCase(unittest.TestCase):
             svg_input_dir=SVG_INPUT_DIR,
             svg_output_dir=SVG_OUTPUT_DIR,
             base_url=BASE_URL,
-            kwargs={"db": PluginsKanjiSVGTestCase.generate_db()}
+            kwargs={"db": PluginsKanjiSVGTestCase.generate_db()},
         )
 
         self.assertTrue("media" in db["一"], "Invalid result")

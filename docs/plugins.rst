@@ -11,6 +11,11 @@ kanjidic2
 
 .. autofunction:: kanjidb.builder.plugins.kanjidic2.run
 
+kanjisvg
+--------
+
+.. autofunction:: kanjidb.builder.plugins.kanjisvg.run
+
 kanjistream
 -----------
 

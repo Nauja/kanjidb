@@ -8,9 +8,10 @@ from kanjidb import encoding
 class Plugin(PluginBase):
     @property
     def template_config(self):
-        return {"svg_dir": "svg/",
+        return {
+            "svg_dir": "svg/",
             "inputs": [{"type": "var", "name": "db"}],
-            "outputs": [{"type": "var", "name": "db"}]
+            "outputs": [{"type": "var", "name": "db"}],
         }
 
     @property
@@ -18,10 +19,14 @@ class Plugin(PluginBase):
         return self.template_config
 
     def __call__(self, **kwargs):
-        run(inputs=self.plugin_config["inputs"], outputs=self.plugin_config["outputs"],
+        run(
+            inputs=self.plugin_config["inputs"],
+            outputs=self.plugin_config["outputs"],
             svg_input_dir=self.plugin_config["svg_input_dir"],
             svg_output_dir=self.plugin_config["svg_output_dir"],
-            base_url=self.plugin_config["base_url"], kwargs=kwargs)
+            base_url=self.plugin_config["base_url"],
+            kwargs=kwargs,
+        )
 
         return kwargs
 
@@ -145,18 +150,13 @@ def run(inputs, outputs=None, *, svg_input_dir, svg_output_dir, base_url, kwargs
         if os.path.isfile(filename):
             basename = os.path.basename(filename)
 
-            shutil.copy(
-                filename,
-                os.path.join(svg_output_dir, basename)
-            )
+            shutil.copy(filename, os.path.join(svg_output_dir, basename))
 
             media["svg"] = base_url + basename
 
     # Write to output streams
     jsonstream.run(
-        inputs=[{"type": "var", "name": "db"}],
-        outputs=outputs,
-        kwargs={"db": db},
+        inputs=[{"type": "var", "name": "db"}], outputs=outputs, kwargs={"db": db},
     )
 
     # Store to variables
