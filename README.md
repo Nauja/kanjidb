@@ -36,11 +36,9 @@ Using pip:
 pip install kanjidb
 ```
 
-Show help:
+You can show help with `kanjidb --help`:
 
-```bash
-python -m kanjidb -h
-
+```
 Usage:  kanjidb COMMAND [OPTIONS]
 
 A kanji database accessible via REST API
